@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-green: #1b75bc;
+  --brand-green-dark: #145a9c;
+  --brand-blue: #1b75bc;
+  --brand-blue-dark: #145a9c;
+  --brand-orange: #f39a1f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #1c2b24;
+  background-color: #ffffff;
+}
+
+.container-page {
+  max-width: 1380px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--brand-orange);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+.btn-primary:hover {
+  background-color: #d9820f;
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1.5px solid var(--brand-green);
+  color: var(--brand-green);
+  font-weight: 600;
+  padding: 0.65rem 1.45rem;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease;
+}
+.btn-outline:hover {
+  background-color: var(--brand-green);
+  color: #ffffff;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--brand-green-dark);
+}
+
+/* visible keyboard focus */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--brand-orange);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
