@@ -34,7 +34,7 @@ export default function HeroSlider({ slides }) {
         timerRef.current = setInterval(() => setIndex((i) => (i + 1) % count), 6000);
       }}
     >
-      <div className="relative min-h-[560px] md:min-h-[640px] flex items-center">
+      <div className="relative min-h-[440px] sm:min-h-[500px] lg:min-h-[580px] flex items-center">
         {slides.map((slide, i) => (
           <div
             key={slide.id}
@@ -65,7 +65,7 @@ export default function HeroSlider({ slides }) {
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/30" />
 
             {/* Content Container */}
-            <div className="container-page relative z-20 h-full flex items-center justify-center pt-14 pb-16 md:py-28 text-center">
+            <div className="container-page relative z-20 h-full flex items-center justify-center py-10 sm:py-14 lg:py-20 text-center">
               <div className="max-w-3xl flex flex-col items-center text-center">
                 {/* Badge */}
                 <div className="inline-flex items-center gap-2 bg-brand-blue/90 border border-blue-400/30 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3.5 sm:px-4 py-1.5 rounded-full mb-4 sm:mb-6 backdrop-blur-sm shadow-md text-center">

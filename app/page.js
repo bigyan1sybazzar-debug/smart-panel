@@ -148,10 +148,10 @@ export default function HomePage() {
       ]} />
 
       {/* 2. Key Advantages Section */}
-      <section className="py-10 md:py-16 lg:py-20 bg-gray-50/70">
+      <section className="py-8 sm:py-10 lg:py-16 bg-gray-50/70">
         <div className="container-page">
           {/* Section Header */}
-          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+          <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
             <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Why Choose Us</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Our Key Advantages</h2>
             <div className="w-16 sm:w-20 h-1 bg-brand-orange mx-auto mt-3 mb-4 rounded-full" />
@@ -170,7 +170,7 @@ export default function HomePage() {
       </section>
 
       {/* 3. About Us / Who We Are Section */}
-      <section className="py-10 md:py-16 lg:py-20">
+      <section className="py-8 sm:py-10 lg:py-16">
         <div className="container-page grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] group">
@@ -213,14 +213,14 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       {/* 4. Services Showcase Section */}
-      <section className="py-10 md:py-16 lg:py-20 bg-gray-50/70">
+      <section className="py-8 sm:py-10 lg:py-16 bg-gray-50/70">
         <div className="container-page">
-          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+          <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
             <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">What We Provide</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Our Services</h2>
             <div className="w-16 sm:w-20 h-1 bg-brand-orange mx-auto mt-3 rounded-full" />
-            <p className="text-xs text-gray-500 mt-2 font-medium lg:hidden">← Swipe to explore services →</p>
           </div>
 
           <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 pt-1 px-1 gap-4 sm:gap-6 lg:grid lg:grid-cols-3 lg:gap-8 lg:overflow-visible lg:pb-0">
