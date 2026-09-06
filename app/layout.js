@@ -129,7 +129,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans">
+      <body className="font-sans overflow-x-hidden">
         <Header settings={settings} />
         <main>{children}</main>
         <Footer settings={settings} />
