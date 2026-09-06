@@ -151,11 +151,11 @@ export default function HomePage() {
       <section className="py-8 sm:py-10 lg:py-16 bg-gray-50/70">
         <div className="container-page">
           {/* Section Header */}
-          <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
             <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Why Choose Us</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Our Key Advantages</h2>
-            <div className="w-16 sm:w-20 h-1 bg-brand-orange mx-auto mt-3 mb-4 rounded-full" />
-            <p className="text-gray-500 text-xs sm:text-sm md:text-base leading-relaxed">
+            <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 mb-4 rounded-full" />
+            <p className="text-gray-500 text-xs sm:text-sm md:text-base leading-relaxed w-full">
               Built on Korean engineering standards, delivering faster, stronger, and smarter construction across Nepal.
             </p>
           </div>
@@ -193,12 +193,12 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="lg:col-span-6 mt-4 lg:mt-0 flex flex-col items-center text-center lg:items-start lg:text-left">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold text-center lg:text-left">Who We Are</span>
-            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1 leading-tight text-center lg:text-left">
+          <div className="lg:col-span-6 mt-4 lg:mt-0 flex flex-col items-start text-left">
+            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold text-left">Who We Are</span>
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1 leading-tight text-left">
               {settings.companyName}
             </h2>
-            <p className="mt-3 sm:mt-5 text-gray-600 leading-relaxed text-xs sm:text-sm md:text-base text-center lg:text-left">{settings.aboutSummary}</p>
+            <p className="mt-3 sm:mt-5 text-gray-600 leading-relaxed text-xs sm:text-sm md:text-base text-left w-full">{settings.aboutSummary}</p>
 
             <div className="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 sm:gap-6 bg-brand-cream/80 p-4 sm:p-6 rounded-xl border border-blue-900/5 text-center w-full">
               <Stat number="10+" label="Years of Experience" />
@@ -207,7 +207,7 @@ export default function HomePage() {
               <Stat number="77" label="Districts Served" />
             </div>
 
-            <div className="mt-6 sm:mt-8 text-center lg:text-left">
+            <div className="mt-6 sm:mt-8 text-left">
               <Link href="/about-us/mission-vision" className="btn-primary text-xs sm:text-sm py-2.5 sm:py-3 px-5 sm:px-6">Learn More About Us &rarr;</Link>
             </div>
           </div>
@@ -217,10 +217,10 @@ export default function HomePage() {
       {/* 4. Services Showcase Section */}
       <section className="py-8 sm:py-10 lg:py-16 bg-gray-50/70">
         <div className="container-page">
-          <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
             <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">What We Provide</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Our Services</h2>
-            <div className="w-16 sm:w-20 h-1 bg-brand-orange mx-auto mt-3 rounded-full" />
+            <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
             <p className="text-xs text-gray-500 mt-2 font-medium md:hidden">← Swipe to explore services →</p>
           </div>
 
@@ -265,12 +265,12 @@ export default function HomePage() {
       <section className="py-8 sm:py-10 lg:py-16">
         <div className="container-page">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-8 gap-3">
-            <div className="text-center sm:text-left">
+            <div className="text-left sm:text-left">
               <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Product Showcase</span>
               <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1">Our Products</h2>
               <p className="text-xs text-gray-500 mt-1 font-medium md:hidden">← Swipe to explore products →</p>
             </div>
-            <Link href="/products" className="btn-outline text-xs sm:text-sm py-2 px-4 self-center sm:self-auto">View All Products &rarr;</Link>
+            <Link href="/products" className="btn-outline text-xs sm:text-sm py-2 px-4 self-start sm:self-auto">View All Products &rarr;</Link>
           </div>
 
           <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 pt-1 px-1 gap-4 sm:gap-6 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-8 md:overflow-visible md:pb-0">
@@ -307,11 +307,11 @@ export default function HomePage() {
       {/* 6. Construction Process Section */}
       <section className="py-8 sm:py-10 lg:py-16 bg-brand-cream/60 border-t border-gray-100">
         <div className="container-page">
-          <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
             <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">How We Build</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Our Construction Process</h2>
-            <div className="w-16 sm:w-20 h-1 bg-brand-orange mx-auto mt-3 rounded-full" />
-            <p className="text-xs sm:text-sm text-gray-600 mt-3 text-center">Engineered step-by-step from blueprint design to rapid on-site assembly across Nepal.</p>
+            <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
+            <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">Engineered step-by-step from blueprint design to rapid on-site assembly across Nepal.</p>
             <p className="text-xs text-gray-500 mt-2 font-medium md:hidden">← Swipe process steps →</p>
           </div>
 
@@ -335,12 +335,12 @@ export default function HomePage() {
       <section className="py-8 sm:py-10 lg:py-16">
         <div className="container-page">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-8 gap-3">
-            <div className="text-center sm:text-left">
+            <div className="text-left">
               <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Our Work Across Nepal</span>
               <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1">Featured Projects</h2>
               <p className="text-xs text-gray-500 mt-1 font-medium md:hidden">← Swipe projects →</p>
             </div>
-            <Link href="/gallery" className="btn-outline text-xs sm:text-sm py-2 px-4 self-center sm:self-auto">View Full Gallery &rarr;</Link>
+            <Link href="/gallery" className="btn-outline text-xs sm:text-sm py-2 px-4 self-start sm:self-auto">View Full Gallery &rarr;</Link>
           </div>
 
           <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 pt-1 px-1 gap-4 sm:gap-6 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-8 md:overflow-visible md:pb-0">
@@ -370,10 +370,10 @@ export default function HomePage() {
       {/* 8. Comparison Table Section */}
       <section className="py-8 sm:py-10 lg:py-16 bg-slate-900 text-white">
         <div className="container-page">
-          <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
             <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Why Switch to Prefab?</span>
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold mt-1">Smart Prefab vs Traditional Construction</h2>
-            <div className="w-16 sm:w-20 h-1 bg-brand-orange mx-auto mt-3 rounded-full" />
+            <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
           </div>
 
           <div className="overflow-x-auto">
@@ -420,11 +420,11 @@ export default function HomePage() {
       {/* 9. Client Reviews / Testimonials Section */}
       <section className="py-8 sm:py-10 lg:py-16 bg-gray-50/80 border-t border-b border-gray-100">
         <div className="container-page">
-          <div className="text-center max-w-2xl mx-auto mb-6 sm:mb-8">
+          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
             <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Client Testimonials</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">What Our Clients Say Across Nepal</h2>
-            <div className="w-16 sm:w-20 h-1 bg-brand-orange mx-auto mt-3 rounded-full" />
-            <div className="mt-4 flex items-center justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold text-gray-600 bg-white border border-gray-200 inline-flex px-3 sm:px-4 py-1.5 rounded-full shadow-xs text-center max-w-full">
+            <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
+            <div className="mt-4 flex items-center justify-start sm:justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold text-gray-600 bg-white border border-gray-200 inline-flex px-3 sm:px-4 py-1.5 rounded-full shadow-xs text-left sm:text-center max-w-full">
               <span className="text-amber-400 text-xs sm:text-sm shrink-0">★★★★★</span>
               <span>4.9 / 5.0 Rating based on 150+ Verified Prefab Projects</span>
             </div>
@@ -487,11 +487,11 @@ export default function HomePage() {
       {/* 10. Frequently Asked Questions (FAQ) Section */}
       <section className="py-10 md:py-16 lg:py-20 bg-white">
         <div className="container-page">
-          <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
+          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-8 sm:mb-12">
             <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Got Questions?</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Frequently Asked Questions</h2>
-            <div className="w-16 sm:w-20 h-1 bg-brand-orange mx-auto mt-3 rounded-full" />
-            <p className="text-xs sm:text-sm text-gray-600 mt-3">Common queries about prefab house price, insulation, and earthquake safety in Nepal.</p>
+            <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
+            <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">Common queries about prefab house price, insulation, and earthquake safety in Nepal.</p>
           </div>
 
           <FaqAccordion faqs={faqs} />
