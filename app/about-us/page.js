@@ -16,12 +16,12 @@ export default function AboutUsPage() {
   return (
     <div>
       <PageHero crumb="About Us" title="About Smart Prefab Panel" subtitle={settings.aboutSummary} />
-      <div className="container-page py-16 grid sm:grid-cols-2 gap-6">
+      <div className="container-page py-10 md:py-16 grid grid-cols-2 gap-3 sm:gap-6">
         {LINKS.map((l) => (
-          <Link key={l.href} href={l.href} className="bg-brand-cream rounded-lg p-6 border border-emerald-900/5 hover:shadow-md transition-shadow">
-            <h2 className="font-display font-bold text-brand-green-dark text-lg">{l.label}</h2>
-            <p className="text-sm text-gray-600 mt-2">{l.desc}</p>
-            <span className="inline-block mt-3 text-sm font-semibold text-brand-orange">Read more &rarr;</span>
+          <Link key={l.href} href={l.href} className="bg-brand-cream rounded-xl p-3.5 sm:p-6 border border-emerald-900/5 hover:shadow-md transition-all flex flex-col items-center text-center">
+            <h2 className="font-display font-bold text-brand-green-dark text-xs sm:text-lg text-center leading-tight break-words">{l.label}</h2>
+            <p className="text-[11px] sm:text-sm text-gray-600 mt-2 text-center leading-relaxed">{l.desc}</p>
+            <span className="inline-block mt-3 text-xs sm:text-sm font-semibold text-brand-orange text-center">Read more &rarr;</span>
           </Link>
         ))}
       </div>

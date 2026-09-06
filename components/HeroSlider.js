@@ -65,53 +65,53 @@ export default function HeroSlider({ slides }) {
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/30" />
 
             {/* Content Container */}
-            <div className="container-page relative z-20 h-full flex items-center pt-14 pb-16 md:py-28">
-              <div className="max-w-3xl">
+            <div className="container-page relative z-20 h-full flex items-center justify-center pt-14 pb-16 md:py-28 text-center">
+              <div className="max-w-3xl flex flex-col items-center text-center">
                 {/* Badge */}
-                <div className="inline-flex items-center gap-2 bg-brand-blue/90 border border-blue-400/30 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm shadow-md">
-                  <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
-                  SMART PREFAB PANEL • LEADER IN NEPAL
+                <div className="inline-flex items-center gap-2 bg-brand-blue/90 border border-blue-400/30 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3.5 sm:px-4 py-1.5 rounded-full mb-4 sm:mb-6 backdrop-blur-sm shadow-md text-center">
+                  <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse shrink-0" />
+                  <span>SMART PREFAB PANEL • LEADER IN NEPAL</span>
                 </div>
 
                 {/* Title */}
-                <h1 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight drop-shadow-md">
+                <h1 className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight drop-shadow-md text-center break-words">
                   {slide.title}
                 </h1>
 
                 {/* Subtitle */}
                 {slide.subtitle && (
-                  <p className="mt-6 text-gray-200 text-base md:text-xl max-w-2xl leading-relaxed font-normal drop-shadow-sm">
+                  <p className="mt-4 sm:mt-6 text-gray-200 text-xs sm:text-base md:text-xl max-w-2xl leading-relaxed font-normal drop-shadow-sm text-center">
                     {slide.subtitle}
                   </p>
                 )}
 
                 {/* CTAs */}
-                <div className="mt-8 sm:mt-9 flex flex-col sm:flex-row sm:items-center gap-3.5 sm:gap-4">
+                <div className="mt-6 sm:mt-9 flex flex-col sm:flex-row sm:items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto">
                   <Link
                     href={slide.ctaHref || "/products"}
-                    className="inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-[#d9820f] text-white font-extrabold text-sm md:text-base px-8 py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 w-full sm:w-auto text-center"
+                    className="inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-[#d9820f] text-white font-extrabold text-xs sm:text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 w-full sm:w-auto text-center"
                   >
                     {slide.ctaLabel || "Explore Products"} &rarr;
                   </Link>
                   <Link
                     href="/contact"
-                    className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold text-sm md:text-base px-7 py-3.5 rounded-lg backdrop-blur-md transition-all hover:-translate-y-0.5 w-full sm:w-auto text-center"
+                    className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold text-xs sm:text-base px-6 sm:px-7 py-3 sm:py-3.5 rounded-lg backdrop-blur-md transition-all hover:-translate-y-0.5 w-full sm:w-auto text-center"
                   >
                     Talk to Our Team
                   </Link>
                 </div>
 
                 {/* Trust Highlights */}
-                <div className="hidden sm:grid sm:grid-cols-3 mt-10 pt-8 border-t border-white/15 gap-4 max-w-xl text-sm text-gray-300">
-                  <div className="flex items-center gap-2">
-                    <span className="text-brand-orange font-extrabold text-base">✓</span>
+                <div className="grid grid-cols-3 mt-6 sm:mt-10 pt-6 sm:pt-8 border-t border-white/15 gap-2 sm:gap-4 max-w-xl text-[11px] sm:text-sm text-gray-300 text-center w-full justify-center">
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
+                    <span className="text-brand-orange font-extrabold text-sm sm:text-base">✓</span>
                     <span>Seismic Code Certified</span>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
                     <span className="text-brand-orange font-extrabold text-base">✓</span>
                     <span>124 kg/m³ Density</span>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
                     <span className="text-brand-orange font-extrabold text-base">✓</span>
                     <span>50% Faster Build</span>
                   </div>
@@ -125,11 +125,11 @@ export default function HeroSlider({ slides }) {
       {/* Slide Navigation Controls */}
       {count > 1 && (
         <>
-          {/* Arrow Buttons */}
+          {/* Arrow Buttons — visible on lg (desktop) only to avoid text overlap on tablet/mobile */}
           <button
             onClick={prev}
             aria-label="Previous slide"
-            className="hidden sm:flex absolute left-5 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-slate-900/60 hover:bg-brand-orange text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all duration-300 shadow-lg hover:scale-110"
+            className="hidden lg:flex absolute left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-slate-900/60 hover:bg-brand-orange text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all duration-300 shadow-lg hover:scale-110"
           >
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="m15 6-6 6 6 6" strokeLinecap="round" strokeLinejoin="round" />
@@ -139,7 +139,7 @@ export default function HeroSlider({ slides }) {
           <button
             onClick={next}
             aria-label="Next slide"
-            className="hidden sm:flex absolute right-5 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-slate-900/60 hover:bg-brand-orange text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all duration-300 shadow-lg hover:scale-110"
+            className="hidden lg:flex absolute right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-slate-900/60 hover:bg-brand-orange text-white border border-white/20 backdrop-blur-md items-center justify-center transition-all duration-300 shadow-lg hover:scale-110"
           >
             <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="2.5">
               <path d="m9 6 6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
