@@ -65,28 +65,28 @@ export default function HeroSlider({ slides }) {
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-black/30" />
 
             {/* Content Container */}
-            <div className="container-page relative z-20 h-full flex items-center justify-center py-10 sm:py-14 lg:py-20 text-center">
-              <div className="max-w-3xl flex flex-col items-center text-center">
+            <div className="container-page relative z-20 h-full flex items-center justify-start sm:justify-center py-10 sm:py-14 lg:py-20 text-left sm:text-center">
+              <div className="max-w-3xl flex flex-col items-start sm:items-center text-left sm:text-center w-full">
                 {/* Badge */}
-                <div className="inline-flex items-center gap-2 bg-brand-blue/90 border border-blue-400/30 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3.5 sm:px-4 py-1.5 rounded-full mb-4 sm:mb-6 backdrop-blur-sm shadow-md text-center">
+                <div className="inline-flex items-center gap-2 bg-brand-blue/90 border border-blue-400/30 text-white text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3.5 sm:px-4 py-1.5 rounded-full mb-4 sm:mb-6 backdrop-blur-sm shadow-md text-left sm:text-center">
                   <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse shrink-0" />
                   <span>SMART PREFAB PANEL • LEADER IN NEPAL</span>
                 </div>
 
                 {/* Title */}
-                <h1 className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight drop-shadow-md text-center break-words">
+                <h1 className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] tracking-tight drop-shadow-md text-left sm:text-center break-words w-full">
                   {slide.title}
                 </h1>
 
                 {/* Subtitle */}
                 {slide.subtitle && (
-                  <p className="mt-4 sm:mt-6 text-gray-200 text-xs sm:text-base md:text-xl max-w-2xl leading-relaxed font-normal drop-shadow-sm text-center">
+                  <p className="mt-4 sm:mt-6 text-gray-200 text-xs sm:text-base md:text-xl max-w-2xl leading-relaxed font-normal drop-shadow-sm text-left sm:text-center w-full">
                     {slide.subtitle}
                   </p>
                 )}
 
                 {/* CTAs */}
-                <div className="mt-6 sm:mt-9 flex flex-col sm:flex-row sm:items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto">
+                <div className="mt-6 sm:mt-9 flex flex-col sm:flex-row sm:items-center justify-start sm:justify-center gap-3 sm:gap-4 w-full sm:w-auto">
                   <Link
                     href={slide.ctaHref || "/products"}
                     className="inline-flex items-center justify-center gap-2 bg-brand-orange hover:bg-[#d9820f] text-white font-extrabold text-xs sm:text-base px-6 sm:px-8 py-3 sm:py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 w-full sm:w-auto text-center"
@@ -102,16 +102,16 @@ export default function HeroSlider({ slides }) {
                 </div>
 
                 {/* Trust Highlights */}
-                <div className="grid grid-cols-3 mt-6 sm:mt-10 pt-6 sm:pt-8 border-t border-white/15 gap-2 sm:gap-4 max-w-xl text-[11px] sm:text-sm text-gray-300 text-center w-full justify-center">
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
+                <div className="grid grid-cols-3 mt-6 sm:mt-10 pt-6 sm:pt-8 border-t border-white/15 gap-2 sm:gap-4 max-w-xl text-[11px] sm:text-sm text-gray-300 text-left sm:text-center w-full justify-start sm:justify-center">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-center gap-1 sm:gap-2">
                     <span className="text-brand-orange font-extrabold text-sm sm:text-base">✓</span>
                     <span>Seismic Code Certified</span>
                   </div>
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-center gap-1 sm:gap-2">
                     <span className="text-brand-orange font-extrabold text-base">✓</span>
                     <span>124 kg/m³ Density</span>
                   </div>
-                  <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start sm:justify-center gap-1 sm:gap-2">
                     <span className="text-brand-orange font-extrabold text-base">✓</span>
                     <span>50% Faster Build</span>
                   </div>
