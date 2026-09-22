@@ -88,6 +88,7 @@
     "chairperson": {
       "name": "Bimal Raj Gosai",
       "title": "Chief Executive Officer (CEO), Prefab Panel Nepal Pvt. Ltd.",
+      "image": "/images/team/chairperson.jpg",
       "message": "We started in 2024 with a simple goal: help Nepal build better. A year later, our manufacturing plant in Bharatpur, Chitwan came online, backed by an NPR 20 crore investment. Today it turns out 150,000 sq. ft. of Smart Panel a year — lightweight, insulated, and ready for construction sites across the country. Seismic strength isn't an add-on; it's built into every panel we produce. We are proud to be an ISO 9001:2015 certified company committed to modern, sustainable, and earthquake-ready construction for every Nepali community."
     },
     "story": "We started in 2024 with a simple goal: help Nepal build better. A year later, our plant in Bharatpur, Chitwan came online, backed by an NPR 20 crore investment. Today it turns out 150,000 sq. ft. of Smart Panel a year — lightweight, insulated, and ready for sites across the country.",
@@ -112,25 +113,25 @@
         "id": "1",
         "name": "Bimal Raj Gosai",
         "position": "Chief Executive Officer (CEO)",
-        "image": ""
+        "image": "/images/team/chairperson.jpg"
       },
       {
         "id": "2",
         "name": "Executive Board Director",
         "position": "Director — Technical & Operations",
-        "image": ""
+        "image": "/images/team/director-1.jpg"
       },
       {
         "id": "3",
         "name": "Executive Board Director",
         "position": "Director — Finance & Strategy",
-        "image": ""
+        "image": "/images/team/director-2.jpg"
       },
       {
         "id": "4",
         "name": "Independent Board Member",
         "position": "Director — Governance",
-        "image": ""
+        "image": "/images/team/director-3.jpg"
       }
     ],
     "management": [
@@ -138,25 +139,25 @@
         "id": "1",
         "name": "Bimal Raj Gosai",
         "position": "Chief Executive Officer",
-        "image": ""
+        "image": "/images/team/chairperson.jpg"
       },
       {
         "id": "2",
         "name": "Head of Plant & Production",
         "position": "Factory Operations — Bharatpur",
-        "image": ""
+        "image": "/images/team/manager-1.jpg"
       },
       {
         "id": "3",
         "name": "Head of Quality & Structural Engineering",
         "position": "Quality Assurance & QC",
-        "image": ""
+        "image": "/images/team/manager-2.jpg"
       },
       {
         "id": "4",
         "name": "Head of Sales & Dealer Network",
         "position": "Nationwide Distribution",
-        "image": ""
+        "image": "/images/team/manager-3.jpg"
       }
     ]
   },
@@ -547,7 +548,8 @@
       "role": "General Contractor & Project Developer",
       "location": "Kathmandu, Nepal",
       "rating": 5,
-      "avatar": "https://i.pravatar.cc/80?img=12",
+      "avatar": "/images/testimonials/avatar-1.jpg",
+      "projectImage": "/images/testimonials/project-1.jpg",
       "review": "Prefab Panel Nepal made our construction project much easier — great quality, durable, and quick to install. We saved both time and money.",
       "project": "Commercial Complex & Partition Project"
     },
@@ -557,7 +559,8 @@
       "role": "Healthcare Administrator",
       "location": "Byasi, Bhaktapur",
       "rating": 5,
-      "avatar": "https://i.pravatar.cc/80?img=47",
+      "avatar": "/images/testimonials/avatar-2.jpg",
+      "projectImage": "/images/testimonials/project-2.jpg",
       "review": "The 4-hour fire rating and sound insulation of Smart Panels provided the quiet, safe environment required for our hospital health post. Exceptional finish and prompt delivery from their Chitwan plant.",
       "project": "Hospital Health Post Facility"
     },
@@ -567,7 +570,8 @@
       "role": "School Infrastructure Committee",
       "location": "Libali, Bhaktapur",
       "rating": 5,
-      "avatar": "https://i.pravatar.cc/80?img=68",
+      "avatar": "/images/testimonials/avatar-3.jpg",
+      "projectImage": "/images/testimonials/project-3.jpg",
       "review": "Our school classrooms built with Smart Panels stay remarkably cool in the summer heat and warm during winter. The earthquake-resistant certification gives parents complete peace of mind.",
       "project": "School Classrooms & Kindergarten Wing"
     },
@@ -577,7 +581,8 @@
       "role": "Structural & Civil Engineer",
       "location": "Bharatpur, Chitwan",
       "rating": 5,
-      "avatar": "https://i.pravatar.cc/80?img=33",
+      "avatar": "/images/testimonials/avatar-4.jpg",
+      "projectImage": "/images/testimonials/project-4.jpg",
       "review": "Having Smart Panel listed on the Government District Rate List makes specifying it seamless for municipal and institutional projects. The structural test results and hanging strength exceed standard requirements.",
       "project": "Municipal & Institutional Buildings"
     }

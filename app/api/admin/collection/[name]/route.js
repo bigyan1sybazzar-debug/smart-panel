@@ -9,6 +9,8 @@ const ALLOWED = {
   catalogue: "catalogue",
   slides: "heroSlides",
   advantages: "advantages",
+  reviews: "reviews",
+  testimonials: "reviews",
 };
 
 function resolveKey(name) {

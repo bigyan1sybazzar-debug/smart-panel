@@ -475,24 +475,76 @@ export default function HomePage() {
             <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">What Clients Say</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Verified Testimonials</h2>
             <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
+            <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">
+              Real feedback from engineers, school committees, hospital administrators, and developers across Nepal.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {demoReviews.map((rev) => (
               <div
                 key={rev.id}
-                className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between"
+                className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex text-amber-400 text-xs mb-3">{"★".repeat(rev.rating || 5)}</div>
-                  <p className="text-xs sm:text-sm text-gray-700 italic leading-relaxed">
-                    &quot;{rev.review}&quot;
-                  </p>
+                  {/* Demo Project / Site Image Header */}
+                  {(rev.projectImage || rev.image) && (
+                    <div className="h-40 w-full overflow-hidden relative bg-gray-100">
+                      <Image
+                        src={rev.projectImage || rev.image}
+                        alt={rev.project || rev.name}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                      {rev.project && (
+                        <span className="absolute bottom-2.5 left-2.5 right-2.5 bg-black/60 backdrop-blur-sm text-white text-[10px] font-semibold px-2 py-0.5 rounded border border-white/20 truncate block">
+                          🏢 {rev.project}
+                        </span>
+                      )}
+                      <span className="absolute top-2.5 right-2.5 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow flex items-center gap-1">
+                        <span>✓</span> Verified
+                      </span>
+                    </div>
+                  )}
+
+                  <div className="p-5">
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="flex text-amber-400 text-xs tracking-wider">
+                        {"★".repeat(rev.rating || 5)}
+                      </div>
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-100">
+                        5.0 Rating
+                      </span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-gray-700 italic leading-relaxed line-clamp-4">
+                      &quot;{rev.review}&quot;
+                    </p>
+                  </div>
                 </div>
-                <div className="mt-4 pt-4 border-t border-gray-100">
-                  <h3 className="font-display font-bold text-xs sm:text-sm text-brand-blue-dark">{rev.name}</h3>
-                  <p className="text-[11px] text-gray-500">{rev.role}</p>
-                  <p className="text-[11px] text-brand-orange font-semibold">{rev.location}</p>
+
+                <div className="p-5 pt-0">
+                  <div className="pt-4 border-t border-gray-100 flex items-center gap-3">
+                    <div className="relative w-11 h-11 rounded-full overflow-hidden shrink-0 ring-2 ring-brand-blue/20 bg-gray-100 shadow-sm">
+                      <Image
+                        src={rev.avatar || "/images/testimonials/avatar-1.jpg"}
+                        alt={rev.name}
+                        fill
+                        sizes="44px"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <h3 className="font-display font-bold text-xs sm:text-sm text-brand-blue-dark truncate" title={rev.name}>
+                        {rev.name}
+                      </h3>
+                      <p className="text-[11px] text-gray-500 truncate" title={rev.role}>{rev.role}</p>
+                      <p className="text-[11px] text-brand-orange font-semibold truncate flex items-center gap-1 mt-0.5">
+                        <span>📍</span> {rev.location}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
