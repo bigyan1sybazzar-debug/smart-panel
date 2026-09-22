@@ -49,25 +49,28 @@ export default function HomePage() {
         }
       />
 
-      {/* Trust Badges Bar */}
-      <div className="bg-slate-900 text-white py-4 border-b border-slate-800">
-        <div className="container-page flex flex-wrap items-center justify-between gap-4 text-xs sm:text-sm">
-          <div className="flex items-center gap-2">
-            <span className="text-amber-400 font-bold">★ ISO 9001:2015</span>
-            <span className="text-gray-300">Certified Company</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-emerald-400 font-bold">✓ Government Approved</span>
-            <span className="text-gray-300">District Rate List Listed</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-sky-400 font-bold">🏭 NPR 20 Crore Plant</span>
-            <span className="text-gray-300">Bharatpur, Chitwan</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-amber-300 font-bold">📦 150,000+ sq. ft./yr</span>
-            <span className="text-gray-300">Annual Production</span>
-          </div>
+      {/* Trust Badges Marquee Bar */}
+      <div className="bg-slate-900 text-white py-3.5 border-b border-slate-800 overflow-hidden relative select-none">
+        <div className="animate-marquee flex items-center gap-8 sm:gap-12 text-xs sm:text-sm">
+          {[
+            { icon: "★", title: "ISO 9001:2015", sub: "Certified Company", color: "text-amber-400" },
+            { icon: "✓", title: "Government Approved", sub: "District Rate List Listed", color: "text-emerald-400" },
+            { icon: "🏭", title: "NPR 20 Crore Plant", sub: "Bharatpur, Chitwan", color: "text-sky-400" },
+            { icon: "📦", title: "150,000+ sq. ft./yr", sub: "Annual Production", color: "text-amber-300" },
+            { icon: "🛡️", title: "Seismic Code Certified", sub: "Earthquake Resistant", color: "text-orange-400" },
+            { icon: "⚡", title: "50% Faster Build", sub: "Lightweight EPS", color: "text-yellow-400" },
+            { icon: "★", title: "ISO 9001:2015", sub: "Certified Company", color: "text-amber-400" },
+            { icon: "✓", title: "Government Approved", sub: "District Rate List Listed", color: "text-emerald-400" },
+            { icon: "🏭", title: "NPR 20 Crore Plant", sub: "Bharatpur, Chitwan", color: "text-sky-400" },
+            { icon: "📦", title: "150,000+ sq. ft./yr", sub: "Annual Production", color: "text-amber-300" },
+            { icon: "🛡️", title: "Seismic Code Certified", sub: "Earthquake Resistant", color: "text-orange-400" },
+            { icon: "⚡", title: "50% Faster Build", sub: "Lightweight EPS", color: "text-yellow-400" },
+          ].map((item, idx) => (
+            <div key={idx} className="flex items-center gap-2 shrink-0">
+              <span className={`${item.color} font-bold`}>{item.icon} {item.title}</span>
+              <span className="text-gray-300">{item.sub}</span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -262,13 +265,14 @@ export default function HomePage() {
               >
                 <div>
                   <div className="h-48 w-full overflow-hidden relative bg-gray-50">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
+                    <Image
                       src={p.image || "/images/sandwich-panel.jpg"}
                       alt={p.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute top-2.5 left-2.5 bg-brand-blue text-white text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-md shadow-sm">
+                    <div className="absolute top-2.5 left-2.5 bg-brand-blue text-white text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-md shadow-sm z-10">
                       {p.category}
                     </div>
                   </div>
@@ -427,13 +431,14 @@ export default function HomePage() {
                 className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
               >
                 <div className="h-48 w-full overflow-hidden relative">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={prj.image}
                     alt={prj.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <span className="absolute top-2.5 right-2.5 bg-brand-orange text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm">
+                  <span className="absolute top-2.5 right-2.5 bg-brand-orange text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm z-10">
                     {prj.category}
                   </span>
                 </div>
@@ -474,7 +479,7 @@ export default function HomePage() {
                   </p>
                 </div>
                 <div className="mt-4 pt-4 border-t border-gray-100">
-                  <h4 className="font-display font-bold text-xs sm:text-sm text-brand-blue-dark">{rev.name}</h4>
+                  <h3 className="font-display font-bold text-xs sm:text-sm text-brand-blue-dark">{rev.name}</h3>
                   <p className="text-[11px] text-gray-500">{rev.role}</p>
                   <p className="text-[11px] text-brand-orange font-semibold">{rev.location}</p>
                 </div>

@@ -25,7 +25,8 @@ export default function FaqAccordion({ faqs }) {
             <button
               type="button"
               onClick={() => toggle(f.id)}
-              className="w-full px-6 py-4 text-left flex items-center justify-between gap-4 font-display font-bold text-gray-800 text-sm md:text-base hover:text-brand-blue transition-colors"
+              aria-expanded={isOpen}
+              className="w-full px-6 py-4 min-h-[48px] text-left flex items-center justify-between gap-4 font-display font-bold text-gray-800 text-sm md:text-base hover:text-brand-blue transition-colors"
             >
               <span>{f.question}</span>
               <span className={`w-7 h-7 rounded-full flex items-center justify-center shrink-0 font-bold text-base transition-colors ${

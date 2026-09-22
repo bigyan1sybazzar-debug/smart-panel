@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { PhoneIcon, MailIcon, PinIcon, SocialIcon } from "./Icons";
 
 export default function Footer({ settings }) {
@@ -9,10 +10,11 @@ export default function Footer({ settings }) {
         <div>
           <div className="mb-4">
             <Link href="/" className="inline-block bg-white px-3.5 py-2 rounded-xl shadow-md hover:opacity-95 transition-opacity">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/images/logo.png"
                 alt={settings?.companyName || "Smart Prefab Panel"}
+                width={180}
+                height={46}
                 className="h-10 sm:h-11 w-auto object-contain"
               />
             </Link>
@@ -44,23 +46,23 @@ export default function Footer({ settings }) {
 
         <div>
           <h3 className="font-semibold text-white mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm text-white/70">
-            <li><Link className="hover:text-brand-orange" href="/about-us/mission-vision">Our Mission &amp; Vision</Link></li>
-            <li><Link className="hover:text-brand-orange" href="/products">Smart Panel Products</Link></li>
-            <li><Link className="hover:text-brand-orange" href="/dealership">Dealership Network</Link></li>
-            <li><Link className="hover:text-brand-orange" href="/gallery">Completed Projects</Link></li>
-            <li><Link className="hover:text-brand-orange" href="/catalogue">Catalogue &amp; Specs</Link></li>
+          <ul className="space-y-1.5 text-sm">
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/about-us/mission-vision">Our Mission &amp; Vision</Link></li>
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/products">Smart Panel Products</Link></li>
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/dealership">Dealership Network</Link></li>
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/gallery">Completed Projects</Link></li>
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/catalogue">Catalogue &amp; Specs</Link></li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-semibold text-white mb-3">Company</h3>
-          <ul className="space-y-2 text-sm text-white/70">
-            <li><Link className="hover:text-brand-orange" href="/about-us">About Company Profile</Link></li>
-            <li><Link className="hover:text-brand-orange" href="/about-us/chairperson-message">Leadership Message</Link></li>
-            <li><Link className="hover:text-brand-orange" href="/notice">Government Rate Notices</Link></li>
-            <li><Link className="hover:text-brand-orange" href="/newsletter">Newsletter</Link></li>
-            <li><Link className="hover:text-brand-orange" href="/contact">Contact &amp; Plant Location</Link></li>
+          <ul className="space-y-1.5 text-sm">
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/about-us">About Company Profile</Link></li>
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/about-us/chairperson-message">Leadership Message</Link></li>
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/notice">Government Rate Notices</Link></li>
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/newsletter">Newsletter</Link></li>
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/contact">Contact &amp; Plant Location</Link></li>
           </ul>
         </div>
 
@@ -88,7 +90,7 @@ export default function Footer({ settings }) {
               <PinIcon className="mt-0.5 shrink-0 text-amber-300" />
               <div>
                 <p className="font-bold text-white">Headquarters:</p>
-                <p>{settings?.corporateOffice || "Pepsicola -32, Madhyapur Thimi, Nepal"}</p>
+                <p>{settings?.corporateOffice || "Pepsicola -32, Kathmandu, Nepal"}</p>
                 <p className="font-bold text-white mt-1">Manufacturing Plant:</p>
                 <p>{settings?.factoryAddress || "Darai Tole-8, Bharatpur, Chitwan, Nepal"}</p>
               </div>

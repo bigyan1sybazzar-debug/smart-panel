@@ -14,6 +14,7 @@ export default function Logo({ compact = false, className = "" }) {
         width={220}
         height={56}
         priority
+        sizes="(max-width: 640px) 180px, 220px"
         className={compact ? "h-9 w-auto object-contain" : "h-11 sm:h-12 w-auto object-contain"}
       />
     </Link>

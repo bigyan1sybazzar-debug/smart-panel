@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { readDB } from "@/lib/db";
 
@@ -78,13 +79,14 @@ export default function ProductsPage() {
             <div key={p.id} className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between items-center text-center">
               <div className="w-full">
                 <div className="h-36 sm:h-56 overflow-hidden relative bg-gray-50">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={p.image || "/images/sandwich-panel.jpg"}
                     alt={`${p.name} - Smart Prefab Panel Nepal`}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
                   />
-                  <span className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 bg-brand-blue text-white text-[10px] sm:text-[11px] font-bold uppercase tracking-wide px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md shadow-sm">
+                  <span className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 bg-brand-blue text-white text-[10px] sm:text-[11px] font-bold uppercase tracking-wide px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md shadow-sm z-10">
                     {p.category}
                   </span>
                 </div>

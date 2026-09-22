@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { readDB } from "@/lib/db";
 
@@ -61,9 +62,15 @@ export default function ServiceDetailPage({ params }) {
       <div className="container-page py-16 grid md:grid-cols-3 gap-10">
         <div className="md:col-span-2 space-y-6">
           {service.image && (
-            <div className="rounded-2xl overflow-hidden shadow-md h-72 md:h-96">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={service.image} alt={service.name} className="w-full h-full object-cover" />
+            <div className="rounded-2xl overflow-hidden shadow-md h-72 md:h-96 relative">
+              <Image
+                src={service.image}
+                alt={service.name}
+                fill
+                sizes="(max-width: 768px) 100vw, 66vw"
+                className="object-cover"
+                priority
+              />
             </div>
           )}
           <p className="text-gray-700 leading-relaxed text-base">{service.content}</p>
