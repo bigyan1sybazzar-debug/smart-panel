@@ -25,8 +25,7 @@ export default function TopBar({ settings }) {
             <MailIcon /> {settings?.email || "info@prefabpanelnepal.com"}
           </a>
           <span className="hidden xl:flex items-center gap-1.5 font-medium text-white/80 shrink-0 text-xs">
-            <PinIcon /> Plant: Bharatpur-8, Chitwan | HQ: Pepsicola-32
-          </span>
+            <PinIcon />  Bharatpur-8, Chitwan | Pepsicola, Kathmandu          </span>
         </div>
         <div className="flex items-center gap-2 sm:gap-3 shrink-0">
           <span className="text-[11px] text-white/70 hidden lg:inline">Follow us:</span>

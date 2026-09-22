@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "480px",
+      },
       colors: {
         brand: {
           green: "#1b75bc",
@@ -25,4 +28,5 @@ module.exports = {
   },
   plugins: [],
 };
+
 

@@ -17,7 +17,7 @@ export default function ContactPage() {
         title="Contact Smart Panel"
         subtitle="Contact our direct sales hotline, visit our corporate headquarters in Pepsicola, or schedule a tour of our manufacturing facility in Bharatpur, Chitwan."
       />
-      <div className="container-page py-12 lg:py-16 grid lg:grid-cols-2 gap-12">
+      <div className="container-page py-10 lg:py-16 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         <div>
           <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Fast Response</span>
           <h2 className="font-display text-2xl font-extrabold text-brand-blue-dark mb-4 mt-1">Send an Inquiry / Quotation Request</h2>
