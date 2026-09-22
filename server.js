@@ -1,10 +1,11 @@
+process.env.NODE_ENV = 'production';
+
 const { createServer } = require('http');
 const { parse } = require('url');
 const next = require('next');
 
-const dev = process.env.NODE_ENV !== 'production';
-
-const app = next({ dev });
+// Always run in production mode on the server to prevent SWC/compiler thread crashes
+const app = next({ dev: false, dir: __dirname });
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
@@ -21,12 +22,15 @@ app.prepare().then(() => {
 
   if (typeof PhusionPassenger !== 'undefined') {
     server.listen('passenger', () => {
-      console.log('> Server ready via Phusion Passenger');
+      console.log('> Next.js production server ready via Phusion Passenger');
     });
   } else {
     const port = process.env.PORT || 3000;
     server.listen(port, () => {
-      console.log(`> Server ready on port ${port}`);
+      console.log(`> Next.js production server ready on port ${port}`);
     });
   }
+}).catch((err) => {
+  console.error('Failed to start Next.js production server:', err);
+  process.exit(1);
 });
