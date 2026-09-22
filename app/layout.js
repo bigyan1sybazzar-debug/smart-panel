@@ -24,36 +24,41 @@ export async function generateMetadata() {
     return {
         metadataBase: new URL(domain),
         title: {
-            default: settings?.metaTitle || `${settings?.companyName || "Smart Prefab Panel"} | EPS & PUF Sandwich Panels & Prefab Homes Nepal`,
-            template: `%s | ${settings?.companyName || "Smart Prefab Panel"}`,
+            default: settings?.metaTitle || "Smart Panel Nepal | Prefab Panel Nepal Pvt. Ltd. | The Smart Way to Build",
+            template: `%s | ${settings?.companyName || "Smart Panel"} Nepal`,
         },
         description: settings?.metaDescription || settings?.aboutSummary,
         keywords: settings?.metaKeywords?.split(",").map((k) => k.trim()) || [
-            "Smart Prefab Panel",
-            "EPS Sandwich Panel Nepal",
-            "PUF Panel Nepal",
+            "Smart Panel Nepal",
+            "Prefab Panel Nepal Pvt. Ltd.",
+            "Smart Sandwich Panel",
+            "Smart Solid Panel",
+            "Smart EPS Block",
             "Prefab House Price in Nepal",
+            "Government District Rate List Nepal",
             "Earthquake Resistant Building Nepal",
-            "Prefabricated Construction Nepal",
         ],
-        authors: [{ name: settings?.companyName || "Smart Prefab Panel Nepal" }],
-        creator: settings?.companyName || "Smart Prefab Panel Nepal",
-        publisher: settings?.companyName || "Smart Prefab Panel Nepal",
+        authors: [
+            { name: settings?.companyName || "Smart Panel Nepal" },
+            { name: settings?.legalName || "Prefab Panel Nepal Pvt. Ltd." }
+        ],
+        creator: settings?.companyName || "Smart Panel Nepal",
+        publisher: settings?.legalName || "Prefab Panel Nepal Pvt. Ltd.",
         formatDetection: { email: true, address: true, telephone: true },
         alternates: {
             canonical: "/",
         },
         openGraph: {
-            title: settings?.metaTitle || settings?.companyName,
+            title: settings?.metaTitle || "Smart Panel Nepal | The Smart Way to Build",
             description: settings?.metaDescription || settings?.aboutSummary,
             url: domain,
-            siteName: settings?.companyName || "Smart Prefab Panel Nepal",
+            siteName: "Smart Panel Nepal (Prefab Panel Nepal Pvt. Ltd.)",
             images: [
                 {
                     url: settings?.ogImage || "/images/prefab-house.jpg",
                     width: 1200,
                     height: 630,
-                    alt: settings?.companyName || "Smart Prefab Panel Nepal",
+                    alt: "Smart Panel Nepal - The Smart Way to Build",
                 },
             ],
             locale: "en_NP",
@@ -61,9 +66,17 @@ export async function generateMetadata() {
         },
         twitter: {
             card: "summary_large_image",
-            title: settings?.metaTitle || settings?.companyName,
+            title: settings?.metaTitle || "Smart Panel Nepal | The Smart Way to Build",
             description: settings?.metaDescription || settings?.aboutSummary,
             images: [settings?.ogImage || "/images/prefab-house.jpg"],
+        },
+        icons: {
+            icon: [
+                { url: "/images/logo-icon.png" },
+                { url: "/favicon.ico" }
+            ],
+            shortcut: "/images/logo-icon.png",
+            apple: "/images/logo-icon.png",
         },
         verification: settings?.googleVerificationCode
             ? { google: settings.googleVerificationCode }
@@ -77,27 +90,45 @@ export default function RootLayout({ children }) {
 
     const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": settings?.companyName || "Smart Prefab Panel",
+        "@type": ["LocalBusiness", "Organization"],
+        "name": "Smart Panel",
+        "legalName": "Prefab Panel Nepal Pvt. Ltd.",
+        "slogan": "The Smart Way to Build",
         "image": `${domain}${settings?.ogImage || "/images/prefab-house.jpg"}`,
         "@id": domain,
         "url": domain,
-        "telephone": settings?.phone || "01-4111704 / 01-5929345",
-        "email": settings?.email || "bigyan.neupane6@gmail.com",
-        "priceRange": "$$",
+        "telephone": ["+977-9851149804", "+977-9709084173"],
+        "email": settings?.email || "info@prefabpanelnepal.com",
+        "priceRange": "NPR 191 - 495 / sq. ft.",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": settings?.address || "Tinkune 32, Subidanagar",
-            "addressLocality": "Kathmandu",
+            "streetAddress": "Pepsicola-32, Madhyapur Thimi",
+            "addressLocality": "Madhyapur Thimi, Kathmandu Valley",
             "addressRegion": "Bagmati",
-            "postalCode": "44600",
             "addressCountry": "NP"
         },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 27.6875,
-            "longitude": 85.3486
-        },
+        "location": [
+            {
+                "@type": "Place",
+                "name": "Smart Panel Corporate Headquarters",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Pepsicola-32, Madhyapur Thimi",
+                    "addressLocality": "Kathmandu Valley",
+                    "addressCountry": "NP"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Smart Panel Manufacturing Plant",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Darai Tole-8, Bharatpur",
+                    "addressLocality": "Chitwan",
+                    "addressCountry": "NP"
+                }
+            }
+        ],
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
             "dayOfWeek": [
@@ -112,7 +143,7 @@ export default function RootLayout({ children }) {
             "closes": "18:00"
         },
         "sameAs": [
-            settings?.facebook,
+            settings?.facebook || "https://facebook.com/smartpanelnepal",
             settings?.instagram,
             settings?.twitter,
             settings?.youtube,
@@ -124,6 +155,8 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${display.variable} ${body.variable}`}>
             <head>
+                <link rel="icon" type="image/png" href="/images/logo-icon.png" />
+                <link rel="apple-touch-icon" href="/images/logo-icon.png" />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -137,4 +170,3 @@ export default function RootLayout({ children }) {
         </html>
     );
 }
-

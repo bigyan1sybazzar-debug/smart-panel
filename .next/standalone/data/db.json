@@ -1,21 +1,28 @@
 {
   "settings": {
-    "companyName": "Smart Prefab Panel",
+    "companyName": "Smart Panel",
+    "legalName": "Prefab Panel Nepal Pvt. Ltd.",
+    "tagline": "The Smart Way to Build",
+    "certification": "An ISO 9001:2015 Certified company",
     "domain": "prefabpanelnepal.com",
-    "phone": "01-4111704 / 01-5929345",
-    "email": "bigyan.neupane6@gmail.com",
-    "address": "Tinkune 32, Subidanagar, Kathmandu, Nepal",
-    "facebook": "https://facebook.com/smartprefabpanel",
-    "instagram": "https://instagram.com/smartprefabpanel",
-    "twitter": "https://twitter.com/smartprefabpanel",
-    "youtube": "https://youtube.com/@smartprefabpanel",
-    "tiktok": "https://tiktok.com/@smartprefabpanel",
-    "heroTitle": "Building Nepal Back Stronger, One Panel at a Time",
-    "heroSubtitle": "EPS & PUF sandwich panels engineered for earthquake resistance, fast installation and lasting insulation.",
-    "aboutSummary": "Smart Prefab Panel manufactures and installs EPS sandwich panels, PUF panels and prefabricated steel structures across Nepal, combining Korean design expertise with local manufacturing to deliver light, strong and energy-efficient buildings.",
-    "metaTitle": "Smart Prefab Panel Nepal | EPS & PUF Sandwich Panels & Prefab Homes",
-    "metaDescription": "Leading manufacturer of earthquake resistant EPS & PUF sandwich panels, prefabricated houses & Korean design homes in Nepal. Light, fire-retardant, heat-insulated & factory direct pricing.",
-    "metaKeywords": "Smart Prefab Panel, EPS Sandwich Panel Nepal, PUF Panel Nepal, Prefab House Price in Nepal, Earthquake Resistant Building Nepal, Prefabricated Construction Nepal, Korean Design House, Roof Insulation Nepal, SY Panel Alternative Nepal",
+    "phone": "+977-9851149804 / +977-9709084173",
+    "email": "info@prefabpanelnepal.com",
+    "address": "Pepsicola-32, Madhyapur Thimi, Nepal",
+    "corporateOffice": "Pepsicola-32, Madhyapur Thimi, Nepal",
+    "factoryAddress": "Darai Tole-8, Bharatpur, Chitwan, Nepal",
+    "directSalesHotlines": "+977-9851149804 / +977-9709084173",
+    "website": "www.prefabpanelnepal.com",
+    "facebook": "https://facebook.com/smartpanelnepal",
+    "instagram": "https://instagram.com/smartpanelnepal",
+    "twitter": "https://twitter.com/smartpanelnepal",
+    "youtube": "https://youtube.com/@smartpanelnepal",
+    "tiktok": "https://tiktok.com/@smartpanelnepal",
+    "heroTitle": "The Smart Way to Build",
+    "heroSubtitle": "Lightweight, fire-rated, insulated, and earthquake-ready Smart Panels engineered for Nepal. Backed by NPR 20 Crore manufacturing plant in Bharatpur, Chitwan.",
+    "aboutSummary": "Smart Panel (Prefab Panel Nepal Pvt. Ltd.) is an ISO 9001:2015 certified company and Nepal's premier manufacturer of high-performance EPS sandwich panels, solid panels, and EPS blocks. With an NPR 20 crore state-of-the-art manufacturing facility in Bharatpur, Chitwan producing over 150,000 sq. ft. annually, we deliver lightweight, earthquake-ready, and energy-efficient building materials across all 77 districts of Nepal.",
+    "metaTitle": "Smart Panel Nepal | Prefab Panel Nepal Pvt. Ltd. | The Smart Way to Build",
+    "metaDescription": "Smart Panel (Prefab Panel Nepal Pvt. Ltd.) is an ISO 9001:2015 certified manufacturer of EPS sandwich panels, solid panels & EPS blocks in Nepal. Factory in Bharatpur, Chitwan & corporate office in Pepsicola, Kathmandu. Approved on Government District Rate List.",
+    "metaKeywords": "Smart Panel Nepal, Prefab Panel Nepal Pvt. Ltd., Smart Sandwich Panel, Smart Solid Panel, Smart EPS Block, Prefab House Price in Nepal, EPS Sandwich Panel Nepal, Government District Rate List Nepal, Prefab Factory Chitwan, Pepsicola Kathmandu Prefab, Earthquake Resistant Construction Nepal, ISO 9001:2015 Prefab Nepal",
     "ogImage": "/images/prefab-house.jpg",
     "googleVerificationCode": "",
     "googleAnalyticsId": ""
@@ -23,226 +30,265 @@
   "advantages": [
     {
       "id": "1",
-      "title": "Heat Insulation",
-      "icon": "heat",
-      "description": "The energy saving features of Smart Prefab Panel heat preserving polystyrene grains with good heat insulation & preservation function, which help to constant range of indoor temperature."
+      "title": "Seismic Safety & Resilience",
+      "icon": "quake",
+      "description": "A lighter wall means significantly less force hits the structure during seismic events — ensuring lower base shear, minimal deflection, and maximum earthquake safety."
     },
     {
       "id": "2",
-      "title": "Light Weight",
-      "icon": "feather",
-      "description": "The Density of Smart Prefab panel is only 124 kg/m3, which makes Smart Prefab Panel Light weight."
+      "title": "Speed & Lower Cost",
+      "icon": "wrench",
+      "description": "Tongue-and-groove interlocking panels click into place fast, dramatically cutting construction labor time, saving money, and bringing project handover forward."
     },
     {
       "id": "3",
-      "title": "Sound Insulation",
-      "icon": "sound",
-      "description": "Expandable polystyrene grain is a good sound insulation absorbing function, damping out loud noise and provide good insulation."
+      "title": "Certified & Approved",
+      "icon": "shield",
+      "description": "Listed on the Government District Rate List — verified and straightforward to specify on public infrastructure, commercial developments, and private homes alike."
     },
     {
       "id": "4",
-      "title": "Quick Installation",
-      "icon": "wrench",
-      "description": "Including the installation & surface finish work, this saves a lot in terms of time, value and money."
+      "title": "Green Construction",
+      "icon": "feather",
+      "description": "Zero topsoil dug up and no kiln smoke released. Engineered eco-friendly materials built in part from recycled glass fiber and non-hazardous bonding agents."
     },
     {
       "id": "5",
-      "title": "Earthquake Resistant",
-      "icon": "quake",
-      "description": "Smart Prefab Panel has earthquake resistance function, directly screwed in the structure make panel safer than other building material."
+      "title": "Thermal Resistant & Insulation",
+      "icon": "heat",
+      "description": "EPS-and-cement core wrapped in 4.5mm calcium silicate boards keeps interiors naturally cooler in summer and warmer in winter, cutting energy bills significantly."
     },
     {
       "id": "6",
-      "title": "Space Saving",
-      "icon": "space",
-      "description": "Increase in carpet area compare to other traditional building material."
+      "title": "Fire Proof Time Limit (≥3-4 Hours)",
+      "icon": "fire",
+      "description": "Engineered fire-retardant calcium silicate skins and non-combustible core provide a certified 3 to 4-hour fire rating, exceeding international safety standards."
     },
     {
       "id": "7",
-      "title": "Cost Saving",
-      "icon": "cost",
-      "description": "Due to light weight properties the overall structural and foundation cost is significantly reduced."
+      "title": "Sound Insulation (≥35-45 dB)",
+      "icon": "sound",
+      "description": "High sound damping capacity (≥35 to ≥45 dB) absorbs external noise, making it ideal for quiet residences, schools, hospitals, and conference spaces."
     },
     {
       "id": "8",
-      "title": "Fire Resistance",
-      "icon": "fire",
-      "description": "High grade fire-retardant EPS & PUF cores prevent flame spread and ensure maximum structural safety."
+      "title": "Space & Cost Saving",
+      "icon": "space",
+      "description": "Slimmer panel profiles increase carpet area by up to 5-8%, while ultra-light density trims structural steel and foundation costs by 5-6%."
     },
     {
       "id": "9",
-      "title": "Durability & Eco-Friendly",
+      "title": "Water & Moisture Resistant",
       "icon": "shield",
-      "description": "100% recyclable, zero-waste construction materials engineered to withstand harsh weather for decades."
+      "description": "Non-asbestos calcium silicate boards on both faces prevent water seepage, moisture buildup, mold, and seasonal dampness across Nepal's climate."
     }
   ],
   "about": {
     "chairperson": {
-      "name": "Er. Ram Bahadur Shrestha",
-      "title": "Chairperson, Smart Prefab Panel",
-      "message": "Since our founding, Smart Prefab Panel has been driven by a single purpose: to give Nepali families and businesses access to building technology that is safe, fast and affordable. The 2015 earthquake reminded all of us how important it is to build responsibly. Every panel that leaves our factory carries that responsibility with it. Thank you for trusting us to help build a stronger Nepal."
+      "name": "Bimal Raj Gosai",
+      "title": "Chief Executive Officer (CEO), Prefab Panel Nepal Pvt. Ltd.",
+      "message": "We started in 2024 with a simple goal: help Nepal build better. A year later, our manufacturing plant in Bharatpur, Chitwan came online, backed by an NPR 20 crore investment. Today it turns out 150,000 sq. ft. of Smart Panel a year — lightweight, insulated, and ready for construction sites across the country. Seismic strength isn't an add-on; it's built into every panel we produce. We are proud to be an ISO 9001:2015 certified company committed to modern, sustainable, and earthquake-ready construction for every Nepali community."
     },
-    "mission": "To provide earthquake-resistant, energy-efficient and cost-effective prefabricated building solutions to every corner of Nepal, using globally proven EPS and PUF panel technology.",
-    "vision": "To become Nepal's most trusted name in prefabricated construction, recognized for quality, innovation and service across South Asia.",
+    "story": "We started in 2024 with a simple goal: help Nepal build better. A year later, our plant in Bharatpur, Chitwan came online, backed by an NPR 20 crore investment. Today it turns out 150,000 sq. ft. of Smart Panel a year — lightweight, insulated, and ready for sites across the country.",
+    "mission": "Smart, eco-friendly, earthquake-ready building material so every community can build faster, safer, and for less.",
+    "vision": "To lead Nepal's construction transition toward sustainable, pre-engineered, and earthquake-resilient building technologies that protect lives and preserve the environment.",
+    "whatWeStandFor": [
+      {
+        "title": "Innovation & Quality",
+        "description": "We keep refining how a panel comes together — always a step ahead with advanced automated technology."
+      },
+      {
+        "title": "Safety & Resilience",
+        "description": "Seismic strength isn't an add-on. It's built into every panel to withstand Nepal's active seismic zones."
+      },
+      {
+        "title": "Environmental Care",
+        "description": "Less topsoil disturbed, fewer emissions released — by design, using non-toxic and recyclable materials."
+      }
+    ],
     "boardOfDirectors": [
-      { "id": "1", "name": "Er. Ram Bahadur Shrestha", "position": "Chairperson", "image": "" },
-      { "id": "2", "name": "Mrs. Sita Koirala", "position": "Director", "image": "" },
-      { "id": "3", "name": "Mr. Bikash Tamang", "position": "Director", "image": "" },
-      { "id": "4", "name": "Mr. Hari Prasad Adhikari", "position": "Independent Director", "image": "" }
+      { "id": "1", "name": "Bimal Raj Gosai", "position": "Chief Executive Officer (CEO)", "image": "" },
+      { "id": "2", "name": "Executive Board Director", "position": "Director — Technical & Operations", "image": "" },
+      { "id": "3", "name": "Executive Board Director", "position": "Director — Finance & Strategy", "image": "" },
+      { "id": "4", "name": "Independent Board Member", "position": "Director — Governance", "image": "" }
     ],
     "management": [
-      { "id": "1", "name": "Er. Suresh Maharjan", "position": "Chief Executive Officer", "image": "" },
-      { "id": "2", "name": "Mrs. Anjali Rana", "position": "Chief Financial Officer", "image": "" },
-      { "id": "3", "name": "Er. Deepak Gurung", "position": "Head of Production", "image": "" },
-      { "id": "4", "name": "Mr. Nabin Shakya", "position": "Head of Sales & Dealership", "image": "" }
+      { "id": "1", "name": "Bimal Raj Gosai", "position": "Chief Executive Officer", "image": "" },
+      { "id": "2", "name": "Head of Plant & Production", "position": "Factory Operations — Bharatpur", "image": "" },
+      { "id": "3", "name": "Head of Quality & Structural Engineering", "position": "Quality Assurance & QC", "image": "" },
+      { "id": "4", "name": "Head of Sales & Dealer Network", "position": "Nationwide Distribution", "image": "" }
     ]
   },
+  "governmentRates": [
+    { "thickness": "50 mm", "rate": "NPR 191 / sq. ft.", "idealFor": "Interior partitions, office cabins, ceiling walls" },
+    { "thickness": "60 mm", "rate": "NPR 293 / sq. ft.", "idealFor": "Internal & external partition walls" },
+    { "thickness": "75 mm", "rate": "NPR 351 / sq. ft.", "idealFor": "Standard exterior residential walls & classrooms" },
+    { "thickness": "90 / 100 mm", "rate": "NPR 410 / sq. ft.", "idealFor": "High insulation exterior walls & hospital wings" },
+    { "thickness": "120 mm", "rate": "NPR 495 / sq. ft.", "idealFor": "Cold storage, perimeter walls & high acoustic barriers" }
+  ],
+  "additionalRates": [
+    { "item": "Installation Charge", "rate": "NPR 26 / sq. ft." },
+    { "item": "Accessories (U-channels, fasteners, sealant)", "rate": "NPR 47 / sq. ft." }
+  ],
+  "technicalData": [
+    { "property": "Anti-Impact Performance (times)", "v50": "≥ 8", "v75": "≥ 10", "v100": "≥ 15", "v120": "≥ 15" },
+    { "property": "Anti-Bending Damage (× dead weight)", "v50": "≥ 3", "v75": "≥ 3", "v100": "≥ 3", "v120": "≥ 3" },
+    { "property": "Anti-Pressure Strength (MPa)", "v50": "≥ 5", "v75": "≥ 5", "v100": "≥ 5", "v120": "≥ 5" },
+    { "property": "Softening Coefficient", "v50": "≥ 0.80", "v75": "≥ 0.80", "v100": "≥ 0.80", "v120": "≥ 0.80" },
+    { "property": "Surface Density (kg/m³)", "v50": "≤ 45", "v75": "≤ 61", "v100": "≤ 78", "v120": "≤ 78" },
+    { "property": "Moisture Rate (%)", "v50": "≤ 10", "v75": "≤ 9", "v100": "≤ 7", "v120": "≤ 7" },
+    { "property": "Drying Shrinkage Value (mm)", "v50": "≤ 0.45", "v75": "≤ 0.5", "v100": "≤ 0.6", "v120": "≤ 0.6" },
+    { "property": "Single Point Hanging Strength (N)", "v50": "≥ 1200", "v75": "≥ 1300", "v100": "≥ 1500", "v120": "≥ 1500" },
+    { "property": "Sound Insulation Capacity (dB)", "v50": "≥ 35", "v75": "≥ 40", "v100": "≥ 45", "v120": "≥ 45" },
+    { "property": "Fire Proof Time Limit (Hours)", "v50": "≥ 3", "v75": "≥ 4", "v100": "≥ 4", "v120": "≥ 4" },
+    { "property": "Thermal Conductivity (W/m·K)", "v50": "≤ 0.30", "v75": "≤ 0.30", "v100": "≤ 0.30", "v120": "≤ 0.30" }
+  ],
+  "installationTools": [
+    { "name": "Cutting Machine", "description": "Trims panels cleanly to exact dimensions on site with zero debris." },
+    { "name": "Drill Machine", "description": "Sets steel fixings and structure anchors quickly and securely." },
+    { "name": "Welding Machine", "description": "Secures the galvanized steel framing and structural connection joints." },
+    { "name": "Thread Hand Drill", "description": "Used for fine adjustments, electrical conduit pass-throughs, and finishing." },
+    { "name": "Plumb Bob", "description": "Ensures every interlocking panel wall is true, plumb, and perfectly vertical." }
+  ],
+  "sectors": [
+    {
+      "title": "Commercial & High-Rise",
+      "description": "Lighter wall dead weight trims structural steel and foundation costs by 5–6% while speeding up tenant occupancy."
+    },
+    {
+      "title": "Healthcare & Education",
+      "description": "Quiet, 4-hour fire-resistant spaces with sound damping (≥45 dB) ideal for patient recovery and student learning."
+    },
+    {
+      "title": "Industrial & Agriculture",
+      "description": "Rapid build-out with consistent year-round indoor temperatures for warehouses, cold storage, and livestock."
+    },
+    {
+      "title": "Residential Builders",
+      "description": "Earthquake-ready homes engineered for Nepal, staying cooler in summer and warmer in winter with zero topsoil usage."
+    }
+  ],
   "servicesList": [
     {
       "slug": "earthquake-resistant-structure",
-      "name": "Earthquake Resistant Structure",
+      "name": "Earthquake Resistant Construction",
       "image": "/images/prefab-house.jpg",
-      "summary": "Panel and frame systems engineered and tested to withstand seismic activity common in Nepal.",
-      "content": "Our earthquake resistant structures combine a galvanized steel frame with EPS/PUF sandwich panels that are screwed directly into the frame, distributing seismic load evenly across the structure. This system has been used in schools, homes and commercial buildings rebuilt after the 2015 earthquake, and is designed to national building code standards for seismic zones."
+      "summary": "Lightweight wall panel and steel frame systems engineered to absorb seismic shocks and minimize structural deflection.",
+      "content": "Our earthquake-resistant structural solutions feature lightweight Smart Panels interlocking directly with precision-engineered steel frames. By reducing the overall building weight by over 60% compared to traditional brick masonry, base shear forces during an earthquake are dramatically decreased. Every installation conforms to the Nepal National Building Code for active seismic zones."
     },
     {
-      "slug": "eps-sandwich-panel",
-      "name": "EPS Sandwich Panel in Nepal",
+      "slug": "smart-sandwich-panel-solutions",
+      "name": "Smart Sandwich Panel Installation",
       "image": "/images/sandwich-panel.jpg",
-      "summary": "Expandable Polystyrene core panels for walls and roofs with excellent insulation and light weight.",
-      "content": "EPS Sandwich Panels consist of a lightweight expanded polystyrene core bonded between two layers of galvanized steel or cement board. They are used extensively for partition walls, cold storage, poultry farms and residential construction, offering a density of just 124 kg/m3 while retaining strong thermal and sound insulation."
+      "summary": "Tongue-and-groove EPS core panels with 4.5mm calcium silicate boards for walls, partitions, and exterior envelopes.",
+      "content": "Smart Sandwich Panels combine an EPS-and-cement core wrapped in 4.5mm calcium silicate board on both faces. Featuring tongue-and-groove interlocking edges, every panel locks tightly into the next for fast on-site installation, clean finish, and exceptional thermal and sound barrier performance."
     },
     {
-      "slug": "korean-design-house",
-      "name": "Korean Design House in Nepal",
-      "image": "/images/korean-house.jpg",
-      "summary": "Modular homes based on proven Korean prefabricated housing design and technology.",
-      "content": "In partnership with Korean design technology, we bring modular home designs that can be manufactured off-site and assembled in Nepal within weeks. These homes are known for clean lines, efficient space usage, high insulation performance and resistance to extreme weather."
+      "slug": "smart-solid-panel-construction",
+      "name": "Smart Solid Panel Wall Systems",
+      "image": "/uploads/slides/1788705701616-images__4_.jpg",
+      "summary": "Mesh-reinforced solid panels plastered after installation for heavy-duty structural durability and impact resistance.",
+      "content": "Smart Solid Panels are manufactured from expanded polystyrene beads, cement, sand, water, and specialized bonding agents, reinforced with internal mesh for added tensile strength. Ideal for high-traffic buildings, schools, and commercial facilities requiring a traditional plastered aesthetic with prefab speed."
     },
     {
       "slug": "prefab-house",
-      "name": "Prefab House in Nepal",
+      "name": "Turnkey Prefab Residential & Commercial Homes",
       "image": "/uploads/slides/1788705675548-photo-1570129477492-45c003edd2be.avif",
-      "summary": "Fully prefabricated houses assembled on site in a fraction of the time of conventional construction.",
-      "content": "Our prefab houses are manufactured in our factory and transported as ready panels and steel frames, then assembled on site — cutting construction time by more than half compared to brick-and-mortar construction, while maintaining strength, insulation and earthquake resistance."
+      "summary": "Complete prefabricated residential homes and commercial buildings constructed in 7 to 15 days.",
+      "content": "We manufacture and assemble complete turnkey prefab houses using Smart Panels. From architectural blueprints and foundation design to panel erection, roofing, and finishing, our turnkey solution delivers safe, earthquake-ready homes in a fraction of traditional construction time."
     },
     {
-      "slug": "sandwich-puf-panel",
-      "name": "Sandwich PUF Panel in Nepal",
-      "image": "/uploads/slides/1788705701616-images__4_.jpg",
-      "summary": "Polyurethane foam core panels offering superior insulation for cold storage and industrial use.",
-      "content": "PUF (Polyurethane Foam) Sandwich Panels provide a higher insulation value than EPS, making them ideal for cold storage rooms, food processing units and industrial facilities that require strict temperature control."
+      "slug": "smart-eps-blocks",
+      "name": "Smart EPS Construction Blocks",
+      "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
+      "summary": "Ultra-lightweight OPC cement & EPS molded blocks for partition walls, floor infills, and insulation layers.",
+      "content": "Lightweight construction blocks made from EPS beads, OPC cement, water, and essential additives, molded into precise dimensions (100×200×600mm, 150×200×600mm, 200×200×600mm). Superior thermal insulation and easy handling on construction sites without heavy machinery."
     },
     {
       "slug": "wall-roof-solutions",
-      "name": "Wall & Roof Solutions",
-      "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
-      "summary": "Complete wall and roofing systems for residential, commercial and industrial buildings.",
-      "content": "We supply and install complete wall and roof panel systems, including insulated roofing sheets, wall cladding and structural accessories, tailored to residential, commercial and industrial projects across Nepal."
+      "name": "Wall & Roof Insulation Systems",
+      "image": "/images/korean-house.jpg",
+      "summary": "Complete insulated wall cladding and roofing systems tailored for schools, hospitals, resorts, and commercial complexes.",
+      "content": "We supply and install complete building envelopes, including insulated sandwich wall systems, fire-rated ceiling panels, and temperature-controlled roof cladding designed to withstand harsh monsoon rains and winter cold across Nepal."
     }
   ],
   "products": [
     {
       "id": "1",
-      "name": "EPS Sandwich Wall Panel",
-      "category": "Wall Panel",
+      "name": "Smart Sandwich Panel",
+      "category": "Sandwich Panel",
       "image": "/images/sandwich-panel.jpg",
-      "description": "Lightweight EPS core wall panel with galvanized steel skin. Ideal for external walls, partitions and residential construction. Available in 50mm, 75mm and 100mm thickness."
+      "description": "Lightweight interlocking prefabricated panels with an EPS-cement core and 4.5mm calcium silicate board on both faces. Available in 50mm, 75mm, 100mm, 120mm thickness (Lengths: 2400/2700/3000mm, Width: 610mm). Fire-rated, thermal-insulated, and earthquake-ready.",
+      "sizes": "50mm, 75mm, 100mm, 120mm × 2400/2700/3000mm × 610mm"
     },
     {
       "id": "2",
-      "name": "PUF Cold Storage Panel",
-      "category": "Cold Storage",
+      "name": "Smart Solid Panel",
+      "category": "Solid Panel",
       "image": "/uploads/slides/1788705701616-images__4_.jpg",
-      "description": "High-density polyurethane foam panel designed for cold rooms, food processing units and industrial insulation requiring strict temperature control."
+      "description": "Lightweight interlocking prefabricated panels made from EPS beads, cement, sand, and bonding agents, reinforced with internal mesh for superior impact strength. Plastered on both sides after installation. Available in 50mm, 75mm, 100mm, and 120mm.",
+      "sizes": "50mm, 75mm, 100mm, 120mm × 2400/2700/3000mm × 610mm"
     },
     {
       "id": "3",
-      "name": "Insulated Roofing Sheet",
-      "category": "Roofing",
+      "name": "Smart EPS Block",
+      "category": "EPS Block",
       "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
-      "description": "Corrugated insulated roofing sheet with EPS or PUF core for residential and industrial roofs. Excellent heat and noise reduction."
+      "description": "Lightweight construction blocks made from expanded EPS beads, OPC cement, water, and specialized additives. Highly thermal-efficient, weather-durable, and available in multiple sizes: 100×200×600mm, 150×200×600mm, and 200×200×600mm.",
+      "sizes": "100×200×600mm, 150×200×600mm, 200×200×600mm"
     },
     {
       "id": "4",
-      "name": "Prefab Steel Frame",
-      "category": "Structure",
+      "name": "Galvanized Steel Frame & Accessories",
+      "category": "Structure & Accessories",
       "image": "/images/prefab-house.jpg",
-      "description": "Galvanized light gauge steel frame engineered to Nepal national seismic code for earthquake resistant prefabricated buildings."
-    },
-    {
-      "id": "5",
-      "name": "EPS Roof Panel",
-      "category": "Roofing",
-      "image": "/images/sandwich-panel.jpg",
-      "description": "Flat or sloped EPS sandwich roof panel with superior R-value for residential homes, commercial warehouses and poultry structures."
-    },
-    {
-      "id": "6",
-      "name": "Korean Modular Home Kit",
-      "category": "Modular Home",
-      "image": "/images/korean-house.jpg",
-      "description": "Complete Korean design prefabricated home kit including steel frame, wall panels, roof panels and all accessories for fast on-site assembly."
-    },
-    {
-      "id": "7",
-      "name": "Partition & Interior Panel",
-      "category": "Interior",
-      "image": "/images/sandwich-panel.jpg",
-      "description": "Slim-profile EPS core partition panel for interior walls. Sound-insulating, lightweight and easy to install without structural support."
-    },
-    {
-      "id": "8",
-      "name": "Poultry & Farm Panel",
-      "category": "Agriculture",
-      "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
-      "description": "Temperature-controlled EPS sandwich panel system purpose-built for poultry farms, mushroom houses and livestock shelters across Nepal."
+      "description": "High-tensile galvanized light gauge steel framing, U-channels, structural connection plates, expansion bolts, and anti-crack joint mesh specifically engineered for Smart Panel assembly to Nepal National Seismic Code.",
+      "sizes": "Custom manufactured to architectural drawing specifications"
     }
   ],
   "gallery": [
-    { "id": "mtpxskcq9k3v0", "title": "Completed Residential Project", "image": "/uploads/gallery/1788706710430-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif" },
-    { "id": "mtpxsg22t3ms7", "title": "Korean Design Show Home", "image": "/uploads/gallery/1788706705223-photo-1570129477492-45c003edd2be.avif" },
-    { "id": "mtpxsbs1m9s1n", "title": "Factory Production Line", "image": "/uploads/gallery/1788706698579-images__4_.jpg" },
-    { "id": "g1", "title": "Panel Installation On Site", "image": "/images/prefab-house.jpg" },
-    { "id": "g2", "title": "EPS Wall Panel Installation", "image": "/images/sandwich-panel.jpg" },
-    { "id": "g3", "title": "Korean Villa Exterior", "image": "/images/korean-house.jpg" },
-    { "id": "g4", "title": "PUF Cold Storage Unit", "image": "/uploads/slides/1788705701616-images__4_.jpg" },
-    { "id": "g5", "title": "Insulated Roof Cladding", "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif" }
+    { "id": "g1", "title": "Khwopa Hospital Health Post, Byasi", "image": "/images/prefab-house.jpg" },
+    { "id": "g2", "title": "Bal Bikash English Secondary School, Libali", "image": "/images/sandwich-panel.jpg" },
+    { "id": "g3", "title": "Bhaktapur Cancer Hospital Facility", "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif" },
+    { "id": "g4", "title": "QFX Cinemas Acoustic Wall Installation", "image": "/uploads/slides/1788705701616-images__4_.jpg" },
+    { "id": "g5", "title": "The Kings Fitness Club Commercial Project", "image": "/images/korean-house.jpg" },
+    { "id": "g6", "title": "Budhi Ganga Hydropower Camp Staff Housing", "image": "/uploads/slides/1788705675548-photo-1570129477492-45c003edd2be.avif" },
+    { "id": "g7", "title": "Shanti Adarsha School, Boudha", "image": "/uploads/gallery/1788706710430-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif" },
+    { "id": "g8", "title": "Khadka Dairy Agricultural Facility, Kharipati", "image": "/uploads/slides/1788719023931-images__5_.jpg" }
   ],
   "notices": [
     {
       "id": "1",
-      "title": "Notice of 5th Annual General Meeting",
-      "date": "2026-08-15",
-      "description": "Notice is hereby given to all shareholders regarding the 5th Annual General Meeting to be held at the company's head office, Tinkune 32, Subidanagar, Kathmandu.",
+      "title": "Government District Rate List Approved for Smart Panel Products",
+      "date": "2026-09-01",
+      "description": "We are proud to announce that Smart Panel (Prefab Panel Nepal Pvt. Ltd.) products are officially approved and listed on the Government District Rate List, starting from NPR 191/sq. ft.",
       "file": ""
     },
     {
       "id": "2",
-      "title": "Dealership Expansion Programme 2026 — Applications Open",
-      "date": "2026-07-20",
-      "description": "Smart Prefab Panel invites applications from entrepreneurs and construction businesses across all 77 districts of Nepal to join our authorised dealership network.",
+      "title": "Nationwide Dealership Expansion Programme — Apply Now",
+      "date": "2026-08-15",
+      "description": "Smart Panel invites applications from contractors, hardware distributors, and entrepreneurs across all 77 districts of Nepal to become authorized Smart Panel dealers.",
       "file": ""
     },
     {
       "id": "3",
-      "title": "New Korean Design Home Model Launch",
-      "date": "2026-06-10",
-      "description": "We are pleased to announce the launch of our new 3-bedroom Korean modular home model, now available for factory direct ordering with delivery across Nepal.",
+      "title": "ISO 9001:2015 Quality Management System Certification",
+      "date": "2026-07-10",
+      "description": "Prefab Panel Nepal Pvt. Ltd. has been awarded ISO 9001:2015 certification for its state-of-the-art manufacturing facility in Bharatpur, Chitwan.",
       "file": ""
     }
   ],
   "investorRelations": [
-    { "id": "1", "title": "Annual Report 2082/83 (2025/26)", "date": "2026-07-10", "file": "" },
-    { "id": "2", "title": "Q4 Financial Statement 2025/26", "date": "2026-07-01", "file": "" },
-    { "id": "3", "title": "Q3 Financial Statement 2025/26", "date": "2026-04-05", "file": "" },
-    { "id": "4", "title": "Shareholding Pattern — Chaitra 2082", "date": "2026-03-15", "file": "" }
+    { "id": "1", "title": "Annual Performance Report 2025/26", "date": "2026-08-01", "file": "" },
+    { "id": "2", "title": "Chitwan Factory Expansion & Production Metrics", "date": "2026-06-15", "file": "" },
+    { "id": "3", "title": "Corporate Governance & Quality Standards", "date": "2026-04-10", "file": "" }
   ],
   "catalogue": [
-    { "id": "1", "title": "Smart Prefab Panel Product Catalogue 2026 (Full Range)", "file": "" },
-    { "id": "2", "title": "EPS Sandwich Panel Technical Specifications", "file": "" },
-    { "id": "3", "title": "PUF Cold Storage Panel Data Sheet", "file": "" },
-    { "id": "4", "title": "Korean Modular Home Design Brochure", "file": "" }
+    { "id": "1", "title": "Smart Panel Official Company Profile & Technical Catalogue", "file": "" },
+    { "id": "2", "title": "Government District Rate List Schedule — Smart Panel", "file": "" },
+    { "id": "3", "title": "Technical Data & Specification Sheet (50mm, 75mm, 100mm, 120mm)", "file": "" },
+    { "id": "4", "title": "On-Site Installation Guide with 5 Essential Tools", "file": "" }
   ],
   "newsletterSubs": [],
   "messages": [],
@@ -250,24 +296,24 @@
   "heroSlides": [
     {
       "id": "s1",
-      "title": "Building Nepal Back Stronger, One Panel at a Time",
-      "subtitle": "EPS & PUF sandwich panels engineered for earthquake resistance, fast installation and lasting insulation.",
+      "title": "The Smart Way to Build",
+      "subtitle": "An ISO 9001:2015 Certified Company. Lightweight, insulated, and earthquake-ready Smart Panels manufactured in Nepal.",
       "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
-      "ctaLabel": "View Our Products",
+      "ctaLabel": "Explore Products",
       "ctaHref": "/products"
     },
     {
       "id": "s2",
-      "title": "Earthquake Resistant Construction, Engineered for Nepal",
-      "subtitle": "Steel frame and sandwich panel systems built to national seismic code standards.",
+      "title": "NPR 20 Crore Modern Plant in Bharatpur, Chitwan",
+      "subtitle": "Producing 150,000 sq. ft. of Smart Panel annually to power safe, sustainable construction across Nepal.",
       "image": "/uploads/slides/1788719023931-images__5_.jpg",
-      "ctaLabel": "Learn About Our Services",
+      "ctaLabel": "Our Services",
       "ctaHref": "/services"
     },
     {
       "id": "s3",
-      "title": "From Factory to Foundation in Weeks, Not Months",
-      "subtitle": "Fully prefabricated homes and commercial structures assembled on site in a fraction of the time.",
+      "title": "Listed on Government District Rate List",
+      "subtitle": "Verified public & private building rates starting from NPR 191 / sq. ft. Tongue-and-groove interlocking for rapid assembly.",
       "image": "/uploads/slides/1788705701616-images__4_.jpg",
       "ctaLabel": "Become a Dealer",
       "ctaHref": "/dealership"
@@ -276,175 +322,145 @@
   "reviews": [
     {
       "id": "r1",
-      "name": "Er. Rabin Adhikari",
-      "role": "Commercial Project Manager",
+      "name": "KTM Builders Pvt. Ltd.",
+      "role": "General Contractor & Project Developer",
       "location": "Kathmandu, Nepal",
       "rating": 5,
       "avatar": "https://i.pravatar.cc/80?img=12",
-      "review": "We used Smart Prefab Panel's EPS Sandwich Panels for a 3-story office building rebuilding project in Kathmandu. The heat insulation and structural strength exceeded our expectations, and construction took less than 3 weeks!",
-      "project": "3-Story Commercial Office"
+      "review": "Prefab Panel Nepal made our construction project much easier — great quality, durable, and quick to install. We saved both time and money.",
+      "project": "Commercial Complex & Partition Project"
     },
     {
       "id": "r2",
-      "name": "Sunita Gurung",
-      "role": "Resort Owner",
-      "location": "Pokhara, Nepal",
+      "name": "Khwopa Hospital Health Post Management",
+      "role": "Healthcare Administrator",
+      "location": "Byasi, Bhaktapur",
       "rating": 5,
       "avatar": "https://i.pravatar.cc/80?img=47",
-      "review": "Our modular lakeside cabins built with Smart Prefab Panel look stunning and keep guests warm in winter and cool in summer. Fast delivery, professional engineering team, and affordable factory direct price!",
-      "project": "Sarankot Eco Resort Cabins"
+      "review": "The 4-hour fire rating and sound insulation of Smart Panels provided the quiet, safe environment required for our hospital health post. Exceptional finish and prompt delivery from their Chitwan plant.",
+      "project": "Hospital Health Post Facility"
     },
     {
       "id": "r3",
-      "name": "Mahesh Shrestha",
-      "role": "Industrial Facility Director",
-      "location": "Chitwan, Nepal",
+      "name": "Bal Bikash English Secondary School",
+      "role": "School Infrastructure Committee",
+      "location": "Libali, Bhaktapur",
       "rating": 5,
       "avatar": "https://i.pravatar.cc/80?img=68",
-      "review": "The PUF Cold Storage panels delivered by Smart Prefab Panel maintain exact temperature control and saved us over 35% on electricity bills. Highly recommended for commercial prefab construction in Nepal.",
-      "project": "Agro Cold Storage Warehouse"
+      "review": "Our school classrooms built with Smart Panels stay remarkably cool in the summer heat and warm during winter. The earthquake-resistant certification gives parents complete peace of mind.",
+      "project": "School Classrooms & Kindergarten Wing"
     },
     {
       "id": "r4",
-      "name": "Priya Tamrakar",
-      "role": "Homeowner",
-      "location": "Lalitpur, Nepal",
-      "rating": 5,
-      "avatar": "https://i.pravatar.cc/80?img=25",
-      "review": "We built our dream Korean design home in just 22 days. The quality of finish, insulation and earthquake resistance is simply outstanding. Our family feels safe and comfortable year round. Highly recommended!",
-      "project": "Korean 2-Story Family Home"
-    },
-    {
-      "id": "r5",
-      "name": "Bikram Lama",
-      "role": "Poultry Farm Owner",
-      "location": "Bhaktapur, Nepal",
+      "name": "Er. Suresh Sharma",
+      "role": "Structural & Civil Engineer",
+      "location": "Bharatpur, Chitwan",
       "rating": 5,
       "avatar": "https://i.pravatar.cc/80?img=33",
-      "review": "The insulated EPS panels from Smart Prefab Panel have drastically reduced our temperature control costs. Our chickens stay healthy through both monsoon heat and winter cold. Excellent product and fast service!",
-      "project": "Poultry Farm Extension"
-    },
-    {
-      "id": "r6",
-      "name": "Rajan KC",
-      "role": "Civil Engineer",
-      "location": "Biratnagar, Nepal",
-      "rating": 5,
-      "avatar": "https://i.pravatar.cc/80?img=53",
-      "review": "As a structural engineer I was skeptical at first, but Smart Prefab Panel's steel frame and EPS panel system genuinely meets seismic code. The precision of factory manufacturing is impressive and installation was flawless.",
-      "project": "4-Story Commercial Complex"
+      "review": "Having Smart Panel listed on the Government District Rate List makes specifying it seamless for municipal and institutional projects. The structural test results and hanging strength exceed standard requirements.",
+      "project": "Municipal & Institutional Buildings"
     }
   ],
   "projects": [
     {
       "id": "p1",
-      "title": "3-Story Korean Villa",
-      "location": "Budhanilkantha, Kathmandu",
-      "category": "Residential",
-      "time": "18 Days",
-      "image": "/images/korean-house.jpg",
-      "description": "Earthquake resistant 3-story luxury villa constructed with 75mm EPS wall and roof sandwich panels."
+      "title": "QFX Cinemas (Chitwan & Balkhu)",
+      "location": "Chitwan & Balkhu, Kathmandu",
+      "category": "Commercial & Acoustic",
+      "time": "Rapid Build",
+      "image": "/uploads/slides/1788705701616-images__4_.jpg",
+      "description": "High sound damping and fire-rated Smart Panel acoustic wall installation for premier cinema halls."
     },
     {
       "id": "p2",
-      "title": "Sarankot Eco Resort Cabins",
-      "location": "Pokhara, Kaski",
-      "category": "Hospitality",
-      "time": "14 Days",
+      "title": "Khwopa Hospital Health Post",
+      "location": "Byasi, Bhaktapur",
+      "category": "Healthcare",
+      "time": "Turnkey Assembly",
       "image": "/images/prefab-house.jpg",
-      "description": "Modular scenic eco-resort cabins built with thermal insulated EPS sandwich panel walling."
+      "description": "Quiet, hygienic, and 4-hour fire-resistant hospital clinic space built with Smart Sandwich Panels."
     },
     {
       "id": "p3",
-      "title": "Agro Cold Storage Warehouse",
-      "location": "Bharatpur, Chitwan",
-      "category": "Industrial",
-      "time": "21 Days",
+      "title": "Bal Bikash English Secondary School",
+      "location": "Libali, Bhaktapur",
+      "category": "Education",
+      "time": "Classroom Wing",
       "image": "/images/sandwich-panel.jpg",
-      "description": "High-density PUF panel cold storage unit engineered for strict climate control and energy savings."
+      "description": "Earthquake-resilient educational facility providing comfortable, thermally insulated classrooms for students."
     },
     {
       "id": "p4",
-      "title": "Modular Commercial Complex",
-      "location": "Itahari, Sunsari",
-      "category": "Commercial",
-      "time": "12 Days",
+      "title": "Bhaktapur Cancer Hospital Extension",
+      "location": "Bhaktapur, Nepal",
+      "category": "Healthcare",
+      "time": "Specialized Build",
       "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
-      "description": "Turnkey commercial office building featuring galvanized light steel structure and insulated roof cladding."
+      "description": "High-density clean panel walling designed for medical recovery suites and diagnostic wings."
     }
   ],
   "processSteps": [
     {
       "step": "01",
-      "title": "Architectural Design & Customization",
-      "description": "Our engineers work with client blueprints to design seismic-certified steel framing and precise panel layouts."
+      "title": "Site Survey & Architectural Planning",
+      "description": "Our team reviews structural drawings to optimize panel layout, joint placement, and seismic steel framing."
     },
     {
       "step": "02",
-      "title": "Precision Factory Manufacturing",
-      "description": "High-density EPS and PUF sandwich panels are manufactured under strict Korean quality control standards."
+      "title": "Automated Plant Manufacturing",
+      "description": "Smart Panels are precision-manufactured at our NPR 20 Cr Chitwan plant under ISO 9001:2015 quality standards."
     },
     {
       "step": "03",
-      "title": "Rapid On-Site Frame & Panel Assembly",
-      "description": "Pre-engineered components are transported to site and assembled within days using direct-screw steel fasteners."
+      "title": "Rapid On-Site 5-Tool Installation",
+      "description": "Interlocking tongue-and-groove panels click together seamlessly using standard tools without heavy cranes."
     },
     {
       "step": "04",
-      "title": "Quality Inspection & Handover",
-      "description": "Thorough thermal, sound, and weather-seal testing conducted prior to final keys handover."
+      "title": "Quality Inspection & Seamless Finish",
+      "description": "Sealed joints, acoustic testing, and smooth calcium silicate surfaces ready for immediate paint or wallpaper."
     }
   ],
   "faqs": [
     {
       "id": "fq1",
-      "question": "What is the price of prefab sandwich panels per sq. ft. in Nepal?",
-      "answer": "Prefab sandwich panel prices in Nepal typically range from NPR 220 to NPR 450 per sq. ft. depending on panel thickness (50mm, 75mm, 100mm) and core material (EPS or PUF). Contact our sales team for an exact factory quote."
+      "question": "What is Smart Panel and what is it made of?",
+      "answer": "Smart Panel is a lightweight, interlocking prefabricated panel manufactured by Prefab Panel Nepal Pvt. Ltd. Our flagship panel wraps an EPS beads, cement, sand, and bonding agent core in 4.5mm non-asbestos calcium silicate boards on both faces. Tongue-and-groove edges allow panels to lock together quickly for airtight, fireproof, and insulated construction."
     },
     {
       "id": "fq2",
-      "question": "Are Smart Prefab Panels earthquake resistant?",
-      "answer": "Yes! Our structural panel system is screwed directly into high-tensile galvanized light gauge steel frames, evenly distributing seismic load across the entire structure to comply with Nepal National Building Code."
+      "question": "What are the approved Government District Rate List prices for Smart Panel?",
+      "answer": "Smart Panel is officially listed on the Government District Rate List with transparent rates: 50mm at NPR 191/sq. ft., 60mm at NPR 293/sq. ft., 75mm at NPR 351/sq. ft., 90/100mm at NPR 410/sq. ft., and 120mm at NPR 495/sq. ft. Standard installation is NPR 26/sq. ft. and accessories are NPR 47/sq. ft."
     },
     {
       "id": "fq3",
-      "question": "What is the lifespan of a prefab house in Nepal?",
-      "answer": "Built with anti-corrosive zinc-coated steel skins and UV-resistant insulating cores, Smart Prefab Panel buildings have an engineered lifespan exceeding 50+ years with minimal maintenance."
+      "question": "Where is the Smart Panel factory and corporate office located?",
+      "answer": "Our state-of-the-art manufacturing plant is located at Darai Tole-8, Bharatpur, Chitwan, backed by an NPR 20 crore investment with an annual capacity of 150,000 sq. ft. Our corporate headquarters is located at Pepsicola-32, Madhyapur Thimi, Nepal."
     },
     {
       "id": "fq4",
-      "question": "How fast can a prefab house be completed in Nepal?",
-      "answer": "A typical 2-story residential prefab home can be manufactured in 5–7 days and assembled on site within 10–15 days, saving over 60% construction time compared to brick and mortar."
+      "question": "Why is Smart Panel superior for earthquake safety in Nepal?",
+      "answer": "A lighter wall means significantly less seismic inertial force acts upon the building during ground shaking. Smart Panels reduce wall dead load by over 60%, drastically reducing base shear and structural deflection, making buildings far safer in earthquake zones."
     },
     {
       "id": "fq5",
-      "question": "What is the difference between EPS and PUF sandwich panels?",
-      "answer": "EPS (Expanded Polystyrene) panels are lightweight, cost-effective, and ideal for residential homes and partition walls. PUF (Polyurethane Foam) panels offer higher R-value thermal density, making them optimal for cold storage and extreme temperature control."
+      "question": "What are the differences between Smart Sandwich Panel, Solid Panel, and EPS Block?",
+      "answer": "Smart Sandwich Panels feature smooth 4.5mm calcium silicate board skins on both sides and require no plastering. Smart Solid Panels are mesh-reinforced for added impact resistance and plastered after installation. Smart EPS Blocks are lightweight blocks (100/150/200 × 200 × 600mm) used for partition walls and floor infills."
     },
     {
       "id": "fq6",
-      "question": "Can Smart Prefab Panel buildings be used in hilly and mountain regions of Nepal?",
-      "answer": "Absolutely. Our lightweight prefab system is ideal for remote hill districts where transporting heavy materials is difficult. Panels can be transported by smaller vehicles and assembled without heavy machinery."
+      "question": "What tools are needed for on-site Smart Panel installation?",
+      "answer": "Installation requires no heavy cranes. A crew uses five standard tools: Cutting Machine (clean trims), Drill Machine (fast fixings), Welding Machine (frame & joint securing), Thread Hand Drill (fine adjustments), and Plumb Bob (ensures panels are perfectly vertical)."
     },
     {
       "id": "fq7",
-      "question": "Do you provide installation services across all 77 districts?",
-      "answer": "Yes. We have an authorised dealer and installation network across all 77 districts of Nepal, ensuring professional assembly and after-sales support regardless of your project location."
+      "question": "How fire-resistant and soundproof is Smart Panel?",
+      "answer": "Smart Panels have a certified fire proof time limit of ≥3 hours (for 50mm) and ≥4 hours (for 75mm, 100mm, and 120mm). Sound insulation capacity ranges from ≥35 dB to ≥45 dB, providing high acoustic privacy."
     },
     {
       "id": "fq8",
-      "question": "What thickness of EPS panel should I choose for my home?",
-      "answer": "For standard residential walls in Nepal's climate, 75mm EPS is most popular, offering a good balance of insulation and strength. 50mm is used for interior partitions and 100mm for cold storage or extreme weather applications."
-    },
-    {
-      "id": "fq9",
-      "question": "Is a dealership available in my district?",
-      "answer": "We are rapidly expanding our dealer network. Visit our Dealership page to apply or contact our sales team to check availability in your area. We provide training, marketing support and factory direct pricing to all authorised dealers."
-    },
-    {
-      "id": "fq10",
-      "question": "Do Smart Prefab Panel products meet Nepal National Building Code?",
-      "answer": "Yes. All our structural systems are designed by licensed civil and structural engineers to comply with the Nepal National Building Code (NBC), including seismic zone requirements for the Kathmandu Valley and other earthquake-prone areas."
+      "question": "How can I order or become an authorized dealer for Smart Panel?",
+      "answer": "You can contact our direct sales hotlines at +977-9851149804 or +977-9709084173, email info@prefabpanelnepal.com, or fill out the dealership application form on our website. We provide factory-direct pricing, technical training, and protected territories."
     }
   ]
 }

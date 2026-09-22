@@ -6,161 +6,82 @@ import FaqAccordion from "@/components/FaqAccordion";
 import AdvantageCard from "@/components/AdvantageCard";
 
 export default function HomePage() {
-  const { settings, advantages, servicesList, products, notices, heroSlides, reviews, projects, processSteps, faqs } = readDB();
+  const {
+    settings,
+    advantages,
+    servicesList,
+    products,
+    notices,
+    heroSlides,
+    reviews,
+    projects,
+    processSteps,
+    faqs,
+    governmentRates = [],
+    additionalRates = [],
+    technicalData = [],
+    installationTools = [],
+    sectors = [],
+  } = readDB();
 
-  const demoReviews = reviews?.length ? reviews : [
-    {
-      id: "r1",
-      name: "Er. Rabin Adhikari",
-      role: "Commercial Project Manager",
-      location: "Kathmandu, Nepal",
-      rating: 5,
-      avatar: "https://i.pravatar.cc/80?img=12",
-      review: "We used Smart Prefab Panel's EPS Sandwich Panels for a 3-story office building rebuilding project in Kathmandu. The heat insulation and structural strength exceeded our expectations, and construction took less than 3 weeks!",
-      project: "3-Story Commercial Office"
-    },
-    {
-      id: "r2",
-      name: "Sunita Gurung",
-      role: "Resort Owner",
-      location: "Pokhara, Nepal",
-      rating: 5,
-      avatar: "https://i.pravatar.cc/80?img=47",
-      review: "Our modular lakeside cabins built with Smart Prefab Panel look stunning and keep guests warm in winter and cool in summer. Fast delivery, professional engineering team, and affordable factory direct price!",
-      project: "Sarankot Eco Resort Cabins"
-    },
-    {
-      id: "r3",
-      name: "Mahesh Shrestha",
-      role: "Industrial Facility Director",
-      location: "Chitwan, Nepal",
-      rating: 5,
-      avatar: "https://i.pravatar.cc/80?img=68",
-      review: "The PUF Cold Storage panels delivered by Smart Prefab Panel maintain exact temperature control and saved us over 35% on electricity bills. Highly recommended for commercial prefab construction in Nepal.",
-      project: "Agro Cold Storage Warehouse"
-    },
-    {
-      id: "r4",
-      name: "Priya Tamrakar",
-      role: "Homeowner",
-      location: "Lalitpur, Nepal",
-      rating: 5,
-      avatar: "https://i.pravatar.cc/80?img=32",
-      review: "We built our dream Korean design home in just 22 days. The quality of finish, insulation and earthquake resistance is simply outstanding. Our family feels safe and comfortable year round. Highly recommended!",
-      project: "Korean 2-Story Family Home"
-    },
-    {
-      id: "r5",
-      name: "Bikram Lama",
-      role: "Poultry Farm Owner",
-      location: "Bhaktapur, Nepal",
-      rating: 5,
-      avatar: "https://i.pravatar.cc/80?img=53",
-      review: "The insulated EPS panels from Smart Prefab Panel have drastically reduced our temperature control costs. Our chickens stay healthy through both monsoon heat and winter cold. Excellent product and fast service!",
-      project: "Poultry Farm Extension"
-    },
-    {
-      id: "r6",
-      name: "Rajan KC",
-      role: "Civil Engineer",
-      location: "Biratnagar, Nepal",
-      rating: 5,
-      avatar: "https://i.pravatar.cc/80?img=15",
-      review: "As a structural engineer I was skeptical at first, but Smart Prefab Panel's steel frame and EPS panel system genuinely meets seismic code. The precision of factory manufacturing is impressive and installation was flawless.",
-      project: "4-Story Commercial Complex"
-    }
-  ];
-
-  const demoProjects = projects || [
-    {
-      id: "p1",
-      title: "3-Story Korean Villa",
-      location: "Budhanilkantha, Kathmandu",
-      category: "Residential",
-      time: "18 Days",
-      image: "/images/korean-house.jpg",
-      description: "Earthquake resistant 3-story luxury villa constructed with 75mm EPS wall and roof sandwich panels."
-    },
-    {
-      "id": "p2",
-      title: "Sarankot Eco Resort Cabins",
-      location: "Pokhara, Kaski",
-      category: "Hospitality",
-      time: "14 Days",
-      image: "/images/prefab-house.jpg",
-      description: "Modular scenic eco-resort cabins built with thermal insulated EPS sandwich panel walling."
-    },
-    {
-      "id": "p3",
-      title: "Agro Cold Storage Warehouse",
-      location: "Bharatpur, Chitwan",
-      category: "Industrial",
-      time: "21 Days",
-      image: "/images/sandwich-panel.jpg",
-      description: "High-density PUF panel cold storage unit engineered for strict climate control and energy savings."
-    },
-    {
-      "id": "p4",
-      title: "Modular Commercial Complex",
-      location: "Itahari, Sunsari",
-      category: "Commercial",
-      time: "12 Days",
-      image: "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
-      description: "Turnkey commercial office building featuring galvanized light steel structure and insulated roof cladding."
-    }
-  ];
-
-  const demoSteps = processSteps || [
-    {
-      step: "01",
-      title: "Architectural Design & Customization",
-      description: "Our engineers work with client blueprints to design seismic-certified steel framing and precise panel layouts."
-    },
-    {
-      step: "02",
-      title: "Precision Factory Manufacturing",
-      description: "High-density EPS and PUF sandwich panels are manufactured under strict Korean quality control standards."
-    },
-    {
-      step: "03",
-      title: "Rapid On-Site Frame & Panel Assembly",
-      description: "Pre-engineered components are transported to site and assembled within days using direct-screw steel fasteners."
-    },
-    {
-      step: "04",
-      title: "Quality Inspection & Handover",
-      description: "Thorough thermal, sound, and weather-seal testing conducted prior to final keys handover."
-    }
-  ];
+  const demoReviews = reviews?.length ? reviews : [];
+  const demoProjects = projects?.length ? projects : [];
+  const demoSteps = processSteps?.length ? processSteps : [];
 
   return (
     <div>
       {/* 1. Hero Slider Section */}
-      <HeroSlider slides={heroSlides && heroSlides.length ? heroSlides : [
-        {
-          id: "default",
-          title: settings.heroTitle,
-          subtitle: settings.heroSubtitle,
-          image: "/images/prefab-house.jpg",
-          ctaLabel: "View Our Products",
-          ctaHref: "/products",
-        },
-      ]} />
+      <HeroSlider
+        slides={
+          heroSlides && heroSlides.length
+            ? heroSlides
+            : [
+                {
+                  id: "default",
+                  title: settings.heroTitle,
+                  subtitle: settings.heroSubtitle,
+                  image: "/images/prefab-house.jpg",
+                  ctaLabel: "Explore Products",
+                  ctaHref: "/products",
+                },
+              ]
+        }
+      />
 
-      {/* 2. Key Advantages Section */}
-      <section className="py-8 sm:py-10 lg:py-16 bg-gray-50/70">
+      {/* Trust Badges Bar */}
+      <div className="bg-slate-900 text-white py-4 border-b border-slate-800">
+        <div className="container-page flex flex-wrap items-center justify-between gap-4 text-xs sm:text-sm">
+          <div className="flex items-center gap-2">
+            <span className="text-amber-400 font-bold">★ ISO 9001:2015</span>
+            <span className="text-gray-300">Certified Company</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-emerald-400 font-bold">✓ Government Approved</span>
+            <span className="text-gray-300">District Rate List Listed</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-sky-400 font-bold">🏭 NPR 20 Crore Plant</span>
+            <span className="text-gray-300">Bharatpur, Chitwan</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-amber-300 font-bold">📦 150,000+ sq. ft./yr</span>
+            <span className="text-gray-300">Annual Production</span>
+          </div>
+        </div>
+      </div>
+
+      {/* 2. Key Advantages / Salient Features Section */}
+      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50/80">
         <div className="container-page">
-          {/* Section Header */}
-          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Why Choose Us</span>
-            <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Our Key Advantages</h2>
+          <div className="text-left sm:text-center sm:max-w-3xl sm:mx-auto mb-6 sm:mb-10">
+            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Why Builders Choose Us</span>
+            <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Salient Features &amp; Advantages</h2>
             <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 mb-4 rounded-full" />
-            <p className="text-gray-500 text-xs sm:text-sm md:text-base leading-relaxed w-full">
-              Built on Korean engineering standards, delivering faster, stronger, and smarter construction across Nepal.
+            <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed w-full">
+              Seismic strength isn&apos;t an add-on — it&apos;s built into every Smart Panel. Tested and certified for fire, thermal, sound, and impact resistance.
             </p>
           </div>
 
-          {/* Advantages Grid */}
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
             {advantages.map((a, idx) => (
               <AdvantageCard key={a.id} advantage={a} idx={idx} />
@@ -169,133 +90,203 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. About Us / Who We Are Section */}
-      <section className="py-8 sm:py-10 lg:py-16">
+      {/* 3. About Us / Company Profile Section */}
+      <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="container-page grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] group">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/korean-house.jpg"
-                alt="Smart Prefab Panel Architecture"
+                alt="Smart Panel Nepal Manufacturing & Construction"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
-                <span className="text-[10px] sm:text-xs uppercase tracking-wider text-brand-orange font-bold">Prefab Innovation</span>
-                <p className="font-display text-base sm:text-xl font-bold mt-0.5 sm:mt-1">Korean Design &amp; Seismic Engineering</p>
+                <span className="text-[10px] sm:text-xs uppercase tracking-wider text-amber-300 font-bold bg-white/20 px-2 py-0.5 rounded">
+                  ISO 9001:2015 Certified
+                </span>
+                <p className="font-display text-base sm:text-xl font-bold mt-1.5">
+                  Prefab Panel Nepal Pvt. Ltd. (Brand: Smart Panel)
+                </p>
+                <p className="text-xs text-white/80 mt-0.5">Manufacturing Plant: Darai Tole-8, Bharatpur, Chitwan</p>
               </div>
             </div>
             {/* Floating Badge */}
             <div className="hidden sm:block absolute -bottom-6 -right-6 bg-brand-blue text-white p-5 lg:p-6 rounded-2xl shadow-xl max-w-xs border-4 border-white">
-              <p className="text-2xl lg:text-3xl font-extrabold font-display">100%</p>
-              <p className="text-xs text-white/90 mt-1 font-medium">Earthquake Resistant &amp; Thermally Insulated Construction</p>
+              <p className="text-xl lg:text-2xl font-extrabold font-display text-amber-300">NPR 20 Crore</p>
+              <p className="text-xs text-white/90 mt-1 font-medium">State-of-the-art plant with 150,000 sq. ft. annual output</p>
             </div>
           </div>
 
           <div className="lg:col-span-6 mt-4 lg:mt-0 flex flex-col items-start text-left">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold text-left">Who We Are</span>
+            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold text-left">Our Story &amp; Leadership</span>
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1 leading-tight text-left">
-              {settings.companyName}
+              The Smart Way to Build in Nepal
             </h2>
-            <p className="mt-3 sm:mt-5 text-gray-600 leading-relaxed text-xs sm:text-sm md:text-base text-left w-full">{settings.aboutSummary}</p>
+            <p className="mt-3 sm:mt-4 text-gray-600 leading-relaxed text-xs sm:text-sm md:text-base text-left w-full">
+              We started in 2024 with a simple goal: help Nepal build better. A year later, our plant in Bharatpur, Chitwan came online, backed by an NPR 20 crore investment. Today it turns out 150,000 sq. ft. of Smart Panel a year — lightweight, insulated, and ready for sites across the country.
+            </p>
+            <div className="mt-3 p-3.5 bg-blue-50/80 rounded-lg border-l-4 border-brand-blue w-full">
+              <p className="text-xs sm:text-sm text-gray-800 italic">
+                &quot;Smart, eco-friendly, earthquake-ready building material so every community can build faster, safer, and for less.&quot;
+              </p>
+              <p className="text-xs font-bold text-brand-blue mt-1">
+                — Bimal Raj Gosai, CEO (Prefab Panel Nepal Pvt. Ltd.)
+              </p>
+            </div>
 
-            <div className="mt-6 sm:mt-8 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 sm:gap-6 bg-brand-cream/80 p-4 sm:p-6 rounded-xl border border-blue-900/5 text-center w-full">
-              <Stat number="10+" label="Years of Experience" />
-              <Stat number="500+" label="Projects Completed" />
-              <Stat number="124kg/m³" label="Panel Density" />
+            <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 sm:gap-4 bg-brand-cream/80 p-4 sm:p-5 rounded-xl border border-blue-900/5 text-center w-full">
+              <Stat number="NPR 20 Cr" label="Chitwan Plant Investment" />
+              <Stat number="150,000" label="Sq. Ft. Annual Output" />
+              <Stat number="≥3-4 Hrs" label="Fire Proof Rating" />
               <Stat number="77" label="Districts Served" />
             </div>
 
-            <div className="mt-6 sm:mt-8 text-left">
-              <Link href="/about-us/mission-vision" className="btn-primary text-xs sm:text-sm py-2.5 sm:py-3 px-5 sm:px-6">Learn More About Us &rarr;</Link>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link href="/about-us" className="btn-primary text-xs sm:text-sm py-2.5 px-5">
+                Our Full Company Profile &rarr;
+              </Link>
+              <Link href="/contact" className="btn-outline text-xs sm:text-sm py-2.5 px-5">
+                Visit Bharatpur Plant / Pepsicola HQ
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 4. Services Showcase Section */}
-      <section className="py-8 sm:py-10 lg:py-16 bg-gray-50/70">
+      {/* 4. Government District Rate List Section (HIGH TRUST & VALUE) */}
+      <section className="py-8 sm:py-12 lg:py-16 bg-slate-900 text-white">
         <div className="container-page">
-          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">What We Provide</span>
-            <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Our Services</h2>
-            <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
-            <p className="text-xs text-gray-500 mt-2 font-medium md:hidden">← Swipe to explore services →</p>
+          <div className="text-left sm:text-center sm:max-w-3xl sm:mx-auto mb-6 sm:mb-10">
+            <span className="text-xs uppercase tracking-widest text-amber-400 font-bold bg-white/10 px-3 py-1 rounded-full">
+              Proven Where It Counts
+            </span>
+            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold mt-2">
+              Government District Rate List
+            </h2>
+            <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 mb-4 rounded-full" />
+            <p className="text-gray-300 text-xs sm:text-sm md:text-base leading-relaxed">
+              Smart Panel is officially listed on the Government District Rate List — making it straightforward to specify and tender on public infrastructure, institutional developments, and private construction across Nepal.
+            </p>
           </div>
 
-          <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 pt-1 px-1 gap-4 sm:gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8 md:overflow-visible md:pb-0">
-            {servicesList.map((s) => (
-              <Link
-                key={s.slug}
-                href={`/services/${s.slug}`}
-                className="w-[85vw] max-w-[340px] sm:w-[320px] md:w-auto shrink-0 md:shrink snap-center group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center text-center justify-between"
-              >
-                <div className="h-44 sm:h-52 w-full overflow-hidden relative">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={s.image || "/images/prefab-house.jpg"}
-                    alt={s.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
-                  <span className="absolute top-2.5 right-2.5 sm:top-4 sm:right-4 bg-white/90 backdrop-blur-sm text-brand-blue text-[10px] sm:text-xs font-bold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full shadow-sm">
-                    Service
-                  </span>
-                </div>
-                <div className="p-4 sm:p-6 lg:p-7 flex-1 flex flex-col justify-between items-center text-center w-full">
-                  <div className="w-full">
-                    <h3 className="font-display font-bold text-sm sm:text-lg md:text-xl text-brand-blue-dark group-hover:text-brand-blue transition-colors leading-tight text-center break-words">
-                      {s.name}
-                    </h3>
-                    <p className="text-xs sm:text-sm text-gray-600 mt-2 sm:mt-3 leading-relaxed text-center">{s.summary}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            {/* Rates Table */}
+            <div className="lg:col-span-8 bg-slate-800/90 rounded-2xl p-4 sm:p-6 border border-slate-700 shadow-xl overflow-x-auto">
+              <h3 className="font-display text-lg font-bold text-amber-300 mb-4 flex items-center gap-2">
+                <span>📋 Official Approved Panel Rates</span>
+              </h3>
+              <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[480px]">
+                <thead>
+                  <tr className="border-b border-slate-700 text-gray-400 text-xs uppercase tracking-wider bg-slate-800">
+                    <th className="py-3 px-4">Panel Thickness</th>
+                    <th className="py-3 px-4 text-amber-300">Government District Rate</th>
+                    <th className="py-3 px-4">Recommended Application</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-700/60">
+                  {governmentRates.map((r, i) => (
+                    <tr key={i} className="hover:bg-slate-700/40 transition-colors">
+                      <td className="py-3.5 px-4 font-bold text-white">{r.thickness}</td>
+                      <td className="py-3.5 px-4 font-extrabold text-amber-400 text-sm sm:text-base">{r.rate}</td>
+                      <td className="py-3.5 px-4 text-gray-300">{r.idealFor}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+
+              <div className="mt-4 pt-4 border-t border-slate-700 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                {additionalRates.map((a, i) => (
+                  <div key={i} className="bg-slate-900/60 p-3 rounded-lg border border-slate-700/50 flex justify-between items-center">
+                    <span className="text-gray-300">{a.item}:</span>
+                    <span className="font-bold text-emerald-400">{a.rate}</span>
                   </div>
-                  <div className="mt-4 sm:mt-6 flex items-center justify-center gap-1 text-xs sm:text-sm font-bold text-brand-orange group-hover:translate-x-1 transition-transform">
-                    <span>Read more</span>
-                    <span>&rarr;</span>
-                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Why Rates Matter Card */}
+            <div className="lg:col-span-4 bg-gradient-to-br from-blue-900/50 to-emerald-950/50 p-6 rounded-2xl border border-blue-800/40 flex flex-col justify-between">
+              <div>
+                <span className="text-xs uppercase tracking-widest text-emerald-400 font-bold">Public &amp; Private Tender Ready</span>
+                <h4 className="font-display text-lg font-bold text-white mt-1">Standardized Transparency</h4>
+                <p className="text-xs text-gray-300 mt-3 leading-relaxed">
+                  Architects, civil engineers, and project managers can immediately specify Smart Panels in engineering estimates and government tenders without bureaucratic friction.
+                </p>
+                <div className="mt-4 space-y-2 text-xs text-gray-200">
+                  <p className="flex items-center gap-2">✓ Verified quality and density tests</p>
+                  <p className="flex items-center gap-2">✓ Standardized nationwide rates</p>
+                  <p className="flex items-center gap-2">✓ Factory direct invoicing from Chitwan</p>
                 </div>
-              </Link>
-            ))}
+              </div>
+              <div className="mt-6 pt-4 border-t border-white/10">
+                <a
+                  href="tel:+9779851149804"
+                  className="w-full block text-center bg-brand-orange hover:bg-orange-600 text-white font-bold text-xs py-3 px-4 rounded-lg transition-all shadow-md"
+                >
+                  Call Sales Hotline (+977-9851149804)
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* 5. Products Catalogue Section */}
-      <section className="py-8 sm:py-10 lg:py-16">
+      <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="container-page">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-8 gap-3">
-            <div className="text-left sm:text-left">
+            <div className="text-left">
               <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Product Showcase</span>
-              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1">Our Products</h2>
-              <p className="text-xs text-gray-500 mt-1 font-medium md:hidden">← Swipe to explore products →</p>
+              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1">
+                Our Smart Panel Products
+              </h2>
+              <p className="text-xs sm:text-sm text-gray-500 mt-1">
+                4.5mm calcium silicate board skins, light EPS-cement core, and tongue-and-groove interlocking.
+              </p>
             </div>
-            <Link href="/products" className="btn-outline text-xs sm:text-sm py-2 px-4 self-start sm:self-auto">View All Products &rarr;</Link>
+            <Link href="/products" className="btn-outline text-xs sm:text-sm py-2 px-4 self-start sm:self-auto">
+              View All Products &rarr;
+            </Link>
           </div>
 
-          <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 pt-1 px-1 gap-4 sm:gap-6 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-8 md:overflow-visible md:pb-0">
-            {products.slice(0, 4).map((p) => (
-              <div key={p.id} className="w-[85vw] max-w-[320px] sm:w-[280px] md:w-auto shrink-0 md:shrink snap-center group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between items-center text-center">
-                <div className="w-full">
-                  <div className="h-44 sm:h-52 w-full overflow-hidden relative bg-gray-50">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            {products.map((p) => (
+              <div
+                key={p.id}
+                className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="h-48 w-full overflow-hidden relative bg-gray-50">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={p.image || "/images/sandwich-panel.jpg"}
                       alt={p.name}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute top-2.5 left-2.5 sm:top-3 sm:left-3 bg-brand-blue text-white text-[10px] sm:text-[11px] font-bold uppercase tracking-wide px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md shadow-sm">
+                    <div className="absolute top-2.5 left-2.5 bg-brand-blue text-white text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-md shadow-sm">
                       {p.category}
                     </div>
                   </div>
-                  <div className="p-4 sm:p-5 flex flex-col items-center text-center w-full">
-                    <h3 className="font-display font-bold text-xs sm:text-base lg:text-lg text-brand-blue-dark group-hover:text-brand-blue transition-colors leading-tight text-center break-words">{p.name}</h3>
-                    {p.description && <p className="text-xs text-gray-500 mt-2 text-center leading-relaxed">{p.description}</p>}
+                  <div className="p-5">
+                    <h3 className="font-display font-bold text-base text-brand-blue-dark group-hover:text-brand-blue transition-colors leading-tight">
+                      {p.name}
+                    </h3>
+                    {p.sizes && (
+                      <p className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded inline-block mt-2">
+                        Sizes: {p.sizes}
+                      </p>
+                    )}
+                    <p className="text-xs text-gray-600 mt-2.5 leading-relaxed">{p.description}</p>
                   </div>
                 </div>
-                <div className="p-4 sm:p-5 pt-0 w-full flex justify-center">
-                  <Link href="/products" className="inline-block text-xs font-bold text-brand-orange hover:underline text-center">
-                    View Details &rarr;
+                <div className="p-5 pt-0">
+                  <Link
+                    href="/contact"
+                    className="block text-center text-xs font-bold text-brand-blue bg-blue-50 hover:bg-brand-blue hover:text-white py-2 px-3 rounded-lg transition-colors"
+                  >
+                    Request Quote &rarr;
                   </Link>
                 </div>
               </div>
@@ -304,61 +295,152 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. Construction Process Section */}
-      <section className="py-8 sm:py-10 lg:py-16 bg-brand-cream/60 border-t border-gray-100">
-        <div className="container-page">
-          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">How We Build</span>
-            <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Our Construction Process</h2>
-            <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
-            <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">Engineered step-by-step from blueprint design to rapid on-site assembly across Nepal.</p>
-            <p className="text-xs text-gray-500 mt-2 font-medium md:hidden">← Swipe process steps →</p>
-          </div>
+      {/* 6. Technical Data Specifications (From PDF Page 3) */}
+      {technicalData.length > 0 && (
+        <section className="py-8 sm:py-12 lg:py-16 bg-gray-50 border-t border-b border-gray-200/70">
+          <div className="container-page">
+            <div className="text-left sm:text-center sm:max-w-3xl sm:mx-auto mb-6 sm:mb-10">
+              <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Tested &amp; Certified</span>
+              <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">
+                Technical Data — Sandwich Panel
+              </h2>
+              <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 mb-4 rounded-full" />
+              <p className="text-gray-600 text-xs sm:text-sm">
+                Comprehensive laboratory and structural metrics for Smart Sandwich Panels across 50mm, 75mm, 100mm, and 120mm dimensions.
+              </p>
+            </div>
 
-          <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 pt-1 px-1 gap-4 sm:gap-6 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-6 md:overflow-visible md:pb-0">
-            {demoSteps.map((st) => (
-              <div key={st.step} className="w-[85vw] max-w-[320px] sm:w-[280px] md:w-auto shrink-0 md:shrink snap-center bg-white rounded-2xl p-5 sm:p-6 border border-gray-100 shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center relative justify-between">
-                <div>
-                  <span className="text-3xl sm:text-4xl font-extrabold font-display text-brand-blue/25 block mb-2 text-center">
-                    {st.step}
-                  </span>
-                  <h3 className="font-display font-bold text-xs sm:text-base lg:text-lg text-brand-blue-dark mb-2 text-center leading-tight break-words">{st.title}</h3>
-                  <p className="text-xs text-gray-600 leading-relaxed text-center">{st.description}</p>
+            <div className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden overflow-x-auto">
+              <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[580px]">
+                <thead>
+                  <tr className="bg-brand-blue text-white text-xs uppercase tracking-wider">
+                    <th className="py-3.5 px-4 sm:px-6">Technical Specification</th>
+                    <th className="py-3.5 px-3 text-center">50 mm</th>
+                    <th className="py-3.5 px-3 text-center">75 mm</th>
+                    <th className="py-3.5 px-3 text-center">100 mm</th>
+                    <th className="py-3.5 px-3 text-center">120 mm</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-100">
+                  {technicalData.map((t, idx) => (
+                    <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50/60"}>
+                      <td className="py-3 px-4 sm:px-6 font-medium text-gray-800">{t.property}</td>
+                      <td className="py-3 px-3 text-center font-bold text-gray-700">{t.v50}</td>
+                      <td className="py-3 px-3 text-center font-bold text-gray-700">{t.v75}</td>
+                      <td className="py-3 px-3 text-center font-bold text-gray-700">{t.v100}</td>
+                      <td className="py-3 px-3 text-center font-bold text-gray-700">{t.v120}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 7. Built for Every Builder (Sectors) */}
+      {sectors.length > 0 && (
+        <section className="py-8 sm:py-12 lg:py-16 bg-white">
+          <div className="container-page">
+            <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-10">
+              <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Applications</span>
+              <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Built for Every Builder</h2>
+              <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
+              <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">
+                Engineered to bring value across high-rise, institutional, agricultural, and residential construction.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+              {sectors.map((sec, idx) => (
+                <div
+                  key={idx}
+                  className="bg-brand-cream/60 rounded-2xl p-5 sm:p-6 border border-gray-100 hover:shadow-lg transition-all"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-brand-blue text-white font-bold flex items-center justify-center mb-3">
+                    {idx + 1}
+                  </div>
+                  <h3 className="font-display font-bold text-base text-brand-blue-dark mb-2">{sec.title}</h3>
+                  <p className="text-xs text-gray-600 leading-relaxed">{sec.description}</p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
-      {/* 7. Featured Projects Portfolio Showcase Section */}
-      <section className="py-8 sm:py-10 lg:py-16">
+      {/* 8. On-Site Installation (Five Tools) */}
+      {installationTools.length > 0 && (
+        <section className="py-8 sm:py-12 lg:py-16 bg-slate-900 text-white">
+          <div className="container-page">
+            <div className="text-left sm:text-center sm:max-w-3xl sm:mx-auto mb-6 sm:mb-10">
+              <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Rapid Assembly</span>
+              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold mt-1">
+                On-Site Installation with 5 Familiar Tools
+              </h2>
+              <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 mb-4 rounded-full" />
+              <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
+                No heavy cranes or long learning curve. A standard Smart Panel crew gets to work immediately with five familiar job-site tools.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+              {installationTools.map((tool, idx) => (
+                <div key={idx} className="bg-slate-800 p-4 sm:p-5 rounded-xl border border-slate-700 text-center flex flex-col items-center">
+                  <div className="w-9 h-9 rounded-full bg-brand-orange/20 text-brand-orange font-extrabold flex items-center justify-center text-sm mb-2">
+                    0{idx + 1}
+                  </div>
+                  <h3 className="font-display font-bold text-sm text-white mb-1">{tool.name}</h3>
+                  <p className="text-[11px] text-gray-400 leading-snug">{tool.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 9. Completed Projects Showcase (PDF Page 4) */}
+      <section className="py-8 sm:py-12 lg:py-16 bg-white">
         <div className="container-page">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-8 gap-3">
             <div className="text-left">
               <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Our Work Across Nepal</span>
-              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1">Featured Projects</h2>
-              <p className="text-xs text-gray-500 mt-1 font-medium md:hidden">← Swipe projects →</p>
+              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1">
+                On-Going &amp; Completed Projects
+              </h2>
+              <p className="text-xs text-gray-500 mt-1">
+                Trusted by hospitals, schools, hydropower projects, and cinemas nationwide.
+              </p>
             </div>
-            <Link href="/gallery" className="btn-outline text-xs sm:text-sm py-2 px-4 self-start sm:self-auto">View Full Gallery &rarr;</Link>
+            <Link href="/gallery" className="btn-outline text-xs sm:text-sm py-2 px-4 self-start sm:self-auto">
+              View Full Gallery &rarr;
+            </Link>
           </div>
 
-          <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 pt-1 px-1 gap-4 sm:gap-6 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-8 md:overflow-visible md:pb-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {demoProjects.map((prj) => (
-              <div key={prj.id} className="w-[85vw] max-w-[340px] sm:w-[290px] md:w-auto shrink-0 md:shrink snap-center group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center justify-between">
-                <div className="h-44 sm:h-52 w-full overflow-hidden relative">
+              <div
+                key={prj.id}
+                className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+              >
+                <div className="h-48 w-full overflow-hidden relative">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={prj.image} alt={prj.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <span className="absolute top-2.5 right-2.5 sm:top-3 sm:right-3 bg-brand-orange text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-md shadow-sm">
-                    {prj.time} Build
+                  <img
+                    src={prj.image}
+                    alt={prj.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <span className="absolute top-2.5 right-2.5 bg-brand-orange text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm">
+                    {prj.category}
                   </span>
                 </div>
-                <div className="p-4 sm:p-6 flex-1 flex flex-col justify-between items-center text-center w-full">
-                  <div className="w-full">
-                    <span className="text-[10px] sm:text-xs font-bold text-brand-blue uppercase tracking-wide text-center block">{prj.category}</span>
-                    <h3 className="font-display font-bold text-xs sm:text-base lg:text-lg text-brand-blue-dark mt-1 text-center leading-tight break-words">{prj.title}</h3>
-                    <p className="text-xs text-gray-500 mt-1 font-medium text-center truncate">📍 {prj.location}</p>
-                    <p className="text-xs text-gray-600 mt-2 text-center leading-relaxed">{prj.description}</p>
+                <div className="p-5 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-display font-bold text-sm sm:text-base text-brand-blue-dark leading-tight">
+                      {prj.title}
+                    </h3>
+                    <p className="text-xs text-gray-500 mt-1">📍 {prj.location}</p>
+                    <p className="text-xs text-gray-600 mt-2 leading-relaxed">{prj.description}</p>
                   </div>
                 </div>
               </div>
@@ -367,171 +449,82 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 8. Comparison Table Section */}
-      <section className="py-8 sm:py-10 lg:py-16 bg-slate-900 text-white">
+      {/* 10. Client Testimonials (With KTM Builders Pvt. Ltd. quote from PDF) */}
+      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50 border-t border-b border-gray-200">
         <div className="container-page">
-          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Why Switch to Prefab?</span>
-            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold mt-1">Smart Prefab vs Traditional Construction</h2>
+          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-10">
+            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">What Clients Say</span>
+            <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Verified Testimonials</h2>
             <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
           </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse min-w-[550px]">
-              <thead>
-                <tr className="border-b border-white/20 text-xs font-bold uppercase tracking-wider text-gray-300 bg-white/5">
-                  <th className="py-3 sm:py-4 px-4 sm:px-6">Feature / Factor</th>
-                  <th className="py-3 sm:py-4 px-4 sm:px-6 text-brand-orange">Smart Prefab Panel</th>
-                  <th className="py-3 sm:py-4 px-4 sm:px-6 text-gray-400">Traditional Brick &amp; Concrete</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-white/10 text-xs sm:text-sm">
-                <tr>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 font-bold text-white">Construction Speed</td>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 text-brand-orange font-bold">7 - 15 Days Complete</td>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 text-gray-400">4 - 8 Months</td>
-                </tr>
-                <tr>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 font-bold text-white">Earthquake Safety</td>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 text-brand-orange font-bold">Direct Screwed Light Steel Frame (Seismic Code)</td>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 text-gray-400">Heavy Rigid Masonry (High Cracking Risk)</td>
-                </tr>
-                <tr>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 font-bold text-white">Thermal Insulation</td>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 text-brand-orange font-bold">100% EPS &amp; PUF Sealed Core</td>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 text-gray-400">Low (High AC/Heating Bills)</td>
-                </tr>
-                <tr>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 font-bold text-white">Foundation Load</td>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 text-brand-orange font-bold">Ultra-light (124 kg/m³)</td>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 text-gray-400">Heavy (Requires Costly Deep Foundation)</td>
-                </tr>
-                <tr>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 font-bold text-white">Weather &amp; Fire Protection</td>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 text-brand-orange font-bold">Fire-Retardant &amp; UV Galvanized Steel</td>
-                  <td className="py-3 sm:py-4 px-4 sm:px-6 text-gray-400">Prone to Seepage &amp; Dampness</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
-      {/* 9. Client Reviews / Testimonials Section */}
-      <section className="py-8 sm:py-10 lg:py-16 bg-gray-50/80 border-t border-b border-gray-100">
-        <div className="container-page">
-          <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Client Testimonials</span>
-            <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">What Our Clients Say Across Nepal</h2>
-            <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
-            <div className="mt-4 flex items-center justify-start sm:justify-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-bold text-gray-600 bg-white border border-gray-200 inline-flex px-3 sm:px-4 py-1.5 rounded-full shadow-xs text-left sm:text-center max-w-full">
-              <span className="text-amber-400 text-xs sm:text-sm shrink-0">★★★★★</span>
-              <span>4.9 / 5.0 Rating based on 150+ Verified Prefab Projects</span>
-            </div>
-            <p className="text-xs text-gray-500 mt-2 font-medium md:hidden">← Swipe client reviews →</p>
-          </div>
-
-          <div className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 pt-1 px-1 gap-4 sm:gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8 md:overflow-visible md:pb-0">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {demoReviews.map((rev) => (
               <div
                 key={rev.id}
-                className="w-[85vw] max-w-[340px] sm:w-[320px] md:w-auto shrink-0 md:shrink snap-center bg-white rounded-2xl p-4 sm:p-6 lg:p-7 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center justify-between"
+                className="bg-white rounded-2xl p-5 sm:p-6 border border-gray-100 shadow-sm hover:shadow-lg transition-all flex flex-col justify-between"
               >
-                {/* Avatar on top */}
-                <div className="w-full flex flex-col items-center text-center gap-2 mb-3 sm:mb-4">
-                  {rev.avatar ? (
-                    // eslint-disable-next-line @next/next/no-img-element
-                    <img
-                      src={rev.avatar}
-                      alt={rev.name}
-                      width={56}
-                      height={56}
-                      className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover shrink-0 border-2 border-brand-blue/20 shadow-sm mx-auto"
-                    />
-                  ) : (
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-brand-blue/10 text-brand-blue font-extrabold text-base sm:text-lg flex items-center justify-center shrink-0 border border-brand-blue/20 mx-auto">
-                      {rev.name.charAt(0)}
-                    </div>
-                  )}
-                  <div className="w-full text-center">
-                    <h3 className="font-display font-bold text-xs sm:text-sm text-brand-blue-dark text-center truncate">{rev.name}</h3>
-                    <p className="text-[11px] text-gray-500 text-center truncate">{rev.role}</p>
-                    <p className="text-[11px] text-brand-orange font-semibold text-center truncate">{rev.location}</p>
-                  </div>
+                <div>
+                  <div className="flex text-amber-400 text-xs mb-3">{"★".repeat(rev.rating || 5)}</div>
+                  <p className="text-xs sm:text-sm text-gray-700 italic leading-relaxed">
+                    &quot;{rev.review}&quot;
+                  </p>
                 </div>
-
-                {/* Stars */}
-                <div className="flex items-center justify-center gap-0.5 text-amber-400 text-xs sm:text-sm mb-2 sm:mb-3">
-                  {"★".repeat(rev.rating || 5)}
+                <div className="mt-4 pt-4 border-t border-gray-100">
+                  <h4 className="font-display font-bold text-xs sm:text-sm text-brand-blue-dark">{rev.name}</h4>
+                  <p className="text-[11px] text-gray-500">{rev.role}</p>
+                  <p className="text-[11px] text-brand-orange font-semibold">{rev.location}</p>
                 </div>
-
-                {/* Quote */}
-                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed italic flex-1 text-center">
-                  &quot;{rev.review}&quot;
-                </p>
-
-                {/* Project tag */}
-                {rev.project && (
-                  <div className="mt-4 sm:mt-5 pt-3 sm:pt-4 border-t border-gray-100 w-full flex justify-center">
-                    <span className="text-[10px] sm:text-xs font-bold text-brand-blue bg-blue-50 px-2.5 sm:px-3 py-1 rounded-full truncate">
-                      📋 {rev.project}
-                    </span>
-                  </div>
-                )}
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 10. Frequently Asked Questions (FAQ) Section */}
+      {/* 11. Frequently Asked Questions (FAQ) Section */}
       <section className="py-10 md:py-16 lg:py-20 bg-white">
         <div className="container-page">
           <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-8 sm:mb-12">
             <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Got Questions?</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Frequently Asked Questions</h2>
             <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
-            <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">Common queries about prefab house price, insulation, and earthquake safety in Nepal.</p>
+            <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">
+              Everything you need to know about Smart Panel specifications, government rates, and factory direct ordering.
+            </p>
           </div>
 
           <FaqAccordion faqs={faqs} />
         </div>
       </section>
 
-      {/* 11. Notices & Newsletter Section */}
-      {notices?.length > 0 && (
-        <section className="py-10 md:py-16 lg:py-20 bg-brand-cream/60 border-t border-gray-100">
-          <div className="container-page grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10">
-            <div className="lg:col-span-7">
-              <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Latest Disclosure</span>
-              <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-brand-blue-dark mt-1 mb-5 sm:mb-7">Official Notices</h2>
-              <div className="space-y-3 sm:space-y-4">
-                {notices.slice(0, 3).map((n) => (
-                  <div key={n.id} className="bg-white rounded-xl p-4 sm:p-5 border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex items-center justify-between gap-4">
-                    <div>
-                      <h3 className="font-display font-bold text-brand-blue-dark text-sm sm:text-base">{n.title}</h3>
-                      {n.description && <p className="text-xs text-gray-500 mt-1 line-clamp-1">{n.description}</p>}
-                    </div>
-                    <span className="text-[11px] sm:text-xs font-semibold text-brand-blue bg-brand-cream px-2.5 sm:px-3 py-1 rounded-full shrink-0">{n.date}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-5 sm:mt-6">
-                <Link href="/notice" className="btn-outline text-xs sm:text-sm py-2 px-4">View All Notices &rarr;</Link>
-              </div>
-            </div>
-
-            <div className="lg:col-span-5 bg-brand-blue-dark rounded-2xl p-6 sm:p-8 md:p-10 text-white flex flex-col justify-center shadow-xl relative overflow-hidden">
-              <div className="relative z-10">
-                <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Stay Connected</span>
-                <h3 className="font-display text-xl sm:text-2xl md:text-3xl font-bold mt-1 mb-3">Newsletter Subscription</h3>
-                <p className="text-white/80 text-xs sm:text-sm mb-5 sm:mb-6 leading-relaxed">Subscribe to receive regular updates on prefab construction tech, investor notices and product releases.</p>
-                <NewsletterForm variant="inline" />
-              </div>
-            </div>
+      {/* 12. Direct Contact Call to Action Banner */}
+      <section className="bg-brand-blue text-white py-12 border-t border-brand-blue-dark">
+        <div className="container-page flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <span className="text-xs uppercase tracking-widest text-amber-300 font-bold">Let&apos;s Build a Smart Tomorrow</span>
+            <h3 className="font-display text-2xl sm:text-3xl font-extrabold mt-1">
+              Ready to Order or Inquire About Smart Panels?
+            </h3>
+            <p className="text-xs sm:text-sm text-white/80 mt-2">
+              Contact our sales hotline: +977-9851149804 / +977-9709084173 or email info@prefabpanelnepal.com
+            </p>
           </div>
-        </section>
-      )}
+          <div className="flex flex-wrap gap-3 shrink-0">
+            <a
+              href="tel:+9779851149804"
+              className="bg-amber-400 hover:bg-amber-500 text-slate-900 font-extrabold text-xs sm:text-sm py-3 px-6 rounded-lg transition-all shadow-md"
+            >
+              📞 Call Direct Hotline
+            </a>
+            <Link
+              href="/dealership"
+              className="bg-white/10 hover:bg-white/20 text-white font-bold text-xs sm:text-sm py-3 px-6 rounded-lg border border-white/20 transition-all"
+            >
+              Become a Dealer
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
@@ -539,9 +532,8 @@ export default function HomePage() {
 function Stat({ number, label }) {
   return (
     <div className="text-center flex flex-col items-center justify-center">
-      <div className="font-display text-2xl sm:text-3xl font-extrabold text-brand-blue text-center">{number}</div>
+      <div className="font-display text-xl sm:text-2xl font-extrabold text-brand-blue text-center">{number}</div>
       <div className="text-[11px] sm:text-xs font-medium text-gray-600 mt-1 text-center">{label}</div>
     </div>
   );
 }
-

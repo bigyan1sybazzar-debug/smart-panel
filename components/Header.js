@@ -82,8 +82,8 @@ export default function Header({ settings }) {
                 <PinIcon />
               </div>
               <div className="text-xs leading-snug">
-                <p className="font-bold text-gray-800">Bharatpur-8,</p>
-                <p className="text-gray-500 font-medium">Chitwan, Nepal</p>
+                <p className="font-bold text-gray-800">Pepsicola,</p>
+                <p className="text-gray-500 font-medium">Kathmandu, Nepal</p>
               </div>
             </div>
 
@@ -95,10 +95,10 @@ export default function Header({ settings }) {
                 <PhoneIcon />
               </div>
               <div className="text-xs leading-snug">
-                <a href={`tel:${settings?.phone?.split(" / ")[0] || "01-4111704"}`} className="font-bold text-gray-800 hover:text-brand-blue block">
-                  +977 {settings?.phone?.split(" / ")[0] || "9709084173"}
+                <a href={`tel:${(settings?.phone?.split(" / ")[0] || "+9779851149804").replace(/[^0-9+]/g, "")}`} className="font-bold text-gray-800 hover:text-brand-blue block">
+                  {settings?.phone?.split(" / ")[0] || "+977-9851149804"}
                 </a>
-                <a href={`mailto:${settings?.email || "info@prefabpanelnepal.com"}`} className="text-gray-500 hover:text-brand-blue block">
+                <a href={`mailto:${settings?.email || "info@prefabpanelnepal.com"}`} className="text-gray-500 hover:text-brand-blue block font-medium">
                   {settings?.email || "info@prefabpanelnepal.com"}
                 </a>
               </div>
@@ -138,11 +138,10 @@ export default function Header({ settings }) {
             >
               <Link
                 href={item.href}
-                className={`flex items-center gap-1.5 px-4 py-3.5 text-xs font-extrabold tracking-wider uppercase whitespace-nowrap transition-colors border-r border-white/10 ${
-                  isActive(item)
-                    ? "bg-brand-orange text-white"
-                    : "text-white hover:bg-brand-blue-dark"
-                }`}
+                className={`flex items-center gap-1.5 px-4 py-3.5 text-xs font-extrabold tracking-wider uppercase whitespace-nowrap transition-colors border-r border-white/10 ${isActive(item)
+                  ? "bg-brand-orange text-white"
+                  : "text-white hover:bg-brand-blue-dark"
+                  }`}
               >
                 {item.label}
                 {item.children && <ChevronDown />}
@@ -171,7 +170,7 @@ export default function Header({ settings }) {
           {/* Quick Mobile Actions */}
           <div className="p-4 bg-brand-blue-dark border-b border-white/10 flex items-center gap-3">
             <a
-              href={`tel:${settings?.phone?.split(" / ")[0] || "01-4111704"}`}
+              href={`tel:${(settings?.phone?.split(" / ")[0] || "+9779851149804").replace(/[^0-9+]/g, "")}`}
               className="flex-1 inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white font-bold text-xs py-2.5 rounded-lg border border-white/20"
             >
               <PhoneIcon className="w-3.5 h-3.5" /> Call Us
@@ -189,9 +188,8 @@ export default function Header({ settings }) {
               <div className="flex items-center justify-between">
                 <Link
                   href={item.href}
-                  className={`flex-1 px-5 py-3.5 text-xs font-extrabold uppercase tracking-wider ${
-                    isActive(item) ? "bg-brand-orange text-white" : "text-white hover:bg-white/10"
-                  }`}
+                  className={`flex-1 px-5 py-3.5 text-xs font-extrabold uppercase tracking-wider ${isActive(item) ? "bg-brand-orange text-white" : "text-white hover:bg-white/10"
+                    }`}
                 >
                   {item.label}
                 </Link>
