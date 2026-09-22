@@ -1,9 +1,15 @@
 import { NextResponse } from "next/server";
 
-const PUBLIC_PATHS = ["/admin/login", "/api/admin/login"];
+const PUBLIC_PATHS = ["/admin-dashboard/login", "/api/admin/login"];
 
 export function middleware(request) {
   const { pathname } = request.nextUrl;
+
+  // Seamlessly redirect any /admin requests to /admin-dashboard
+  if (pathname === "/admin" || pathname.startsWith("/admin/")) {
+    const newPath = pathname.replace(/^\/admin/, "/admin-dashboard");
+    return NextResponse.redirect(new URL(newPath, request.url));
+  }
 
   if (PUBLIC_PATHS.includes(pathname)) {
     return NextResponse.next();
@@ -19,8 +25,8 @@ export function middleware(request) {
     return NextResponse.next();
   }
 
-  if (pathname.startsWith("/admin") && !authed) {
-    const loginUrl = new URL("/admin/login", request.url);
+  if (pathname.startsWith("/admin-dashboard") && !authed) {
+    const loginUrl = new URL("/admin-dashboard/login", request.url);
     return NextResponse.redirect(loginUrl);
   }
 
@@ -28,5 +34,6 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/admin/:path*", "/api/admin/:path*"],
+  matcher: ["/admin/:path*", "/admin-dashboard/:path*", "/api/admin/:path*"],
 };
+

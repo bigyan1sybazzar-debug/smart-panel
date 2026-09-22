@@ -6,20 +6,20 @@ import { useState } from "react";
 import { MenuIcon, CloseIcon } from "@/components/Icons";
 
 const NAV = [
-  { href: "/admin", label: "Dashboard" },
-  { href: "/admin/settings", label: "Site Settings" },
-  { href: "/admin/about", label: "About Content" },
-  { href: "/admin/services", label: "Services Content" },
-  { href: "/admin/slides", label: "Homepage Slider" },
-  { href: "/admin/advantages", label: "Key Advantages" },
-  { href: "/admin/products", label: "Products" },
-  { href: "/admin/gallery", label: "Gallery" },
-  { href: "/admin/notices", label: "Notices" },
-  { href: "/admin/investor", label: "Investor Relations" },
-  { href: "/admin/catalogue", label: "Catalogue" },
-  { href: "/admin/messages", label: "Contact Messages" },
-  { href: "/admin/subscribers", label: "Newsletter Subscribers" },
-  { href: "/admin/dealership-leads", label: "Dealership Leads" },
+  { href: "/admin-dashboard", label: "Dashboard" },
+  { href: "/admin-dashboard/settings", label: "Site Settings" },
+  { href: "/admin-dashboard/about", label: "About Content" },
+  { href: "/admin-dashboard/services", label: "Services Content" },
+  { href: "/admin-dashboard/slides", label: "Homepage Slider" },
+  { href: "/admin-dashboard/advantages", label: "Key Advantages" },
+  { href: "/admin-dashboard/products", label: "Products" },
+  { href: "/admin-dashboard/gallery", label: "Gallery" },
+  { href: "/admin-dashboard/notices", label: "Notices" },
+  { href: "/admin-dashboard/investor", label: "Investor Relations" },
+  { href: "/admin-dashboard/catalogue", label: "Catalogue" },
+  { href: "/admin-dashboard/messages", label: "Contact Messages" },
+  { href: "/admin-dashboard/subscribers", label: "Newsletter Subscribers" },
+  { href: "/admin-dashboard/dealership-leads", label: "Dealership Leads" },
 ];
 
 export default function AdminSidebar() {
@@ -29,7 +29,7 @@ export default function AdminSidebar() {
 
   async function handleLogout() {
     await fetch("/api/admin/logout", { method: "POST" });
-    router.push("/admin/login");
+    router.push("/admin-dashboard/login");
     router.refresh();
   }
 
@@ -47,7 +47,7 @@ export default function AdminSidebar() {
         </div>
         <nav className="py-2">
           {NAV.map((item) => {
-            const active = item.href === "/admin" ? pathname === "/admin" : pathname.startsWith(item.href);
+            const active = item.href === "/admin-dashboard" ? pathname === "/admin-dashboard" : pathname.startsWith(item.href);
             return (
               <Link
                 key={item.href}

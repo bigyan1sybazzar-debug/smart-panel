@@ -2,6 +2,7 @@ import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { readDB } from "@/lib/db";
 
 const display = Poppins({
@@ -166,6 +167,7 @@ export default function RootLayout({ children }) {
                 <Header settings={settings} />
                 <main>{children}</main>
                 <Footer settings={settings} />
+                <WhatsAppWidget settings={settings} />
             </body>
         </html>
     );

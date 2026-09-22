@@ -9,7 +9,7 @@ export default function robots() {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/admin", "/admin/*", "/api/*"],
+        disallow: ["/admin", "/admin/*", "/admin-dashboard", "/admin-dashboard/*", "/api/*"],
       },
     ],
     sitemap: `${domain}/sitemap.xml`,

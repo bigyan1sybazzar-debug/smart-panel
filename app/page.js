@@ -6,6 +6,9 @@ import HeroSlider from "@/components/HeroSlider";
 import FaqAccordion from "@/components/FaqAccordion";
 import AdvantageCard from "@/components/AdvantageCard";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default function HomePage() {
   const {
     settings,
@@ -277,9 +280,11 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="p-5">
-                    <h3 className="font-display font-bold text-base text-brand-blue-dark group-hover:text-brand-blue transition-colors leading-tight">
-                      {p.name}
-                    </h3>
+                    <Link href={`/products/${p.id}`}>
+                      <h3 className="font-display font-bold text-base text-brand-blue-dark hover:text-brand-orange transition-colors leading-tight">
+                        {p.name}
+                      </h3>
+                    </Link>
                     {p.sizes && (
                       <p className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded inline-block mt-2">
                         Sizes: {p.sizes}
@@ -288,12 +293,18 @@ export default function HomePage() {
                     <p className="text-xs text-gray-600 mt-2.5 leading-relaxed">{p.description}</p>
                   </div>
                 </div>
-                <div className="p-5 pt-0">
+                <div className="p-5 pt-0 grid grid-cols-2 gap-2">
+                  <Link
+                    href={`/products/${p.id}`}
+                    className="block text-center text-xs font-bold text-brand-blue bg-blue-50 hover:bg-brand-blue hover:text-white py-2 px-2.5 rounded-lg transition-colors"
+                  >
+                    View Specs &rarr;
+                  </Link>
                   <Link
                     href="/contact"
-                    className="block text-center text-xs font-bold text-brand-blue bg-blue-50 hover:bg-brand-blue hover:text-white py-2 px-3 rounded-lg transition-colors"
+                    className="block text-center text-xs font-bold text-white bg-brand-orange hover:bg-[#d9820f] py-2 px-2.5 rounded-lg transition-colors"
                   >
-                    Request Quote &rarr;
+                    Quote &rarr;
                   </Link>
                 </div>
               </div>
