@@ -3,7 +3,6 @@ const { parse } = require('url');
 const next = require('next');
 
 const dev = process.env.NODE_ENV !== 'production';
-const port = process.env.PORT || 0;
 
 const app = next({ dev });
 const handle = app.getRequestHandler();
@@ -20,8 +19,14 @@ app.prepare().then(() => {
     }
   });
 
-  server.listen(port, (err) => {
-    if (err) throw err;
-    console.log(`> Server ready on port ${server.address().port}`);
-  });
+  if (typeof PhusionPassenger !== 'undefined') {
+    server.listen('passenger', () => {
+      console.log('> Server ready via Phusion Passenger');
+    });
+  } else {
+    const port = process.env.PORT || 3000;
+    server.listen(port, () => {
+      console.log(`> Server ready on port ${port}`);
+    });
+  }
 });
