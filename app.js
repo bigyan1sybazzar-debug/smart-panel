@@ -1,4 +1,5 @@
 process.env.NODE_ENV = 'production';
+process.chdir(__dirname);
 
 const { createServer } = require('http');
 const { parse } = require('url');

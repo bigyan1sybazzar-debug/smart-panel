@@ -107,48 +107,195 @@
       }
     ],
     "boardOfDirectors": [
-      { "id": "1", "name": "Bimal Raj Gosai", "position": "Chief Executive Officer (CEO)", "image": "" },
-      { "id": "2", "name": "Executive Board Director", "position": "Director — Technical & Operations", "image": "" },
-      { "id": "3", "name": "Executive Board Director", "position": "Director — Finance & Strategy", "image": "" },
-      { "id": "4", "name": "Independent Board Member", "position": "Director — Governance", "image": "" }
+      {
+        "id": "1",
+        "name": "Bimal Raj Gosai",
+        "position": "Chief Executive Officer (CEO)",
+        "image": ""
+      },
+      {
+        "id": "2",
+        "name": "Executive Board Director",
+        "position": "Director — Technical & Operations",
+        "image": ""
+      },
+      {
+        "id": "3",
+        "name": "Executive Board Director",
+        "position": "Director — Finance & Strategy",
+        "image": ""
+      },
+      {
+        "id": "4",
+        "name": "Independent Board Member",
+        "position": "Director — Governance",
+        "image": ""
+      }
     ],
     "management": [
-      { "id": "1", "name": "Bimal Raj Gosai", "position": "Chief Executive Officer", "image": "" },
-      { "id": "2", "name": "Head of Plant & Production", "position": "Factory Operations — Bharatpur", "image": "" },
-      { "id": "3", "name": "Head of Quality & Structural Engineering", "position": "Quality Assurance & QC", "image": "" },
-      { "id": "4", "name": "Head of Sales & Dealer Network", "position": "Nationwide Distribution", "image": "" }
+      {
+        "id": "1",
+        "name": "Bimal Raj Gosai",
+        "position": "Chief Executive Officer",
+        "image": ""
+      },
+      {
+        "id": "2",
+        "name": "Head of Plant & Production",
+        "position": "Factory Operations — Bharatpur",
+        "image": ""
+      },
+      {
+        "id": "3",
+        "name": "Head of Quality & Structural Engineering",
+        "position": "Quality Assurance & QC",
+        "image": ""
+      },
+      {
+        "id": "4",
+        "name": "Head of Sales & Dealer Network",
+        "position": "Nationwide Distribution",
+        "image": ""
+      }
     ]
   },
   "governmentRates": [
-    { "thickness": "50 mm", "rate": "NPR 191 / sq. ft.", "idealFor": "Interior partitions, office cabins, ceiling walls" },
-    { "thickness": "60 mm", "rate": "NPR 293 / sq. ft.", "idealFor": "Internal & external partition walls" },
-    { "thickness": "75 mm", "rate": "NPR 351 / sq. ft.", "idealFor": "Standard exterior residential walls & classrooms" },
-    { "thickness": "90 / 100 mm", "rate": "NPR 410 / sq. ft.", "idealFor": "High insulation exterior walls & hospital wings" },
-    { "thickness": "120 mm", "rate": "NPR 495 / sq. ft.", "idealFor": "Cold storage, perimeter walls & high acoustic barriers" }
+    {
+      "thickness": "50 mm",
+      "rate": "NPR 191 / sq. ft.",
+      "idealFor": "Interior partitions, office cabins, ceiling walls"
+    },
+    {
+      "thickness": "60 mm",
+      "rate": "NPR 293 / sq. ft.",
+      "idealFor": "Internal & external partition walls"
+    },
+    {
+      "thickness": "75 mm",
+      "rate": "NPR 351 / sq. ft.",
+      "idealFor": "Standard exterior residential walls & classrooms"
+    },
+    {
+      "thickness": "90 / 100 mm",
+      "rate": "NPR 410 / sq. ft.",
+      "idealFor": "High insulation exterior walls & hospital wings"
+    },
+    {
+      "thickness": "120 mm",
+      "rate": "NPR 495 / sq. ft.",
+      "idealFor": "Cold storage, perimeter walls & high acoustic barriers"
+    }
   ],
   "additionalRates": [
-    { "item": "Installation Charge", "rate": "NPR 26 / sq. ft." },
-    { "item": "Accessories (U-channels, fasteners, sealant)", "rate": "NPR 47 / sq. ft." }
+    {
+      "item": "Installation Charge",
+      "rate": "NPR 26 / sq. ft."
+    },
+    {
+      "item": "Accessories (U-channels, fasteners, sealant)",
+      "rate": "NPR 47 / sq. ft."
+    }
   ],
   "technicalData": [
-    { "property": "Anti-Impact Performance (times)", "v50": "≥ 8", "v75": "≥ 10", "v100": "≥ 15", "v120": "≥ 15" },
-    { "property": "Anti-Bending Damage (× dead weight)", "v50": "≥ 3", "v75": "≥ 3", "v100": "≥ 3", "v120": "≥ 3" },
-    { "property": "Anti-Pressure Strength (MPa)", "v50": "≥ 5", "v75": "≥ 5", "v100": "≥ 5", "v120": "≥ 5" },
-    { "property": "Softening Coefficient", "v50": "≥ 0.80", "v75": "≥ 0.80", "v100": "≥ 0.80", "v120": "≥ 0.80" },
-    { "property": "Surface Density (kg/m³)", "v50": "≤ 45", "v75": "≤ 61", "v100": "≤ 78", "v120": "≤ 78" },
-    { "property": "Moisture Rate (%)", "v50": "≤ 10", "v75": "≤ 9", "v100": "≤ 7", "v120": "≤ 7" },
-    { "property": "Drying Shrinkage Value (mm)", "v50": "≤ 0.45", "v75": "≤ 0.5", "v100": "≤ 0.6", "v120": "≤ 0.6" },
-    { "property": "Single Point Hanging Strength (N)", "v50": "≥ 1200", "v75": "≥ 1300", "v100": "≥ 1500", "v120": "≥ 1500" },
-    { "property": "Sound Insulation Capacity (dB)", "v50": "≥ 35", "v75": "≥ 40", "v100": "≥ 45", "v120": "≥ 45" },
-    { "property": "Fire Proof Time Limit (Hours)", "v50": "≥ 3", "v75": "≥ 4", "v100": "≥ 4", "v120": "≥ 4" },
-    { "property": "Thermal Conductivity (W/m·K)", "v50": "≤ 0.30", "v75": "≤ 0.30", "v100": "≤ 0.30", "v120": "≤ 0.30" }
+    {
+      "property": "Anti-Impact Performance (times)",
+      "v50": "≥ 8",
+      "v75": "≥ 10",
+      "v100": "≥ 15",
+      "v120": "≥ 15"
+    },
+    {
+      "property": "Anti-Bending Damage (× dead weight)",
+      "v50": "≥ 3",
+      "v75": "≥ 3",
+      "v100": "≥ 3",
+      "v120": "≥ 3"
+    },
+    {
+      "property": "Anti-Pressure Strength (MPa)",
+      "v50": "≥ 5",
+      "v75": "≥ 5",
+      "v100": "≥ 5",
+      "v120": "≥ 5"
+    },
+    {
+      "property": "Softening Coefficient",
+      "v50": "≥ 0.80",
+      "v75": "≥ 0.80",
+      "v100": "≥ 0.80",
+      "v120": "≥ 0.80"
+    },
+    {
+      "property": "Surface Density (kg/m³)",
+      "v50": "≤ 45",
+      "v75": "≤ 61",
+      "v100": "≤ 78",
+      "v120": "≤ 78"
+    },
+    {
+      "property": "Moisture Rate (%)",
+      "v50": "≤ 10",
+      "v75": "≤ 9",
+      "v100": "≤ 7",
+      "v120": "≤ 7"
+    },
+    {
+      "property": "Drying Shrinkage Value (mm)",
+      "v50": "≤ 0.45",
+      "v75": "≤ 0.5",
+      "v100": "≤ 0.6",
+      "v120": "≤ 0.6"
+    },
+    {
+      "property": "Single Point Hanging Strength (N)",
+      "v50": "≥ 1200",
+      "v75": "≥ 1300",
+      "v100": "≥ 1500",
+      "v120": "≥ 1500"
+    },
+    {
+      "property": "Sound Insulation Capacity (dB)",
+      "v50": "≥ 35",
+      "v75": "≥ 40",
+      "v100": "≥ 45",
+      "v120": "≥ 45"
+    },
+    {
+      "property": "Fire Proof Time Limit (Hours)",
+      "v50": "≥ 3",
+      "v75": "≥ 4",
+      "v100": "≥ 4",
+      "v120": "≥ 4"
+    },
+    {
+      "property": "Thermal Conductivity (W/m·K)",
+      "v50": "≤ 0.30",
+      "v75": "≤ 0.30",
+      "v100": "≤ 0.30",
+      "v120": "≤ 0.30"
+    }
   ],
   "installationTools": [
-    { "name": "Cutting Machine", "description": "Trims panels cleanly to exact dimensions on site with zero debris." },
-    { "name": "Drill Machine", "description": "Sets steel fixings and structure anchors quickly and securely." },
-    { "name": "Welding Machine", "description": "Secures the galvanized steel framing and structural connection joints." },
-    { "name": "Thread Hand Drill", "description": "Used for fine adjustments, electrical conduit pass-throughs, and finishing." },
-    { "name": "Plumb Bob", "description": "Ensures every interlocking panel wall is true, plumb, and perfectly vertical." }
+    {
+      "name": "Cutting Machine",
+      "description": "Trims panels cleanly to exact dimensions on site with zero debris."
+    },
+    {
+      "name": "Drill Machine",
+      "description": "Sets steel fixings and structure anchors quickly and securely."
+    },
+    {
+      "name": "Welding Machine",
+      "description": "Secures the galvanized steel framing and structural connection joints."
+    },
+    {
+      "name": "Thread Hand Drill",
+      "description": "Used for fine adjustments, electrical conduit pass-throughs, and finishing."
+    },
+    {
+      "name": "Plumb Bob",
+      "description": "Ensures every interlocking panel wall is true, plumb, and perfectly vertical."
+    }
   ],
   "sectors": [
     {
@@ -247,14 +394,46 @@
     }
   ],
   "gallery": [
-    { "id": "g1", "title": "Khwopa Hospital Health Post, Byasi", "image": "/images/prefab-house.jpg" },
-    { "id": "g2", "title": "Bal Bikash English Secondary School, Libali", "image": "/images/sandwich-panel.jpg" },
-    { "id": "g3", "title": "Bhaktapur Cancer Hospital Facility", "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif" },
-    { "id": "g4", "title": "QFX Cinemas Acoustic Wall Installation", "image": "/uploads/slides/1788705701616-images__4_.jpg" },
-    { "id": "g5", "title": "The Kings Fitness Club Commercial Project", "image": "/images/korean-house.jpg" },
-    { "id": "g6", "title": "Budhi Ganga Hydropower Camp Staff Housing", "image": "/uploads/slides/1788705675548-photo-1570129477492-45c003edd2be.avif" },
-    { "id": "g7", "title": "Shanti Adarsha School, Boudha", "image": "/uploads/gallery/1788706710430-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif" },
-    { "id": "g8", "title": "Khadka Dairy Agricultural Facility, Kharipati", "image": "/uploads/slides/1788719023931-images__5_.jpg" }
+    {
+      "id": "g1",
+      "title": "Khwopa Hospital Health Post, Byasi",
+      "image": "/images/prefab-house.jpg"
+    },
+    {
+      "id": "g2",
+      "title": "Bal Bikash English Secondary School, Libali",
+      "image": "/images/sandwich-panel.jpg"
+    },
+    {
+      "id": "g3",
+      "title": "Bhaktapur Cancer Hospital Facility",
+      "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif"
+    },
+    {
+      "id": "g4",
+      "title": "QFX Cinemas Acoustic Wall Installation",
+      "image": "/uploads/slides/1788705701616-images__4_.jpg"
+    },
+    {
+      "id": "g5",
+      "title": "The Kings Fitness Club Commercial Project",
+      "image": "/images/korean-house.jpg"
+    },
+    {
+      "id": "g6",
+      "title": "Budhi Ganga Hydropower Camp Staff Housing",
+      "image": "/uploads/slides/1788705675548-photo-1570129477492-45c003edd2be.avif"
+    },
+    {
+      "id": "g7",
+      "title": "Shanti Adarsha School, Boudha",
+      "image": "/uploads/gallery/1788706710430-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif"
+    },
+    {
+      "id": "g8",
+      "title": "Khadka Dairy Agricultural Facility, Kharipati",
+      "image": "/uploads/slides/1788719023931-images__5_.jpg"
+    }
   ],
   "notices": [
     {
@@ -280,19 +459,60 @@
     }
   ],
   "investorRelations": [
-    { "id": "1", "title": "Annual Performance Report 2025/26", "date": "2026-08-01", "file": "" },
-    { "id": "2", "title": "Chitwan Factory Expansion & Production Metrics", "date": "2026-06-15", "file": "" },
-    { "id": "3", "title": "Corporate Governance & Quality Standards", "date": "2026-04-10", "file": "" }
+    {
+      "id": "1",
+      "title": "Annual Performance Report 2025/26",
+      "date": "2026-08-01",
+      "file": ""
+    },
+    {
+      "id": "2",
+      "title": "Chitwan Factory Expansion & Production Metrics",
+      "date": "2026-06-15",
+      "file": ""
+    },
+    {
+      "id": "3",
+      "title": "Corporate Governance & Quality Standards",
+      "date": "2026-04-10",
+      "file": ""
+    }
   ],
   "catalogue": [
-    { "id": "1", "title": "Smart Panel Official Company Profile & Technical Catalogue", "file": "" },
-    { "id": "2", "title": "Government District Rate List Schedule — Smart Panel", "file": "" },
-    { "id": "3", "title": "Technical Data & Specification Sheet (50mm, 75mm, 100mm, 120mm)", "file": "" },
-    { "id": "4", "title": "On-Site Installation Guide with 5 Essential Tools", "file": "" }
+    {
+      "id": "1",
+      "title": "Smart Panel Official Company Profile & Technical Catalogue",
+      "file": ""
+    },
+    {
+      "id": "2",
+      "title": "Government District Rate List Schedule — Smart Panel",
+      "file": ""
+    },
+    {
+      "id": "3",
+      "title": "Technical Data & Specification Sheet (50mm, 75mm, 100mm, 120mm)",
+      "file": ""
+    },
+    {
+      "id": "4",
+      "title": "On-Site Installation Guide with 5 Essential Tools",
+      "file": ""
+    }
   ],
   "newsletterSubs": [],
   "messages": [],
-  "dealershipInquiries": [],
+  "dealershipInquiries": [
+    {
+      "id": "muctezhj2pusr",
+      "name": "Bigyan Neupane",
+      "email": "bigyan1.sybazzar@gmail.com",
+      "phone": "9812211321",
+      "location": "ktm",
+      "message": " xcf xf ",
+      "date": "2026-09-22T15:14:42.343Z"
+    }
+  ],
   "heroSlides": [
     {
       "id": "s1",
@@ -304,7 +524,7 @@
     },
     {
       "id": "s2",
-      "title": "NPR 20 Crore Modern Plant in Bharatpur, Chitwan",
+      "title": "Modern Plant in Bharatpur, Chitwan",
       "subtitle": "Producing 150,000 sq. ft. of Smart Panel annually to power safe, sustainable construction across Nepal.",
       "image": "/uploads/slides/1788719023931-images__5_.jpg",
       "ctaLabel": "Our Services",

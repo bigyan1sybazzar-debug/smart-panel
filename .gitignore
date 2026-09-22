@@ -1,6 +1,7 @@
 node_modules
 .next/cache
+.next/static/webpack
+.next/static/development
 .env
 .env.local
 data/db.json.bak
-
