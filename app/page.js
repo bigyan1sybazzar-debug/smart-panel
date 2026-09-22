@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { readDB } from "@/lib/db";
 import NewsletterForm from "@/components/NewsletterForm";
 import HeroSlider from "@/components/HeroSlider";
@@ -95,11 +96,13 @@ export default function HomePage() {
         <div className="container-page grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] group">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src="/images/korean-house.jpg"
-                alt="Smart Panel Nepal Manufacturing &amp; Construction"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                alt="Smart Panel Nepal Manufacturing & Construction"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={80}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
