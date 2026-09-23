@@ -49,6 +49,7 @@ export default function HomePage() {
       item.description ??
       item.summary ??
       "Built with Smart Panel — lightweight, insulated, and earthquake-ready.",
+    time: item.time ?? "",
   }));
 
   return (
@@ -479,6 +480,9 @@ export default function HomePage() {
                         {prj.title}
                       </h3>
                       <p className="text-xs text-gray-500 mt-1">📍 {prj.location}</p>
+                      {prj.time && (
+                        <p className="text-[11px] text-brand-orange font-semibold mt-1">⏱ {prj.time}</p>
+                      )}
                       <p className="text-xs text-gray-600 mt-2 leading-relaxed">{prj.description}</p>
                     </div>
                   </div>

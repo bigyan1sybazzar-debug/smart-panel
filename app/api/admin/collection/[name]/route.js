@@ -13,6 +13,7 @@ const ALLOWED = {
   advantages: "advantages",
   reviews: "reviews",
   testimonials: "reviews",
+  projects: "projects",
 };
 
 function resolveKey(name) {
