@@ -318,7 +318,7 @@ export default function ProductDetailPage({ params }) {
               <tbody className="divide-y divide-gray-100">
                 {specs.map((s, idx) => (
                   <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50/60"}>
-                    <td className="py-3.5 px-4 sm:px-6 font-bold text-gray-800">{s.label}</td>
+                    <td className="py-3.5 px-4 sm:px-6 font-bold text-gray-800">{s.label || s.name}</td>
                     <td className="py-3.5 px-4 sm:px-6 text-gray-600 font-medium">{s.value}</td>
                   </tr>
                 ))}
