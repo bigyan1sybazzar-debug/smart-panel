@@ -88,7 +88,7 @@ export async function generateMetadata() {
 }
 
 export default function RootLayout({ children }) {
-    const { settings } = readDB();
+    const { settings, servicesList = [] } = readDB();
     const domain = settings?.domain ? `https://${settings.domain.replace(/^https?:\/\//, "")}` : "https://prefabpanelnepal.com";
 
     const jsonLd = {
@@ -166,7 +166,7 @@ export default function RootLayout({ children }) {
                 />
             </head>
             <body className="font-sans overflow-x-hidden">
-                <Header settings={settings} />
+                <Header settings={settings} servicesList={servicesList} />
                 <main>{children}</main>
                 <Footer settings={settings} />
                 <WhatsAppWidget settings={settings} />

@@ -7,46 +7,50 @@ import Logo from "./Logo";
 import TopBar from "./TopBar";
 import { ChevronDown, MenuIcon, CloseIcon, PhoneIcon, MailIcon, PinIcon } from "./Icons";
 
-const NAV = [
-  { label: "Home", href: "/" },
-  {
-    label: "About Us",
-    href: "/about-us",
-    children: [
-      { label: "Chairperson's Message", href: "/about-us/chairperson-message" },
-      { label: "Our Mission & Vision", href: "/about-us/mission-vision" },
-      { label: "Board of Directors", href: "/about-us/board-of-directors" },
-      { label: "Management Committee", href: "/about-us/management-committee" },
-    ],
-  },
-  {
-    label: "Services",
-    href: "/services",
-    children: [
-      { label: "Earthquake Resistant Structure", href: "/services/earthquake-resistant-structure" },
-      { label: "EPS Sandwich Panel in Nepal", href: "/services/eps-sandwich-panel" },
-      { label: "Korean Design House in Nepal", href: "/services/korean-design-house" },
-      { label: "Prefab house in Nepal", href: "/services/prefab-house" },
-      { label: "Sandwich PUF Panel in Nepal", href: "/services/sandwich-puf-panel" },
-      { label: "Wall & Roof Solutions", href: "/services/wall-roof-solutions" },
-    ],
-  },
-  { label: "Products", href: "/products" },
-  { label: "Dealership", href: "/dealership" },
-  { label: "Gallery", href: "/gallery" },
-  { label: "Catalogue", href: "/catalogue" },
-  { label: "Investor Relations", href: "/investor-relations" },
-  { label: "Notice", href: "/notice" },
-  { label: "Newsletter", href: "/newsletter" },
-  { label: "Contact", href: "/contact" },
-];
-
-export default function Header({ settings }) {
+export default function Header({ settings, servicesList = [] }) {
   const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState(null);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSubOpen, setMobileSubOpen] = useState(null);
   const closeTimer = useRef(null);
+
+  const serviceChildren = servicesList && servicesList.length > 0
+    ? servicesList.map((s) => ({ label: s.name, href: `/services/${s.slug}` }))
+    : [
+        { label: "Earthquake Resistant Construction", href: "/services/earthquake-resistant-structure" },
+        { label: "Smart Sandwich Panel Installation", href: "/services/smart-sandwich-panel-solutions" },
+        { label: "Smart Solid Panel Wall Systems", href: "/services/smart-solid-panel-construction" },
+        { label: "Turnkey Prefab Residential & Commercial Homes", href: "/services/prefab-house" },
+        { label: "Smart EPS Construction Blocks", href: "/services/smart-eps-blocks" },
+        { label: "Wall & Roof Insulation Systems", href: "/services/wall-roof-solutions" },
+      ];
+
+  const NAV = [
+    { label: "Home", href: "/" },
+    {
+      label: "About Us",
+      href: "/about-us",
+      children: [
+        { label: "Chairperson's Message", href: "/about-us/chairperson-message" },
+        { label: "Our Mission & Vision", href: "/about-us/mission-vision" },
+        { label: "Board of Directors", href: "/about-us/board-of-directors" },
+        { label: "Management Committee", href: "/about-us/management-committee" },
+      ],
+    },
+    {
+      label: "Services",
+      href: "/services",
+      children: serviceChildren,
+    },
+    { label: "Products", href: "/products" },
+    { label: "Dealership", href: "/dealership" },
+    { label: "Gallery", href: "/gallery" },
+    { label: "Catalogue", href: "/catalogue" },
+    { label: "Investor Relations", href: "/investor-relations" },
+    { label: "Notice", href: "/notice" },
+    { label: "Newsletter", href: "/newsletter" },
+    { label: "Contact", href: "/contact" },
+  ];
 
   useEffect(() => {
     setMobileOpen(false);
