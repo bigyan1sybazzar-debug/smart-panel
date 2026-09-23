@@ -26,7 +26,7 @@
     "metaKeywords": "Smart Panel Nepal, Prefab Panel Nepal Pvt. Ltd., Smart Sandwich Panel, Smart Solid Panel, Smart EPS Block, Prefab House Price in Nepal, EPS Sandwich Panel Nepal, Government District Rate List Nepal, Prefab Factory Chitwan, Pepsicola Kathmandu Prefab, Earthquake Resistant Construction Nepal, ISO 9001:2015 Prefab Nepal",
     "ogImage": "/images/prefab-house.jpg",
     "googleVerificationCode": "",
-    "googleAnalyticsId": ""
+    "googleAnalyticsId": "G-HCV8C3MX6H"
   },
   "advantages": [
     {
@@ -88,12 +88,12 @@
     "chairperson": {
       "name": "Bimal Raj Gosai",
       "title": "Chief Executive Officer (CEO), Prefab Panel Nepal Pvt. Ltd.",
-      "image": "/images/team/chairperson.jpg",
-      "message": "We started in 2024 with a simple goal: help Nepal build better. A year later, our manufacturing plant in Bharatpur, Chitwan came online, backed by an NPR 20 crore investment. Today it turns out 150,000 sq. ft. of Smart Panel a year — lightweight, insulated, and ready for construction sites across the country. Seismic strength isn't an add-on; it's built into every panel we produce. We are proud to be an ISO 9001:2015 certified company committed to modern, sustainable, and earthquake-ready construction for every Nepali community."
+      "image": "/uploads/team/1790183083854-ceo.jpeg",
+      "message": "We began our journey in 2024 with a clear and purposeful goal: to help Nepal build better. Within a year, our state-of-the-art manufacturing plant in Bharatpur, Chitwan became fully operational, supported by an investment of NPR 20 crore. Today, the facility produces 150,000 square feet of Smart Panel annually—lightweight, highly insulated, and ready for construction sites across the nation. Every panel we manufacture carries built-in seismic strength, reflecting our unwavering commitment to safety and resilience.\nAs an ISO 9001:2015 certified company, we take pride in advancing modern, sustainable, and earthquake-ready construction solutions. Our mission is to empower every Nepali community with smarter building materials that deliver speed, durability, and environmental responsibility. Together, we are shaping a stronger, safer, and more sustainable future for Nepal."
     },
     "story": "We started in 2024 with a simple goal: help Nepal build better. A year later, our plant in Bharatpur, Chitwan came online, backed by an NPR 20 crore investment. Today it turns out 150,000 sq. ft. of Smart Panel a year — lightweight, insulated, and ready for sites across the country.",
-    "mission": "Smart, eco-friendly, earthquake-ready building material so every community can build faster, safer, and for less.",
-    "vision": "To lead Nepal's construction transition toward sustainable, pre-engineered, and earthquake-resilient building technologies that protect lives and preserve the environment.",
+    "mission": "Smart Panel exists to transform the way Nepal builds by delivering innovative, eco-friendly, and earthquake-ready prefabricated panels that make quality construction accessible to every community. We produce lightweight, insulated sandwich and solid panels designed for speed, safety, and cost efficiency, ensuring that families, businesses, schools, and hospitals can rise stronger and faster without compromising on durability or environmental responsibility.\nThrough continuous refinement of materials, rigorous quality standards, and a commitment to seismic resilience, we empower builders across the country to construct with confidence. Our mission is to reduce construction time, lower overall costs, minimize ecological disruption, and create safer living and working spaces for present and future generations of Nepal.",
+    "vision": "We envision a Nepal where every structure—whether a remote village school, a bustling city hospital, or a family home—is built with intelligent, sustainable technology that prioritizes safety, efficiency, and respect for the environment. Smart Panel aims to lead the shift toward modern, green construction practices that protect communities from seismic risks while accelerating national development.\nBy becoming the most trusted name in prefabricated building solutions, we aspire to set new standards of quality and innovation, expand access to advanced materials nationwide, and inspire a construction culture that builds not just stronger walls, but stronger, more resilient communities for generations to come.",
     "whatWeStandFor": [
       {
         "title": "Innovation & Quality",
@@ -113,7 +113,7 @@
         "id": "1",
         "name": "Bimal Raj Gosai",
         "position": "Chief Executive Officer (CEO)",
-        "image": "/images/team/chairperson.jpg"
+        "image": "/uploads/team/1790183233254-ceo.jpeg"
       },
       {
         "id": "2",
@@ -139,7 +139,7 @@
         "id": "1",
         "name": "Bimal Raj Gosai",
         "position": "Chief Executive Officer",
-        "image": "/images/team/chairperson.jpg"
+        "image": "/uploads/team/1790183238945-ceo.jpeg"
       },
       {
         "id": "2",
@@ -319,122 +319,174 @@
   ],
   "servicesList": [
     {
-      "slug": "earthquake-resistant-structure",
-      "name": "Earthquake Resistant Construction",
-      "image": "/images/prefab-house.jpg",
-      "summary": "Lightweight wall panel and steel frame systems engineered to absorb seismic shocks and minimize structural deflection.",
-      "content": "Our earthquake-resistant structural solutions feature lightweight Smart Panels interlocking directly with precision-engineered steel frames. By reducing the overall building weight by over 60% compared to traditional brick masonry, base shear forces during an earthquake are dramatically decreased. Every installation conforms to the Nepal National Building Code for active seismic zones."
+      "slug": "smart-sandwich-panel",
+      "name": "Smart Sandwich Panel",
+      "image": "/uploads/services/1790183651956-Smart_Sandwich_Panel.jpg",
+      "summary": "Lightweight interlocking prefabricated panels with a light EPS-and-cement core wrapped in 4.5 mm calcium silicate boards. Tongue-and-groove edges lock every panel into the next for fast, clean installation.",
+      "content": "Smart Sandwich Panel is our flagship product — a modern, eco-friendly alternative to traditional brick and concrete hollow blocks. Each panel features a lightweight EPS-and-cement core protected by 4.5 mm calcium silicate boards on both faces. The precision tongue-and-groove design allows panels to interlock quickly and securely, significantly reducing installation time and labour costs.\n\nThese panels deliver excellent thermal and sound insulation, fire resistance, impact resistance, and built-in seismic strength. They are much lighter than conventional masonry, reducing structural load and foundation costs. Available in 50 mm, 75 mm, 100 mm and 120 mm thicknesses with lengths up to 3000 mm and standard width of 610 mm, they are ideal for interior and exterior walls, partitions and complete building envelopes in residential, commercial, healthcare, educational and industrial projects."
     },
     {
-      "slug": "smart-sandwich-panel-solutions",
-      "name": "Smart Sandwich Panel Installation",
-      "image": "/images/sandwich-panel.jpg",
-      "summary": "Tongue-and-groove EPS core panels with 4.5mm calcium silicate boards for walls, partitions, and exterior envelopes.",
-      "content": "Smart Sandwich Panels combine an EPS-and-cement core wrapped in 4.5mm calcium silicate board on both faces. Featuring tongue-and-groove interlocking edges, every panel locks tightly into the next for fast on-site installation, clean finish, and exceptional thermal and sound barrier performance."
+      "slug": "smart-solid-panel",
+      "name": "Smart Solid Panel",
+      "image": "/uploads/services/1790183755294-WhatsApp_Image_2026-09-23_at_2.39.10_PM.jpeg",
+      "summary": "Lightweight interlocking panels made from EPS beads, cement, sand, water and bonding agents, reinforced with mesh for extra strength. Both sides are plastered after installation for a smooth finish.",
+      "content": "Smart Solid Panel is engineered for superior strength and durability while remaining lightweight and easy to handle. Manufactured from high-quality EPS beads, cement, sand, water and special bonding agents, each panel is reinforced with mesh to enhance structural performance and impact resistance.\n\nAfter installation, both faces are plastered to create a smooth surface ready for final finishing. These panels offer outstanding resistance to impact, fire, moisture and seismic forces. They reduce building weight, speed up construction and lower overall project costs. Available in the same thickness and length options as our Sandwich Panels, Smart Solid Panels are an excellent choice for load-bearing walls, high-rise construction and projects demanding maximum resilience."
     },
     {
-      "slug": "smart-solid-panel-construction",
-      "name": "Smart Solid Panel Wall Systems",
-      "image": "/uploads/slides/1788705701616-images__4_.jpg",
-      "summary": "Mesh-reinforced solid panels plastered after installation for heavy-duty structural durability and impact resistance.",
-      "content": "Smart Solid Panels are manufactured from expanded polystyrene beads, cement, sand, water, and specialized bonding agents, reinforced with internal mesh for added tensile strength. Ideal for high-traffic buildings, schools, and commercial facilities requiring a traditional plastered aesthetic with prefab speed."
+      "slug": "smart-eps-block",
+      "name": "Smart EPS Block",
+      "image": "/uploads/services/1790183834735-Smart_EPS_Block.jpg",
+      "summary": "Lightweight construction blocks made from EPS beads, OPC cement, water and essential additives. Molded into various sizes for fast, economical and eco-friendly building.",
+      "content": "Smart EPS Blocks provide a modern, sustainable alternative to traditional clay bricks and concrete blocks. Produced by mixing expanded polystyrene (EPS) beads with OPC cement, water and specialised additives, the material is precisely molded into different sizes and shapes.\n\nThese blocks are significantly lighter than conventional masonry, reducing structural load and foundation requirements. They offer good thermal insulation, are easy to cut and handle on site, and help accelerate construction timelines while generating less waste. Available in sizes such as 100×200×600 mm, 150×200×600 mm and 200×200×600 mm, they are ideal for infill walls, partition walls and non-load-bearing applications."
     },
     {
-      "slug": "prefab-house",
-      "name": "Turnkey Prefab Residential & Commercial Homes",
-      "image": "/uploads/slides/1788705675548-photo-1570129477492-45c003edd2be.avif",
-      "summary": "Complete prefabricated residential homes and commercial buildings constructed in 7 to 15 days.",
-      "content": "We manufacture and assemble complete turnkey prefab houses using Smart Panels. From architectural blueprints and foundation design to panel erection, roofing, and finishing, our turnkey solution delivers safe, earthquake-ready homes in a fraction of traditional construction time."
+      "slug": "on-site-installation",
+      "name": "On-Site Installation Service",
+      "image": "/uploads/services/1790183970054-WhatsApp_Image_2026-09-23_at_2.39.43_PM.jpeg",
+      "summary": "Professional installation by trained Smart Panel crews using specialised tools for fast, precise and clean on-site assembly.",
+      "content": "Our trained installation teams ensure every Smart Panel project is completed efficiently and to the highest standard. Using specialised equipment — cutting machines, drill machines, welding machines, thread hand drills and plumb bobs — our crews achieve accurate cuts, secure fixing and perfect alignment.\n\nNo heavy machinery or long learning curve is required. Panels are installed quickly with minimal labour, resulting in cleaner sites, shorter project timelines and lower overall costs. We also provide technical guidance and supervision so your project benefits from both premium materials and expert workmanship."
     },
     {
-      "slug": "smart-eps-blocks",
-      "name": "Smart EPS Construction Blocks",
-      "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
-      "summary": "Ultra-lightweight OPC cement & EPS molded blocks for partition walls, floor infills, and insulation layers.",
-      "content": "Lightweight construction blocks made from EPS beads, OPC cement, water, and essential additives, molded into precise dimensions (100×200×600mm, 150×200×600mm, 200×200×600mm). Superior thermal insulation and easy handling on construction sites without heavy machinery."
+      "slug": "technical-consultation",
+      "name": "Technical Consultation & Design Support",
+      "image": "/uploads/services/1790184056223-H9d9638e28b5f47a58e05aaf448b21bfbe.png_720x720q50.avif",
+      "summary": "Expert guidance on panel selection, structural design, seismic performance and project optimisation for architects, engineers and contractors.",
+      "content": "Choosing the right panel thickness, type and installation method is critical for performance and cost efficiency. Our technical team works closely with architects, engineers and contractors to recommend the most suitable Smart Panel solution for each project.\n\nWe provide detailed technical data, seismic performance guidance, thermal and acoustic calculations, and practical advice on foundation design and structural steel savings. Whether you are building a high-rise, hospital, school or residential project, our consultation service helps you maximise safety, speed and value."
     },
     {
-      "slug": "wall-roof-solutions",
-      "name": "Wall & Roof Insulation Systems",
-      "image": "/images/korean-house.jpg",
-      "summary": "Complete insulated wall cladding and roofing systems tailored for schools, hospitals, resorts, and commercial complexes.",
-      "content": "We supply and install complete building envelopes, including insulated sandwich wall systems, fire-rated ceiling panels, and temperature-controlled roof cladding designed to withstand harsh monsoon rains and winter cold across Nepal."
+      "slug": "wall-roof-custom-panel-solutions",
+      "name": "Custom Panel Solutions",
+      "image": "/uploads/services/1790184142167-images__23_.jpg",
+      "summary": "Tailor-made panel sizes, thicknesses and specifications to meet unique project requirements beyond standard dimensions.",
+      "content": "While our standard range covers most construction needs, some projects require special dimensions or performance characteristics. Smart Panel offers custom manufacturing solutions including non-standard lengths, thicknesses, and reinforced or specialised formulations.\n\nOur production facility in Bharatpur can accommodate custom orders while maintaining the same high quality, ISO 9001:2015 standards and seismic performance. Contact our team early in the design stage to discuss custom solutions that fit your exact project requirements."
     }
   ],
   "products": [
+    {
+      "id": "muedsv8e1g8du",
+      "name": "Smart Partition Wall Panel",
+      "category": "Partition Wall Panel",
+      "sizes": "Thickness: 50 mm, 75 mm  Length: 2400 / 2700 / 3000 mm  Width: 610 mm",
+      "price": "",
+      "description": "Lightweight and space-saving partition solution using Smart Sandwich or Solid Panels. Ideal for creating flexible internal layouts in offices, hotels, hospitals, schools and residential buildings. Fast to install, excellent sound insulation and fire resistance with minimal structural load.",
+      "specs": "[\n  {\"name\": \"Recommended Thickness\", \"value\": \"50–75 mm\"},\n  {\"name\": \"Sound Insulation\", \"value\": \"≥35 – ≥40 dB\"},\n  {\"name\": \"Space Saving\", \"value\": \"Thinner than traditional brick walls\"},\n  {\"name\": \"Installation Speed\", \"value\": \"Very fast – tongue-and-groove system\"},\n  {\"name\": \"Fire Resistance\", \"value\": \"≥3 hours\"}\n]",
+      "image": "/uploads/products/1790184785309-Black-rotating-slat-wood-room-dividers-web-1.webp"
+    },
+    {
+      "id": "muedr7s7y6r9d",
+      "name": "Smart Exterior Wall Panel",
+      "category": "Exterior Wall Panel",
+      "sizes": "Thickness: 75 mm, 100 mm, 120 mm  Length: 2400 / 2700 / 3000 mm  Width: 610 mm",
+      "price": "",
+      "description": "High-performance Smart Sandwich Panel designed for exterior walls. Offers superior weather resistance, thermal insulation, fire protection and seismic strength. The calcium silicate board facing provides durability against moisture and environmental exposure while keeping the building envelope lightweight and energy-efficient.",
+      "specs": "[\n  {\"name\": \"Recommended Thickness\", \"value\": \"75–120 mm\"},\n  {\"name\": \"Weather Resistance\", \"value\": \"High (moisture & impact resistant)\"},\n  {\"name\": \"Thermal Conductivity\", \"value\": \"≤0.30 W/mK\"},\n  {\"name\": \"Fire Proof Time Limit\", \"value\": \"≥4 hours\"},\n  {\"name\": \"Seismic Performance\", \"value\": \"Built-in strength\"}\n]",
+      "image": "/uploads/products/1790184710621-images__26_.jpg"
+    },
     {
       "id": "1",
       "name": "Smart Sandwich Panel",
       "category": "Sandwich Panel",
       "image": "/images/sandwich-panel.jpg",
-      "description": "Lightweight interlocking prefabricated panels with an EPS-cement core and 4.5mm calcium silicate board on both faces. Available in 50mm, 75mm, 100mm, 120mm thickness (Lengths: 2400/2700/3000mm, Width: 610mm). Fire-rated, thermal-insulated, and earthquake-ready.",
-      "sizes": "50mm, 75mm, 100mm, 120mm × 2400/2700/3000mm × 610mm"
+      "description": "Smart Sandwich Panel is our flagship lightweight interlocking prefabricated panel. It features a light EPS-and-cement core wrapped in 4.5 mm calcium silicate boards on both faces. The precision tongue-and-groove design allows every panel to lock securely into the next for fast installation and a clean finish.",
+      "sizes": "Thickness: 50 mm, 75 mm, 100 mm, 120 mm",
+      "price": "",
+      "specs": "[\n  {\"name\": \"Anti-Impact Performance (times)\", \"value\": \"≥8 – ≥15 (depending on thickness)\"},\n  {\"name\": \"Anti-Bending Damage (> dead weight)\", \"value\": \"≥3\"},\n  {\"name\": \"Anti-Pressure Strength (MPa)\", \"value\": \"≥5\"},\n  {\"name\": \"Softening Coefficient\", \"value\": \"≥0.80\"},\n  {\"name\": \"Surface Density (kg/m²)\", \"value\": \"≤45 – ≤78\"},\n  {\"name\": \"Moisture Rate (%)\", \"value\": \"≤7 – ≤10\"},\n  {\"name\": \"Drying Shrinkage Value (mm)\", \"value\": \"≤0.45 – ≤0.6\"},\n  {\"name\": \"Single Point Hanging Strength (N)\", \"value\": \"≥1200 – ≥1500\"},\n  {\"name\": \"Sound Insulation Capacity (dB)\", \"value\": \"≥35 – ≥45\"},\n  {\"name\": \"Fire Proof Time Limit (h)\", \"value\": \"≥3 – ≥4\"},\n  {\"name\": \"Thermal Conductivity (W/mK)\", \"value\": \"≤0.30\"}\n]"
     },
     {
       "id": "2",
       "name": "Smart Solid Panel",
       "category": "Solid Panel",
-      "image": "/uploads/slides/1788705701616-images__4_.jpg",
-      "description": "Lightweight interlocking prefabricated panels made from EPS beads, cement, sand, and bonding agents, reinforced with internal mesh for superior impact strength. Plastered on both sides after installation. Available in 50mm, 75mm, 100mm, and 120mm.",
-      "sizes": "50mm, 75mm, 100mm, 120mm × 2400/2700/3000mm × 610mm"
+      "image": "/uploads/products/1790184498513-csfd.jpg",
+      "description": "Smart Solid Panel is a lightweight interlocking prefabricated panel made from EPS beads, cement, sand, water and bonding agents, reinforced with mesh for added strength. Both sides are plastered after installation to create a smooth, ready-to-finish surface.",
+      "sizes": "50mm, 75mm, 100mm, 120mm × 2400/2700/3000mm × 610mm",
+      "price": "",
+      "specs": "[\n  {\"name\": \"Core Material\", \"value\": \"EPS beads + Cement + Sand + Bonding agents + Mesh reinforcement\"},\n  {\"name\": \"Surface Finish\", \"value\": \"Plastered on both sides after installation\"},\n  {\"name\": \"Anti-Impact Performance\", \"value\": \"High\"},\n  {\"name\": \"Fire Resistance\", \"value\": \"Excellent\"},\n  {\"name\": \"Seismic Strength\", \"value\": \"Built-in\"},\n  {\"name\": \"Thermal Insulation\", \"value\": \"Good\"},\n  {\"name\": \"Installation\", \"value\": \"Tongue-and-groove interlocking\"}\n]"
     },
     {
       "id": "3",
       "name": "Smart EPS Block",
       "category": "EPS Block",
-      "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
-      "description": "Lightweight construction blocks made from expanded EPS beads, OPC cement, water, and specialized additives. Highly thermal-efficient, weather-durable, and available in multiple sizes: 100×200×600mm, 150×200×600mm, and 200×200×600mm.",
-      "sizes": "100×200×600mm, 150×200×600mm, 200×200×600mm"
+      "image": "/uploads/products/1790184562131-WhatsApp_Image_2026-09-23_at_2.39.10_PM.jpeg",
+      "description": "Smart EPS Blocks are lightweight construction blocks made from EPS beads, OPC cement, water and essential additives. Molded into precise sizes and shapes, they offer a fast, economical and eco-friendly alternative to traditional clay bricks and concrete blocks.",
+      "sizes": "100×200×600mm, 150×200×600mm, 200×200×600mm",
+      "price": "",
+      "specs": "[\n  {\"name\": \"Material Composition\", \"value\": \"EPS beads + OPC cement + Water + Additives\"},\n  {\"name\": \"Density\", \"value\": \"Lightweight (significantly lower than traditional masonry)\"},\n  {\"name\": \"Thermal Insulation\", \"value\": \"Good\"},\n  {\"name\": \"Workability\", \"value\": \"Easy to cut, drill and handle\"},\n  {\"name\": \"Application\", \"value\": \"Infill walls, partitions, non-load-bearing walls\"},\n  {\"name\": \"Eco-friendly\", \"value\": \"Yes – reduced topsoil disturbance and emissions\"}\n]"
     },
     {
       "id": "4",
-      "name": "Galvanized Steel Frame & Accessories",
-      "category": "Structure & Accessories",
-      "image": "/images/prefab-house.jpg",
-      "description": "High-tensile galvanized light gauge steel framing, U-channels, structural connection plates, expansion bolts, and anti-crack joint mesh specifically engineered for Smart Panel assembly to Nepal National Seismic Code.",
-      "sizes": "Custom manufactured to architectural drawing specifications"
+      "name": "Smart Interior Wall Panel",
+      "category": "Interior Wall Panel",
+      "image": "/uploads/products/1790184630347-images__24_.jpg",
+      "description": "Specially optimised Smart Sandwich Panel for interior applications. Lightweight, easy to install and excellent for creating clean, quiet and thermally comfortable internal spaces. Perfect for partitions, room dividers and internal walls in homes, offices, schools, hospitals and commercial buildings.",
+      "sizes": "Thickness: 50 mm, 75 mm, 100 mm  Length: 2400 / 2700 / 3000 mm  Width: 610 mm",
+      "price": "",
+      "specs": "[\n  {\"name\": \"Recommended Thickness\", \"value\": \"50–100 mm\"},\n  {\"name\": \"Sound Insulation\", \"value\": \"≥35 – ≥45 dB\"},\n  {\"name\": \"Fire Resistance\", \"value\": \"≥3 – ≥4 hours\"},\n  {\"name\": \"Surface\", \"value\": \"Calcium silicate board both sides\"},\n  {\"name\": \"Installation\", \"value\": \"Tongue-and-groove, fast dry installation\"}\n]"
     }
   ],
   "gallery": [
     {
+      "id": "mueenqgenqboa",
+      "title": "Certificate  of registration ",
+      "location": "Nepal",
+      "category": "Certificate",
+      "description": "",
+      "image": "/uploads/gallery/1790186162737-WhatsApp_Image_2026-09-23_at_2.39.03_PM.jpeg"
+    },
+    {
       "id": "g1",
       "title": "Khwopa Hospital Health Post, Byasi",
-      "image": "/images/prefab-house.jpg"
+      "image": "/uploads/gallery/1790186051828-WhatsApp_Image_2026-09-23_at_2.35.50_PM.jpeg",
+      "location": "",
+      "category": "",
+      "description": ""
     },
     {
       "id": "g2",
-      "title": "Bal Bikash English Secondary School, Libali",
-      "image": "/images/sandwich-panel.jpg"
+      "title": "Shree ganesh English Secondary School, Libali",
+      "image": "/uploads/gallery/1790186070265-WhatsApp_Image_2026-09-23_at_2.38.21_PMFHF.jpeg",
+      "location": "",
+      "category": "",
+      "description": ""
     },
     {
       "id": "g3",
       "title": "Bhaktapur Cancer Hospital Facility",
-      "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif"
+      "image": "/uploads/gallery/1790186089780-WhatsApp_Image_2026-09-23_at_2.35.50_PM.jpeg",
+      "location": "",
+      "category": "",
+      "description": ""
     },
     {
       "id": "g4",
       "title": "QFX Cinemas Acoustic Wall Installation",
-      "image": "/uploads/slides/1788705701616-images__4_.jpg"
+      "image": "/uploads/gallery/1790186250088-WhatsApp_Image_2026-09-23_at_2.38.20_PMFRT.jpeg",
+      "location": "",
+      "category": "",
+      "description": ""
     },
     {
       "id": "g5",
-      "title": "The Kings Fitness Club Commercial Project",
-      "image": "/images/korean-house.jpg"
+      "title": "Doctor Gym  Fitness Club Commercial Project",
+      "image": "/uploads/gallery/1790186101533-WhatsApp_Image_2026-09-23_at_2.38.21_PMDDDHD.jpeg",
+      "location": "",
+      "category": "",
+      "description": ""
     },
     {
       "id": "g6",
       "title": "Budhi Ganga Hydropower Camp Staff Housing",
-      "image": "/uploads/slides/1788705675548-photo-1570129477492-45c003edd2be.avif"
-    },
-    {
-      "id": "g7",
-      "title": "Shanti Adarsha School, Boudha",
-      "image": "/uploads/gallery/1788706710430-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif"
+      "image": "/uploads/gallery/1790186126470-WhatsApp_Image_2026-09-23_at_2.38.52_PMHF.jpeg",
+      "location": "",
+      "category": "",
+      "description": ""
     },
     {
       "id": "g8",
       "title": "Khadka Dairy Agricultural Facility, Kharipati",
-      "image": "/uploads/slides/1788719023931-images__5_.jpg"
+      "image": "/uploads/gallery/1790186142784-WhatsApp_Image_2026-09-23_at_2.38.21_PM.jpeg",
+      "location": "",
+      "category": "",
+      "description": ""
     }
   ],
   "notices": [
@@ -549,7 +601,7 @@
       "location": "Kathmandu, Nepal",
       "rating": 5,
       "avatar": "/images/testimonials/avatar-1.jpg",
-      "projectImage": "/images/testimonials/project-1.jpg",
+      "projectImage": "/uploads/testimonials/1790185915428-WhatsApp_Image_2026-09-23_at_2.40.31_PM.jpeg",
       "review": "Prefab Panel Nepal made our construction project much easier — great quality, durable, and quick to install. We saved both time and money.",
       "project": "Commercial Complex & Partition Project"
     },
@@ -560,7 +612,7 @@
       "location": "Byasi, Bhaktapur",
       "rating": 5,
       "avatar": "/images/testimonials/avatar-2.jpg",
-      "projectImage": "/images/testimonials/project-2.jpg",
+      "projectImage": "/uploads/testimonials/1790185924611-WhatsApp_Image_2026-09-23_at_2.38.21_PM.jpeg",
       "review": "The 4-hour fire rating and sound insulation of Smart Panels provided the quiet, safe environment required for our hospital health post. Exceptional finish and prompt delivery from their Chitwan plant.",
       "project": "Hospital Health Post Facility"
     },
@@ -571,7 +623,7 @@
       "location": "Libali, Bhaktapur",
       "rating": 5,
       "avatar": "/images/testimonials/avatar-3.jpg",
-      "projectImage": "/images/testimonials/project-3.jpg",
+      "projectImage": "/uploads/testimonials/1790185934190-WhatsApp_Image_2026-09-23_at_2.35.50_PM.jpeg",
       "review": "Our school classrooms built with Smart Panels stay remarkably cool in the summer heat and warm during winter. The earthquake-resistant certification gives parents complete peace of mind.",
       "project": "School Classrooms & Kindergarten Wing"
     },
@@ -582,12 +634,32 @@
       "location": "Bharatpur, Chitwan",
       "rating": 5,
       "avatar": "/images/testimonials/avatar-4.jpg",
-      "projectImage": "/images/testimonials/project-4.jpg",
+      "projectImage": "/uploads/testimonials/1790185945679-WhatsApp_Image_2026-09-23_at_2.38.20_PM.jpeg",
       "review": "Having Smart Panel listed on the Government District Rate List makes specifying it seamless for municipal and institutional projects. The structural test results and hanging strength exceed standard requirements.",
       "project": "Municipal & Institutional Buildings"
     }
   ],
   "projects": [
+    {
+      "id": "mueefxuhvwvuh",
+      "title": "Elevated Guard House / Small Structure",
+      "status": "",
+      "category": "Residential / Utility",
+      "location": "Chitwan",
+      "time": "Completed",
+      "image": "/uploads/gallery/1790185855947-WhatsApp_Image_2026-09-23_at_2.36.03_PM.jpeg",
+      "description": "Compact elevated structure built with Smart Panel, demonstrating the system’s suitability for small, fast and durable buildings."
+    },
+    {
+      "id": "mueed25l29qtm",
+      "title": "Modern School Complex with Playground",
+      "status": "",
+      "category": "Education",
+      "location": "Nepal",
+      "time": "Completed",
+      "image": "/uploads/gallery/1790185723237-WhatsApp_Image_2026-09-23_at_2.35.50_PM.jpeg",
+      "description": "Colorful school buildings and facilities built with Smart Panel, creating a safe and modern learning environment with outdoor play areas."
+    },
     {
       "id": "p1",
       "title": "QFX Cinemas (Chitwan & Balkhu)",
@@ -595,7 +667,7 @@
       "category": "Commercial & Acoustic",
       "status": "Completed",
       "time": "Completed 2025",
-      "image": "/uploads/slides/1788705701616-images__4_.jpg",
+      "image": "/uploads/gallery/1790185161968-WhatsApp_Image_2026-09-23_at_2.38.20_PMFRT.jpeg",
       "description": "High sound damping and fire-rated Smart Panel acoustic wall installation for premier cinema halls."
     },
     {
@@ -605,17 +677,17 @@
       "category": "Healthcare",
       "status": "Completed",
       "time": "Completed 2024",
-      "image": "/images/prefab-house.jpg",
+      "image": "/uploads/gallery/1790185175048-WhatsApp_Image_2026-09-23_at_2.35.50_PM.jpeg",
       "description": "Quiet, hygienic, and 4-hour fire-resistant hospital clinic space built with Smart Sandwich Panels."
     },
     {
       "id": "p3",
-      "title": "Bal Bikash English Secondary School",
+      "title": "Shree Ganesh English Secondary School",
       "location": "Libali, Bhaktapur",
       "category": "Education",
       "status": "Completed",
       "time": "Completed 2024",
-      "image": "/images/sandwich-panel.jpg",
+      "image": "/uploads/gallery/1790185186000-WhatsApp_Image_2026-09-23_at_2.38.21_PMFHF.jpeg",
       "description": "Earthquake-resilient educational facility providing comfortable, thermally insulated classrooms for students."
     },
     {
@@ -625,7 +697,7 @@
       "category": "Healthcare",
       "status": "On-Going",
       "time": "Under Construction",
-      "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
+      "image": "/uploads/gallery/1790185205382-WhatsApp_Image_2026-09-23_at_2.39.55_PM.jpeg",
       "description": "High-density clean panel walling designed for medical recovery suites and diagnostic wings."
     },
     {
@@ -635,18 +707,18 @@
       "category": "Industrial & Energy",
       "status": "On-Going",
       "time": "Under Construction (Phase 2)",
-      "image": "/images/dealership/dealership-partner.jpg",
+      "image": "/uploads/gallery/1790185561419-WhatsApp_Image_2026-09-23_at_2.38.52_PMHF.webp",
       "description": "All-weather thermally insulated modular staff quarters engineered for high-altitude weather conditions."
     },
     {
       "id": "p6",
-      "title": "Pokhara Lakeside Eco-Resort Villa Cottages",
+      "title": "Doctor Gym",
       "location": "Lakeside, Pokhara",
-      "category": "Hospitality & Tourism",
+      "category": "Commercial",
       "status": "Completed",
       "time": "Completed 2025",
-      "image": "/images/korean-house.jpg",
-      "description": "Fast-track earthquake-resistant prefab guest cottages with acoustic privacy and superior thermal insulation."
+      "image": "/uploads/gallery/1790185689079-WhatsApp_Image_2026-09-23_at_2.38.21_PMDDDHD.jpeg",
+      "description": "Modern commercial gym facility constructed with Smart Panel. The project features clean, durable walls, good thermal performance and fast construction, creating a professional and comfortable fitness space."
     }
   ],
   "processSteps": [

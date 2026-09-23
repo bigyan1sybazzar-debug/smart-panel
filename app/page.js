@@ -125,7 +125,7 @@ export default function HomePage() {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3] group">
               <Image
-                src="/images/korean-house.jpg"
+                src="/uploads/gallery/1790185561419-WhatsApp_Image_2026-09-23_at_2.38.52_PMHF.webp"
                 alt="Smart Panel Nepal Manufacturing & Construction"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
