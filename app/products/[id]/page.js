@@ -73,8 +73,18 @@ export default function ProductDetailPage({ params }) {
     }
   };
 
-  // Tailored specifications per product
+  // Try to parse admin-supplied specs first, then fall back to hardcoded
   const getSpecs = () => {
+    // If admin provided specs as JSON string, parse and use them
+    if (product.specs) {
+      try {
+        const parsed = typeof product.specs === "string" ? JSON.parse(product.specs) : product.specs;
+        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+      } catch {
+        // fall through to hardcoded
+      }
+    }
+    // Hardcoded fallback for original 4 products
     if (product.id === "3") {
       return [
         { label: "Core Material", value: "Virgin EPS Beads + High-Grade OPC Cement" },
@@ -108,7 +118,7 @@ export default function ProductDetailPage({ params }) {
         { label: "Recommended Use", value: "High-traffic partition walls, exterior compound walls" },
         { label: "Factory Warranty", value: "Guaranteed Against Structural Defect" },
       ];
-    } else {
+    } else if (product.id === "4") {
       return [
         { label: "Material Grade", value: "High-Tensile Galvanized Light Gauge Steel (G550 / Z275)" },
         { label: "Coating", value: "Corrosion-Proof Heavy Zinc Galvanization" },
@@ -120,7 +130,9 @@ export default function ProductDetailPage({ params }) {
         { label: "Origin", value: "Precision roll-formed at Bharatpur, Chitwan plant" },
       ];
     }
+    return [];
   };
+
 
   const specs = getSpecs();
 
@@ -204,6 +216,11 @@ export default function ProductDetailPage({ params }) {
                     📏 Dimensions: {product.sizes}
                   </div>
                 )}
+                {product.price && (
+                  <div className="mt-2 inline-block bg-amber-50 text-amber-800 border border-amber-200 text-xs font-semibold px-3 py-1.5 rounded-lg ml-2">
+                    💰 Starting from: {product.price}
+                  </div>
+                )}
 
                 <p className="mt-4 text-gray-700 text-sm sm:text-base leading-relaxed">
                   {product.description}
@@ -276,6 +293,7 @@ export default function ProductDetailPage({ params }) {
       </section>
 
       {/* Detailed Technical Specifications Table */}
+      {specs.length > 0 && (
       <section className="py-12 bg-gray-50 border-t border-gray-200">
         <div className="container-page">
           <div className="max-w-3xl mb-8">
@@ -329,6 +347,7 @@ export default function ProductDetailPage({ params }) {
           </div>
         </div>
       </section>
+      )}
 
       {/* Related Products Carousel / Grid */}
       <section className="py-12 bg-white border-t border-gray-200">

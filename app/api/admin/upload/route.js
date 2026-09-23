@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
-const ALLOWED_FOLDERS = ["gallery", "products", "notices", "investor", "catalogue", "slides"];
+const ALLOWED_FOLDERS = ["gallery", "products", "notices", "investor", "catalogue", "slides", "team", "testimonials", "services"];
 
 export async function POST(request) {
   const formData = await request.formData();

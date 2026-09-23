@@ -98,8 +98,9 @@ export default function CollectionManager({ apiPath, fields, uploadFolder, title
                   required={f.required}
                   rows={3}
                   value={form[f.name] || ""}
+                  placeholder={f.placeholder || ""}
                   onChange={(e) => handleChange(f.name, e.target.value)}
-                  className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-green focus:outline-none"
+                  className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-green focus:outline-none font-mono"
                 />
               ) : f.type === "file" ? (
                 <div>
@@ -111,13 +112,18 @@ export default function CollectionManager({ apiPath, fields, uploadFolder, title
                   />
                   {uploading && <p className="text-xs text-gray-500 mt-1">Uploading...</p>}
                   {form[f.name] && (
-                    <p className="text-xs text-brand-green mt-1 break-all">Saved: {form[f.name]}</p>
+                    <div className="mt-2 flex items-center gap-3">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={form[f.name]} alt="preview" className="h-12 w-16 object-cover rounded border" />
+                      <p className="text-xs text-brand-green break-all">{form[f.name]}</p>
+                    </div>
                   )}
                 </div>
               ) : (
                 <input
                   type={f.type || "text"}
                   required={f.required}
+                  placeholder={f.placeholder || ""}
                   value={form[f.name] || ""}
                   onChange={(e) => handleChange(f.name, e.target.value)}
                   className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-green focus:outline-none"
