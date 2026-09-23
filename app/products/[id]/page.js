@@ -4,10 +4,8 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { readDB } from "@/lib/db";
 
-export function generateStaticParams() {
-  const { products } = readDB();
-  return (products || []).map((p) => ({ id: String(p.id) }));
-}
+// Force server-render on every request so admin DB edits show immediately
+export const dynamic = "force-dynamic";
 
 export function generateMetadata({ params }) {
   const { products, settings } = readDB();

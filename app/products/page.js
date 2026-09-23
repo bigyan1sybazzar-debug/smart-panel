@@ -3,6 +3,8 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { readDB } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 export async function generateMetadata() {
   const { settings } = readDB();
   const companyName = settings?.companyName || "Smart Prefab Panel";
