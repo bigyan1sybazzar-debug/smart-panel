@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { readDB } from "@/lib/db";
+import Script from "next/script";
 
 export const dynamic = "force-dynamic";
 
@@ -166,6 +167,19 @@ export default function RootLayout({ children }) {
                 />
             </head>
             <body className="font-sans overflow-x-hidden">
+                {/* Google Analytics */}
+                <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=G-HCV8C3MX6H"
+                    strategy="afterInteractive"
+                />
+                <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'G-HCV8C3MX6H');
+                    `}
+                </Script>
                 <Header settings={settings} servicesList={servicesList} />
                 <main>{children}</main>
                 <Footer settings={settings} />
