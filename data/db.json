@@ -593,7 +593,8 @@
       "title": "QFX Cinemas (Chitwan & Balkhu)",
       "location": "Chitwan & Balkhu, Kathmandu",
       "category": "Commercial & Acoustic",
-      "time": "Rapid Build",
+      "status": "Completed",
+      "time": "Completed 2025",
       "image": "/uploads/slides/1788705701616-images__4_.jpg",
       "description": "High sound damping and fire-rated Smart Panel acoustic wall installation for premier cinema halls."
     },
@@ -602,7 +603,8 @@
       "title": "Khwopa Hospital Health Post",
       "location": "Byasi, Bhaktapur",
       "category": "Healthcare",
-      "time": "Turnkey Assembly",
+      "status": "Completed",
+      "time": "Completed 2024",
       "image": "/images/prefab-house.jpg",
       "description": "Quiet, hygienic, and 4-hour fire-resistant hospital clinic space built with Smart Sandwich Panels."
     },
@@ -611,7 +613,8 @@
       "title": "Bal Bikash English Secondary School",
       "location": "Libali, Bhaktapur",
       "category": "Education",
-      "time": "Classroom Wing",
+      "status": "Completed",
+      "time": "Completed 2024",
       "image": "/images/sandwich-panel.jpg",
       "description": "Earthquake-resilient educational facility providing comfortable, thermally insulated classrooms for students."
     },
@@ -620,9 +623,30 @@
       "title": "Bhaktapur Cancer Hospital Extension",
       "location": "Bhaktapur, Nepal",
       "category": "Healthcare",
-      "time": "Specialized Build",
+      "status": "On-Going",
+      "time": "Under Construction",
       "image": "/uploads/slides/1788705567899-138000974030903._Lucias_Garden_photo_300dpi_w1728.avif",
       "description": "High-density clean panel walling designed for medical recovery suites and diagnostic wings."
+    },
+    {
+      "id": "p5",
+      "title": "Lower Dudhkoshi Hydropower Staff Quarters",
+      "location": "Solukhumbu, Koshi Province",
+      "category": "Industrial & Energy",
+      "status": "On-Going",
+      "time": "Under Construction (Phase 2)",
+      "image": "/images/dealership/dealership-partner.jpg",
+      "description": "All-weather thermally insulated modular staff quarters engineered for high-altitude weather conditions."
+    },
+    {
+      "id": "p6",
+      "title": "Pokhara Lakeside Eco-Resort Villa Cottages",
+      "location": "Lakeside, Pokhara",
+      "category": "Hospitality & Tourism",
+      "status": "Completed",
+      "time": "Completed 2025",
+      "image": "/images/korean-house.jpg",
+      "description": "Fast-track earthquake-resistant prefab guest cottages with acoustic privacy and superior thermal insulation."
     }
   ],
   "processSteps": [

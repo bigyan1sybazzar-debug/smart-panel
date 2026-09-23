@@ -119,6 +119,19 @@ export default function CollectionManager({ apiPath, fields, uploadFolder, title
                     </div>
                   )}
                 </div>
+              ) : f.type === "select" ? (
+                <select
+                  required={f.required}
+                  value={form[f.name] || (f.options?.[0]?.value ?? "")}
+                  onChange={(e) => handleChange(f.name, e.target.value)}
+                  className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-green focus:outline-none bg-white"
+                >
+                  {f.options?.map((opt) => (
+                    <option key={opt.value} value={opt.value}>
+                      {opt.label}
+                    </option>
+                  ))}
+                </select>
               ) : (
                 <input
                   type={f.type || "text"}

@@ -5,6 +5,7 @@ import NewsletterForm from "@/components/NewsletterForm";
 import HeroSlider from "@/components/HeroSlider";
 import FaqAccordion from "@/components/FaqAccordion";
 import AdvantageCard from "@/components/AdvantageCard";
+import ProjectsShowcase from "@/components/ProjectsShowcase";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -42,6 +43,7 @@ export default function HomePage() {
   const demoProjects = sourceProjects.map((item, idx) => ({
     id: item.id ?? `g-${idx}`,
     title: item.title ?? "Project",
+    status: item.status || "Completed",
     location: item.location ?? item.subtitle ?? "Nepal",
     category: item.category ?? "Completed Project",
     image: item.image || "/images/prefab-house.jpg",
@@ -437,61 +439,8 @@ export default function HomePage() {
         </section>
       )}
 
-      {/* 9. Completed Projects Showcase — DYNAMIC (uses projects or gallery) */}
-      {demoProjects.length > 0 && (
-        <section className="py-8 sm:py-12 lg:py-16 bg-white">
-          <div className="container-page">
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-8 gap-3">
-              <div className="text-left">
-                <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Our Work Across Nepal</span>
-                <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1">
-                  On-Going &amp; Completed Projects
-                </h2>
-                <p className="text-xs text-gray-500 mt-1">
-                  Trusted by hospitals, schools, hydropower projects, and cinemas nationwide.
-                </p>
-              </div>
-              <Link href="/gallery" className="btn-outline text-xs sm:text-sm py-2 px-4 self-start sm:self-auto">
-                View Full Gallery &rarr;
-              </Link>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-              {demoProjects.map((prj) => (
-                <div
-                  key={prj.id}
-                  className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
-                >
-                  <div className="h-48 w-full overflow-hidden relative">
-                    <Image
-                      src={prj.image}
-                      alt={prj.title}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <span className="absolute top-2.5 right-2.5 bg-brand-orange text-white text-[10px] font-bold px-2 py-0.5 rounded shadow-sm z-10">
-                      {prj.category}
-                    </span>
-                  </div>
-                  <div className="p-5 flex-1 flex flex-col justify-between">
-                    <div>
-                      <h3 className="font-display font-bold text-sm sm:text-base text-brand-blue-dark leading-tight">
-                        {prj.title}
-                      </h3>
-                      <p className="text-xs text-gray-500 mt-1">📍 {prj.location}</p>
-                      {prj.time && (
-                        <p className="text-[11px] text-brand-orange font-semibold mt-1">⏱ {prj.time}</p>
-                      )}
-                      <p className="text-xs text-gray-600 mt-2 leading-relaxed">{prj.description}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
+      {/* 9. Completed & On-Going Projects Showcase — DYNAMIC */}
+      <ProjectsShowcase initialProjects={demoProjects} />
 
       {/* 10. Client Testimonials */}
       <section className="py-8 sm:py-12 lg:py-16 bg-gray-50 border-t border-b border-gray-200">

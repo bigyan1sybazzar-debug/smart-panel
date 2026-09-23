@@ -54,9 +54,8 @@ export default function AdminSidebar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`block px-6 py-3 text-sm font-medium ${
-                  active ? "bg-brand-orange text-white" : "text-white/80 hover:bg-white/10 hover:text-white"
-                }`}
+                className={`block px-6 py-3 text-sm font-medium ${active ? "bg-brand-orange text-white" : "text-white/80 hover:bg-white/10 hover:text-white"
+                  }`}
               >
                 {item.label}
               </Link>

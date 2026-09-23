@@ -1,0 +1,8 @@
+{
+  "name": "Smart Panel Nepal",
+  "description": "Smart Panel Nepal - Prefab Panel Nepal Pvt. Ltd. Official Website and CMS Dashboard.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
