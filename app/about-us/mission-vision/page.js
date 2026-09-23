@@ -2,6 +2,8 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { readDB } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Our Mission & Vision | Smart Panel Nepal",
   description: "Our corporate mission and vision to lead Nepal's construction transition toward sustainable, pre-engineered, and earthquake-resilient building technologies.",

@@ -2,6 +2,8 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import { readDB } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "About Smart Panel | Prefab Panel Nepal Pvt. Ltd.",
   description: "Learn about Smart Panel (Prefab Panel Nepal Pvt. Ltd.), an ISO 9001:2015 certified company with an NPR 20 Cr plant in Bharatpur, Chitwan producing 150,000 sq. ft. annually.",

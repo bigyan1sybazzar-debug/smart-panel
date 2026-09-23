@@ -2,6 +2,7 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { readDB } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
 export const metadata = { title: "Board of Directors | Smart Panel Nepal" };
 
 export default function BoardPage() {

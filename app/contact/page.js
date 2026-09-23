@@ -3,6 +3,8 @@ import ContactForm from "@/components/ContactForm";
 import { readDB } from "@/lib/db";
 import { PhoneIcon, MailIcon, PinIcon } from "@/components/Icons";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Contact & Factory Location | Smart Panel Nepal",
   description: "Contact Smart Panel (Prefab Panel Nepal Pvt. Ltd.). Head office in Pepsicola-32, Kathmandu and NPR 20 Cr manufacturing plant in Bharatpur-8, Chitwan. Direct sales: +977-9851149804.",

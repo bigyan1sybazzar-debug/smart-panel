@@ -3,6 +3,8 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { readDB } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Prefab & Smart Panel Construction Services | Smart Panel Nepal",
   description: "Explore our prefabricated building services in Nepal: earthquake-resistant construction, sandwich panel installation, turnkey prefab homes, and wall & roof insulation systems.",

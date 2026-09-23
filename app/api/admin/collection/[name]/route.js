@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { readDB, updateDB, newId } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 const ALLOWED = {
   products: "products",
   gallery: "gallery",

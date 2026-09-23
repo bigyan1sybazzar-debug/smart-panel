@@ -2,6 +2,8 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import DealershipForm from "@/components/DealershipForm";
 
+export const dynamic = "force-dynamic";
+
 export const metadata = {
   title: "Nationwide Dealership Programme | Smart Panel Nepal",
   description: "Join the Smart Panel dealer network across 77 districts of Nepal. Factory-direct pricing, technical support, protected territories, and high margin prefab solutions.",

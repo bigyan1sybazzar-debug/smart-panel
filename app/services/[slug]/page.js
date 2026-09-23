@@ -4,10 +4,8 @@ import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { readDB } from "@/lib/db";
 
-export function generateStaticParams() {
-  const { servicesList } = readDB();
-  return servicesList.map((s) => ({ slug: s.slug }));
-}
+export const dynamic = "force-dynamic";
+export const dynamicParams = true;
 
 export function generateMetadata({ params }) {
   const { servicesList, settings } = readDB();

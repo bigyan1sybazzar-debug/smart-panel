@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { readDB } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
+
 const display = Poppins({
     subsets: ["latin"],
     weight: ["600", "700", "800"],

@@ -1,6 +1,7 @@
 import PageHero from "@/components/PageHero";
 import { readDB } from "@/lib/db";
 
+export const dynamic = "force-dynamic";
 export const metadata = { title: "Investor Relations" };
 
 export default function InvestorRelationsPage() {

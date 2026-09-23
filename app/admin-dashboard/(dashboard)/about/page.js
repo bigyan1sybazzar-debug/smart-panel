@@ -69,21 +69,26 @@ export default function AdminAboutPage() {
           </div>
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Photo (Image URL or File)</label>
-            <input
-              type="file"
-              accept="image/*"
-              onChange={async (e) => {
-                const file = e.target.files?.[0];
-                if (!file) return;
-                const fd = new FormData();
-                fd.append("file", file);
-                fd.append("folder", "team");
-                const res = await fetch("/api/admin/upload", { method: "POST", body: fd });
-                const d = await res.json();
-                if (d.url) setAbout({ ...about, chairperson: { ...about.chairperson, image: d.url } });
-              }}
-              className="text-xs mb-1 block"
-            />
+            <div className="flex items-center gap-2 mb-1">
+              {about.chairperson.image && (
+                <img src={about.chairperson.image} alt="preview" className="w-9 h-9 rounded-md object-cover border border-gray-300 shrink-0" />
+              )}
+              <input
+                type="file"
+                accept="image/*"
+                onChange={async (e) => {
+                  const file = e.target.files?.[0];
+                  if (!file) return;
+                  const fd = new FormData();
+                  fd.append("file", file);
+                  fd.append("folder", "team");
+                  const res = await fetch("/api/admin/upload", { method: "POST", body: fd });
+                  const d = await res.json();
+                  if (d.url) setAbout({ ...about, chairperson: { ...about.chairperson, image: d.url } });
+                }}
+                className="text-xs block flex-1"
+              />
+            </div>
             <input
               placeholder="/images/team/chairperson.jpg"
               value={about.chairperson.image || ""}
@@ -176,6 +181,9 @@ function MemberEditor({ title, listKey, members, onUpdate, onAdd, onRemove }) {
               className="rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-brand-green focus:outline-none bg-white"
             />
             <div className="flex items-center gap-2">
+              {m.image && (
+                <img src={m.image} alt="preview" className="w-8 h-8 rounded-full object-cover border border-gray-300 shrink-0" />
+              )}
               <input
                 type="file"
                 accept="image/*"
@@ -189,7 +197,7 @@ function MemberEditor({ title, listKey, members, onUpdate, onAdd, onRemove }) {
                   const d = await res.json();
                   if (d.url) onUpdate(listKey, m.id, "image", d.url);
                 }}
-                className="text-[11px] max-w-[130px]"
+                className="text-[11px] max-w-[120px]"
               />
               <input
                 placeholder="Image path"

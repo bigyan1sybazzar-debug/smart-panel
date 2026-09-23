@@ -4,6 +4,8 @@ import path from "path";
 
 const ALLOWED_FOLDERS = ["gallery", "products", "notices", "investor", "catalogue", "slides", "team", "testimonials", "services"];
 
+export const dynamic = "force-dynamic";
+
 export async function POST(request) {
   const formData = await request.formData();
   const file = formData.get("file");
