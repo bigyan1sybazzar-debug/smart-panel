@@ -67,12 +67,15 @@ body {
   border-radius: 0.375rem;
   font-size: 0.875rem;
   transition: background-color 0.2s ease, transform 0.15s ease;
-  min-height: 44px; /* touch-friendly */
+  min-height: 44px;
+  /* touch-friendly */
 }
+
 .btn-primary:hover {
   background-color: #d9820f;
   transform: translateY(-1px);
 }
+
 .btn-primary:active {
   transform: translateY(0);
 }
@@ -89,13 +92,16 @@ body {
   border-radius: 0.375rem;
   font-size: 0.875rem;
   transition: all 0.2s ease;
-  min-height: 44px; /* touch-friendly */
+  min-height: 44px;
+  /* touch-friendly */
 }
+
 .btn-outline:hover {
   background-color: var(--brand-blue);
   color: #ffffff;
   transform: translateY(-1px);
 }
+
 .btn-outline:active {
   transform: translateY(0);
 }
@@ -122,6 +128,7 @@ select:focus-visible {
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -129,7 +136,9 @@ select:focus-visible {
 
 /* Better touch tap targets on mobile */
 @media (max-width: 640px) {
-  a, button {
+
+  a,
+  button {
     min-height: 40px;
   }
 
@@ -141,8 +150,13 @@ select:focus-visible {
 
 /* Ticker / Marquee auto slide animation */
 @keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
@@ -155,3 +169,11 @@ select:focus-visible {
   animation-play-state: paused;
 }
 
+.products-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.products-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

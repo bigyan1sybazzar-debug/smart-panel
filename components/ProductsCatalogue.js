@@ -1,44 +1,9 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ProductsCatalogue({ products }) {
-    const trackRef = useRef(null);
-    const [page, setPage] = useState(0);
-    const [perView, setPerView] = useState(3);
-
-    useEffect(() => {
-        const update = () => setPerView(window.innerWidth < 768 ? 2 : 3);
-        update();
-        window.addEventListener("resize", update);
-        return () => window.removeEventListener("resize", update);
-    }, []);
-
-    const totalPages = Math.max(1, Math.ceil(products.length / perView));
-
-    const goTo = (p) => {
-        const clamped = Math.max(0, Math.min(p, totalPages - 1));
-        setPage(clamped);
-        const track = trackRef.current;
-        if (track) {
-            const cardWidth = track.scrollWidth / Math.max(products.length, 1);
-            track.scrollTo({
-                left: clamped * perView * cardWidth,
-                behavior: "smooth",
-            });
-        }
-    };
-
-    const onScroll = () => {
-        const track = trackRef.current;
-        if (!track) return;
-        const cardWidth = track.scrollWidth / Math.max(products.length, 1);
-        const current = Math.round(track.scrollLeft / (cardWidth * perView));
-        if (current !== page) setPage(current);
-    };
-
     return (
         <section className="py-8 sm:py-12 lg:py-16 bg-white">
             <div className="container-page">
@@ -62,155 +27,63 @@ export default function ProductsCatalogue({ products }) {
                     </Link>
                 </div>
 
-                <div style={{ position: "relative" }}>
-                    <div
-                        ref={trackRef}
-                        onScroll={onScroll}
-                        className="products-scroll"
-                        style={{
-                            display: "flex",
-                            gap: "1rem",
-                            overflowX: "auto",
-                            scrollSnapType: "x mandatory",
-                            scrollbarWidth: "none",
-                            msOverflowStyle: "none",
-                            paddingBottom: "0.5rem",
-                        }}
-                    >
-                        {products.map((p) => (
-                            <div
-                                key={p.id}
-                                style={{
-                                    flex: "0 0 auto",
-                                    width: `calc((100% - ${(perView - 1) * 1}rem) / ${perView})`,
-                                    scrollSnapAlign: "start",
-                                }}
-                            >
-                                <div className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between h-full">
-                                    <div>
-                                        <div className="h-48 w-full overflow-hidden relative bg-gray-50">
-                                            <Image
-                                                src={p.image || "/images/sandwich-panel.jpg"}
-                                                alt={p.name}
-                                                fill
-                                                sizes="(max-width: 640px) 50vw, 33vw"
-                                                className="object-cover group-hover:scale-110 transition-transform duration-700"
-                                            />
-                                            <div className="absolute top-2.5 left-2.5 bg-brand-blue text-white text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-md shadow-sm z-10">
-                                                {p.category}
-                                            </div>
-                                        </div>
-                                        <div className="p-5">
-                                            <Link href={`/products/${p.id}`}>
-                                                <h3 className="font-display font-bold text-base text-brand-blue-dark hover:text-brand-orange transition-colors leading-tight">
-                                                    {p.name}
-                                                </h3>
-                                            </Link>
-                                            {p.sizes && (
-                                                <p className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded inline-block mt-2">
-                                                    Sizes: {p.sizes}
-                                                </p>
-                                            )}
-                                            <p className="text-xs text-gray-600 mt-2.5 leading-relaxed line-clamp-3">
-                                                {p.description}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="p-5 pt-0 grid grid-cols-2 gap-2">
-                                        <Link
-                                            href={`/products/${p.id}`}
-                                            className="block text-center text-xs font-bold text-brand-blue bg-blue-50 hover:bg-brand-blue hover:text-white py-2 px-2.5 rounded-lg transition-colors"
-                                        >
-                                            View Specs &rarr;
-                                        </Link>
-                                        <Link
-                                            href="/contact"
-                                            className="block text-center text-xs font-bold text-white bg-brand-orange hover:bg-[#d9820f] py-2 px-2.5 rounded-lg transition-colors"
-                                        >
-                                            Quote &rarr;
-                                        </Link>
-                                    </div>
+                {/* Responsive grid — 1 on mobile, 3 on desktop */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
+                    {products.map((p) => (
+                        <div
+                            key={p.id}
+                            className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
+                        >
+                            {/* Image */}
+                            <div className="h-48 sm:h-48 w-full overflow-hidden relative bg-gray-50 shrink-0">
+                                <Image
+                                    src={p.image || "/images/sandwich-panel.jpg"}
+                                    alt={p.name}
+                                    fill
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                                />
+                                <div className="absolute top-2.5 left-2.5 bg-brand-blue text-white text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-md shadow-sm z-10">
+                                    {p.category}
                                 </div>
                             </div>
-                        ))}
-                    </div>
 
-                    <button
-                        onClick={() => goTo(page - 1)}
-                        aria-label="Previous products"
-                        disabled={page === 0}
-                        className="hidden md:flex"
-                        style={{
-                            position: "absolute",
-                            top: "40%",
-                            left: "-1.25rem",
-                            width: "2.5rem",
-                            height: "2.5rem",
-                            borderRadius: "9999px",
-                            background: "#ffffff",
-                            boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-                            border: "1px solid #e5e7eb",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            cursor: page === 0 ? "not-allowed" : "pointer",
-                            opacity: page === 0 ? 0.4 : 1,
-                            zIndex: 10,
-                        }}
-                    >
-                        ‹
-                    </button>
-                    <button
-                        onClick={() => goTo(page + 1)}
-                        aria-label="Next products"
-                        disabled={page >= totalPages - 1}
-                        className="hidden md:flex"
-                        style={{
-                            position: "absolute",
-                            top: "40%",
-                            right: "-1.25rem",
-                            width: "2.5rem",
-                            height: "2.5rem",
-                            borderRadius: "9999px",
-                            background: "#ffffff",
-                            boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
-                            border: "1px solid #e5e7eb",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            cursor: page >= totalPages - 1 ? "not-allowed" : "pointer",
-                            opacity: page >= totalPages - 1 ? 0.4 : 1,
-                            zIndex: 10,
-                        }}
-                    >
-                        ›
-                    </button>
+                            {/* Content */}
+                            <div className="p-4 sm:p-5 flex flex-col flex-1">
+                                <Link href={`/products/${p.id}`}>
+                                    <h3 className="font-display font-bold text-base sm:text-base text-brand-blue-dark hover:text-brand-orange transition-colors leading-tight line-clamp-2">
+                                        {p.name}
+                                    </h3>
+                                </Link>
 
-                    {totalPages > 1 && (
-                        <div
-                            style={{
-                                display: "flex",
-                                justifyContent: "center",
-                                gap: "0.5rem",
-                                marginTop: "1.25rem",
-                            }}
-                        >
-                            {Array.from({ length: totalPages }).map((_, i) => (
-                                <button
-                                    key={i}
-                                    onClick={() => goTo(i)}
-                                    aria-label={`Go to page ${i + 1}`}
-                                    style={{
-                                        width: page === i ? "1.5rem" : "0.5rem",
-                                        height: "0.5rem",
-                                        borderRadius: "9999px",
-                                        background: page === i ? "#f59e0b" : "#d1d5db",
-                                        border: "none",
-                                        cursor: "pointer",
-                                        transition: "all 0.3s ease",
-                                    }}
-                                />
-                            ))}
+                                {p.sizes && (
+                                    <p className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-1 rounded inline-block mt-2 self-start max-w-full break-words line-clamp-2">
+                                        Sizes: {p.sizes}
+                                    </p>
+                                )}
+
+                                <p className="text-xs text-gray-600 mt-2.5 leading-relaxed line-clamp-3">
+                                    {p.description}
+                                </p>
+
+                                {/* Buttons pinned to bottom */}
+                                <div className="grid grid-cols-2 gap-2 mt-auto pt-4">
+                                    <Link
+                                        href={`/products/${p.id}`}
+                                        className="block text-center text-xs font-bold text-brand-blue bg-blue-50 hover:bg-brand-blue hover:text-white py-2 px-2 rounded-lg transition-colors whitespace-nowrap"
+                                    >
+                                        View Specs
+                                    </Link>
+                                    <Link
+                                        href="/contact"
+                                        className="block text-center text-xs font-bold text-white bg-brand-orange hover:bg-[#d9820f] py-2 px-2 rounded-lg transition-colors whitespace-nowrap"
+                                    >
+                                        Quote →
+                                    </Link>
+                                </div>
+                            </div>
                         </div>
-                    )}
+                    ))}
                 </div>
             </div>
         </section>
