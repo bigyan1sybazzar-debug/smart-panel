@@ -398,6 +398,78 @@
   ],
   "gallery": [
     {
+      "id": "muh2b5sc4a7pd",
+      "title": "Santi ardarsha School ",
+      "location": "Boudha, kathmandu",
+      "category": "School",
+      "description": "",
+      "image": "/uploads/gallery/1790346884000-Santi_ardarsha_School___boudha.jpeg"
+    },
+    {
+      "id": "muh2ai060x5l5",
+      "title": "J And J garment factory ",
+      "location": "Balkot , Bhaktapur",
+      "category": "Commercial",
+      "description": "",
+      "image": "/uploads/gallery/1790346852339-WhatsApp_Image_2026-09-23_at_2.38.21_PM.jpeg"
+    },
+    {
+      "id": "muh29s5xuut19",
+      "title": "Bhaktapur municipality Montessori ",
+      "location": "Bhaktapur",
+      "category": "School",
+      "description": "",
+      "image": "/uploads/gallery/1790346820179-WhatsApp_Image_2026-09-23_at_2.38.22_PM.jpeg"
+    },
+    {
+      "id": "muh290uhprxul",
+      "title": "Khwopa hospital Checkpoint ",
+      "location": "Byasi Bhaktapur",
+      "category": "Health",
+      "description": "",
+      "image": "/uploads/gallery/1790346783265-WhatsApp_Image_2026-09-23_at_2.40.31_PM.jpeg"
+    },
+    {
+      "id": "muh280ovmluon",
+      "title": "Bhaktapur Cancer hospital",
+      "location": "Bhaktapur",
+      "category": "Health",
+      "description": "",
+      "image": "/uploads/gallery/1790346737200-WhatsApp_Image_2026-09-23_at_2.39.55_PM.jpeg"
+    },
+    {
+      "id": "muh274khi4uji",
+      "title": "Balbikash school Montessori block , Bhaktapur",
+      "location": "Bhaktapur",
+      "category": "Education",
+      "description": "",
+      "image": "/uploads/gallery/1790346696029-WhatsApp_Image_2026-09-23_at_2.36.03_PM.jpeg"
+    },
+    {
+      "id": "muh261t2wzvgt",
+      "title": "Guard room , Bhaktapur municipality office",
+      "location": "Bhaktapur",
+      "category": "Commercial",
+      "description": "",
+      "image": "/uploads/gallery/1790346644930-WhatsApp_Image_2026-09-23_at_2.38.22RFG_PM.jpeg"
+    },
+    {
+      "id": "muh24jds0gt2v",
+      "title": "Balbikash school , Bhaktapur",
+      "location": "Bhaktapur",
+      "category": "Education",
+      "description": "",
+      "image": "/uploads/gallery/1790346575459-WhatsApp_Image_2026-09-23_at_2.35.50_PM.jpeg"
+    },
+    {
+      "id": "muh23rz1p0zn3",
+      "title": "Kings fitness",
+      "location": "Bhaktapur",
+      "category": "health",
+      "description": "",
+      "image": "/uploads/gallery/1790346537503-Kings_fitness.jpeg"
+    },
+    {
       "id": "mueenqgenqboa",
       "title": "Certificate  of registration ",
       "location": "Nepal",
@@ -422,43 +494,11 @@
       "description": ""
     },
     {
-      "id": "g3",
-      "title": "Bhaktapur Cancer Hospital Facility",
-      "image": "/uploads/gallery/1790186089780-WhatsApp_Image_2026-09-23_at_2.35.50_PM.jpeg",
-      "location": "",
-      "category": "",
-      "description": ""
-    },
-    {
-      "id": "g4",
-      "title": "QFX Cinemas Acoustic Wall Installation",
-      "image": "/uploads/gallery/1790186250088-WhatsApp_Image_2026-09-23_at_2.38.20_PMFRT.jpeg",
-      "location": "",
-      "category": "",
-      "description": ""
-    },
-    {
       "id": "g5",
       "title": "Doctor Gym  Fitness Club Commercial Project",
       "image": "/uploads/gallery/1790186101533-WhatsApp_Image_2026-09-23_at_2.38.21_PMDDDHD.jpeg",
-      "location": "",
-      "category": "",
-      "description": ""
-    },
-    {
-      "id": "g6",
-      "title": "Budhi Ganga Hydropower Camp Staff Housing",
-      "image": "/uploads/gallery/1790186126470-WhatsApp_Image_2026-09-23_at_2.38.52_PMHF.jpeg",
-      "location": "",
-      "category": "",
-      "description": ""
-    },
-    {
-      "id": "g8",
-      "title": "Khadka Dairy Agricultural Facility, Kharipati",
-      "image": "/uploads/gallery/1790186142784-WhatsApp_Image_2026-09-23_at_2.38.21_PM.jpeg",
-      "location": "",
-      "category": "",
+      "location": "Bhaktapur",
+      "category": "Health",
       "description": ""
     }
   ],
@@ -618,6 +658,16 @@
     }
   ],
   "projects": [
+    {
+      "id": "muh21y2mhstdi",
+      "title": "kharpati dairy",
+      "status": "",
+      "category": "Commercial",
+      "location": "Kharpati , Bhaktapur",
+      "time": "Completed ",
+      "image": "/uploads/gallery/1790346454483-WhatsApp_Image_2026-09-23_at_2.38.20_PMFRT.jpeg",
+      "description": "Insulated Smart Panel dairy structure providing clean, temperature-stable space for daily operations.\n"
+    },
     {
       "id": "muh1h7ss4nvjl",
       "title": "Santi ardarsha School",
