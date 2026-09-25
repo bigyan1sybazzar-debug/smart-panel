@@ -408,37 +408,160 @@ export default function HomePage() {
           </div>
         </section>
       )}
-
       {/* 8. On-Site Installation (Five Tools) */}
       {installationTools.length > 0 && (
         <section className="py-8 sm:py-12 lg:py-16 bg-slate-900 text-white">
           <div className="container-page">
             <div className="text-left sm:text-center sm:max-w-3xl sm:mx-auto mb-6 sm:mb-10">
-              <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Rapid Assembly</span>
+              <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">
+                Rapid Assembly
+              </span>
+
               <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold mt-1">
                 On-Site Installation with 5 Familiar Tools
               </h2>
+
               <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 mb-4 rounded-full" />
+
               <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
-                No heavy cranes or long learning curve. A standard Smart Panel crew gets to work immediately with five familiar job-site tools.
+                No heavy cranes or long learning curve. A standard Smart Panel crew
+                gets to work immediately with five familiar job-site tools.
               </p>
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
-              {installationTools.map((tool, idx) => (
-                <div key={idx} className="bg-slate-800 p-4 sm:p-5 rounded-xl border border-slate-700 text-center flex flex-col items-center">
-                  <div className="w-9 h-9 rounded-full bg-brand-orange/20 text-brand-orange font-extrabold flex items-center justify-center text-sm mb-2">
-                    0{idx + 1}
+              {installationTools.map((tool, idx) => {
+
+                /*
+                 * Images are matched to the five installation tools.
+                 *
+                 * 01 - Cordless Drill / Impact Driver
+                 * 02 - Circular Saw
+                 * 03 - Spirit Level
+                 * 04 - Wrench / Spanner
+                 * 05 - Measuring Tape
+                 */
+
+                const toolImages = [
+                  "https://hardwarepasal.com/src/img/product/2023-11-19-14-27-44_MZgYTorhc8product.jpg",
+                  "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=900&h=700&fit=crop&q=85",
+                  "https://static-01.daraz.com.np/p/dc31c347ca8021da1d47e72709023e43.jpg",
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa1SGTIolJ1pMjdBUzKolK3Ea4GwR9YBhXksER9iZn4Q&s=10",
+                  "https://www.ragsons.co.ke/web/image/product.template/3465/image_1024?unique=641292d",
+                ];
+
+                const image = tool.image || toolImages[idx % toolImages.length];
+
+                return (
+                  <div
+                    key={idx}
+                    className="
+                group relative
+                bg-slate-800
+                rounded-xl
+                border border-slate-700
+                overflow-hidden
+                text-center
+                flex flex-col
+                items-center
+                hover:border-brand-orange/60
+                hover:-translate-y-1
+                transition-all duration-300
+              "
+                  >
+                    {/* Image */}
+                    <div className="relative w-full aspect-[4/3] overflow-hidden bg-slate-700">
+                      <img
+                        src={image}
+                        alt={`${tool.name} used for Smart Panel installation`}
+                        loading="lazy"
+                        decoding="async"
+                        className="
+                    w-full h-full
+                    object-cover
+                    group-hover:scale-110
+                    transition-transform duration-500
+                  "
+                      />
+
+                      {/* Dark overlay */}
+                      <div className="
+                  absolute inset-0
+                  bg-gradient-to-t
+                  from-slate-900/90
+                  via-slate-900/10
+                  to-transparent
+                " />
+
+                      {/* Number badge */}
+                      <div className="
+                  absolute top-2 left-2
+                  w-8 h-8
+                  rounded-full
+                  bg-brand-orange
+                  text-white
+                  font-extrabold
+                  flex items-center justify-center
+                  text-xs
+                  shadow-lg
+                ">
+                        {String(idx + 1).padStart(2, "0")}
+                      </div>
+
+                      {/* Tool label */}
+                      <div className="
+                  absolute bottom-2 left-3 right-3
+                  text-left
+                ">
+                        <span className="
+                    inline-block
+                    text-[9px]
+                    uppercase
+                    tracking-widest
+                    font-bold
+                    text-white/80
+                    bg-black/30
+                    backdrop-blur-sm
+                    px-2 py-1
+                    rounded
+                  ">
+                          Installation Tool
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Content */}
+                    <div className="
+                p-4 sm:p-5
+                flex flex-col
+                items-center
+                flex-1
+              ">
+                      <h3 className="
+                  font-display
+                  font-bold
+                  text-sm
+                  text-white
+                  mb-1
+                ">
+                        {tool.name}
+                      </h3>
+
+                      <p className="
+                  text-[11px]
+                  text-gray-400
+                  leading-snug
+                ">
+                        {tool.description}
+                      </p>
+                    </div>
                   </div>
-                  <h3 className="font-display font-bold text-sm text-white mb-1">{tool.name}</h3>
-                  <p className="text-[11px] text-gray-400 leading-snug">{tool.description}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
       )}
-
       {/* 9. Completed & On-Going Projects Showcase — DYNAMIC */}
       <ProjectsShowcase initialProjects={demoProjects} />
 

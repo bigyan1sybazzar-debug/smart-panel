@@ -352,36 +352,9 @@
       "image": "/uploads/services/1790184056223-H9d9638e28b5f47a58e05aaf448b21bfbe.png_720x720q50.avif",
       "summary": "Expert guidance on panel selection, structural design, seismic performance and project optimisation for architects, engineers and contractors.",
       "content": "Choosing the right panel thickness, type and installation method is critical for performance and cost efficiency. Our technical team works closely with architects, engineers and contractors to recommend the most suitable Smart Panel solution for each project.\n\nWe provide detailed technical data, seismic performance guidance, thermal and acoustic calculations, and practical advice on foundation design and structural steel savings. Whether you are building a high-rise, hospital, school or residential project, our consultation service helps you maximise safety, speed and value."
-    },
-    {
-      "slug": "wall-roof-custom-panel-solutions",
-      "name": "Custom Panel Solutions",
-      "image": "/uploads/services/1790184142167-images__23_.jpg",
-      "summary": "Tailor-made panel sizes, thicknesses and specifications to meet unique project requirements beyond standard dimensions.",
-      "content": "While our standard range covers most construction needs, some projects require special dimensions or performance characteristics. Smart Panel offers custom manufacturing solutions including non-standard lengths, thicknesses, and reinforced or specialised formulations.\n\nOur production facility in Bharatpur can accommodate custom orders while maintaining the same high quality, ISO 9001:2015 standards and seismic performance. Contact our team early in the design stage to discuss custom solutions that fit your exact project requirements."
     }
   ],
   "products": [
-    {
-      "id": "muedsv8e1g8du",
-      "name": "Smart Partition Wall Panel",
-      "category": "Partition Wall Panel",
-      "sizes": "Thickness: 50 mm, 75 mm  Length: 2400 / 2700 / 3000 mm  Width: 610 mm",
-      "price": "",
-      "description": "Lightweight and space-saving partition solution using Smart Sandwich or Solid Panels. Ideal for creating flexible internal layouts in offices, hotels, hospitals, schools and residential buildings. Fast to install, excellent sound insulation and fire resistance with minimal structural load.",
-      "specs": "[\n  {\"name\": \"Recommended Thickness\", \"value\": \"50–75 mm\"},\n  {\"name\": \"Sound Insulation\", \"value\": \"≥35 – ≥40 dB\"},\n  {\"name\": \"Space Saving\", \"value\": \"Thinner than traditional brick walls\"},\n  {\"name\": \"Installation Speed\", \"value\": \"Very fast – tongue-and-groove system\"},\n  {\"name\": \"Fire Resistance\", \"value\": \"≥3 hours\"}\n]",
-      "image": "/uploads/products/1790184785309-Black-rotating-slat-wood-room-dividers-web-1.webp"
-    },
-    {
-      "id": "muedr7s7y6r9d",
-      "name": "Smart Exterior Wall Panel",
-      "category": "Exterior Wall Panel",
-      "sizes": "Thickness: 75 mm, 100 mm, 120 mm  Length: 2400 / 2700 / 3000 mm  Width: 610 mm",
-      "price": "",
-      "description": "High-performance Smart Sandwich Panel designed for exterior walls. Offers superior weather resistance, thermal insulation, fire protection and seismic strength. The calcium silicate board facing provides durability against moisture and environmental exposure while keeping the building envelope lightweight and energy-efficient.",
-      "specs": "[\n  {\"name\": \"Recommended Thickness\", \"value\": \"75–120 mm\"},\n  {\"name\": \"Weather Resistance\", \"value\": \"High (moisture & impact resistant)\"},\n  {\"name\": \"Thermal Conductivity\", \"value\": \"≤0.30 W/mK\"},\n  {\"name\": \"Fire Proof Time Limit\", \"value\": \"≥4 hours\"},\n  {\"name\": \"Seismic Performance\", \"value\": \"Built-in strength\"}\n]",
-      "image": "/uploads/products/1790184710621-images__26_.jpg"
-    },
     {
       "id": "1",
       "name": "Smart Sandwich Panel",
@@ -534,9 +507,14 @@
   ],
   "catalogue": [
     {
+      "id": "muh0z8xmmflxb",
+      "title": "Company Profile ",
+      "file": "/uploads/catalogue/1790344641618-smart_profile.pdf"
+    },
+    {
       "id": "1",
       "title": "Smart Panel Official Company Profile & Technical Catalogue",
-      "file": ""
+      "file": "/uploads/catalogue/1790344664317-smart_profile.pdf"
     },
     {
       "id": "2",
@@ -641,43 +619,83 @@
   ],
   "projects": [
     {
+      "id": "muh1h7ss4nvjl",
+      "title": "Santi ardarsha School",
+      "status": "On-Going",
+      "category": "Education",
+      "location": "Boudha, Kathmandu",
+      "time": "Under Construction",
+      "image": "/uploads/gallery/1790345487461-Santi_ardarsha_School___boudha.jpeg",
+      "description": "Smart Panel school building providing safe, insulated, and earthquake-resilient classrooms for students.\n"
+    },
+    {
+      "id": "muh1ffzob8xhp",
+      "title": "Bhaktapur municipality Montessori ",
+      "status": "",
+      "category": "EDucation",
+      "location": "Bhaktapur",
+      "time": "Completed 2025",
+      "image": "/uploads/gallery/1790345403597-WhatsApp_Image_2026-09-23_at_2.38.22_PM.jpeg",
+      "description": "Modern school buildings and outdoor play areas built with Smart Panel for safe, resilient learning."
+    },
+    {
+      "id": "muh1b0h0gjfi5",
+      "title": "Balbikash school Montessori ",
+      "status": "",
+      "category": "Education",
+      "location": "Bhaktapur",
+      "time": "Completed 2025",
+      "image": "/uploads/gallery/1790345213220-WhatsApp_Image_2026-09-23_at_2.36.03_PM.jpeg",
+      "description": "Colorful Montessori learning space built with Smart Panel for a safe, modern early-education environment."
+    },
+    {
+      "id": "muh19lyxcnghd",
+      "title": "Kings fitness",
+      "status": "",
+      "category": "fitness",
+      "location": "Bhaktapur",
+      "time": "Completed",
+      "image": "/uploads/gallery/1790345111743-Kings_fitness.jpeg",
+      "description": "Colorful Montessori learning space built with Smart Panel for a safe, modern early-education environment."
+    },
+    {
       "id": "mueefxuhvwvuh",
-      "title": "Elevated Guard House / Small Structure",
+      "title": "Guard room for Bhaktapur municipality office",
       "status": "",
       "category": "Residential / Utility",
-      "location": "Chitwan",
+      "location": "Bhaktapur",
       "time": "Completed",
-      "image": "/uploads/gallery/1790185855947-WhatsApp_Image_2026-09-23_at_2.36.03_PM.jpeg",
-      "description": "Compact elevated structure built with Smart Panel, demonstrating the system’s suitability for small, fast and durable buildings."
+      "image": "/uploads/gallery/1790344925145-WhatsApp_Image_2026-09-23_at_2.38.22RFG_PM.jpeg",
+      "description": "Compact elevated guard room showcasing Smart Panel's speed and durability for small builds."
     },
     {
       "id": "mueed25l29qtm",
-      "title": "Modern School Complex with Playground",
+      "title": "Balbikash school ",
       "status": "",
       "category": "Education",
-      "location": "Nepal",
+      "location": "Bhaktapur",
       "time": "Completed",
       "image": "/uploads/gallery/1790185723237-WhatsApp_Image_2026-09-23_at_2.35.50_PM.jpeg",
       "description": "Colorful school buildings and facilities built with Smart Panel, creating a safe and modern learning environment with outdoor play areas."
     },
     {
       "id": "p1",
-      "title": "QFX Cinemas (Chitwan & Balkhu)",
-      "location": "Chitwan & Balkhu, Kathmandu",
+      "title": "J And J garment factory",
+      "location": "Balkot , Bhaktapur",
       "category": "Commercial & Acoustic",
       "status": "Completed",
       "time": "Completed 2025",
-      "image": "/uploads/gallery/1790185161968-WhatsApp_Image_2026-09-23_at_2.38.20_PMFRT.jpeg",
+      "image": "/uploads/gallery/1790344993281-WhatsApp_Image_2026-09-23_at_2.38.21_PM.jpeg",
       "description": "High sound damping and fire-rated Smart Panel acoustic wall installation for premier cinema halls."
     },
     {
       "id": "p2",
-      "title": "Khwopa Hospital Health Post",
+      "title": "Khwopa hospital Checkpoint",
       "location": "Byasi, Bhaktapur",
       "category": "Healthcare",
       "status": "Completed",
       "time": "Completed 2024",
-      "image": "/uploads/gallery/1790185175048-WhatsApp_Image_2026-09-23_at_2.35.50_PM.jpeg",
+      "image": "/uploads/gallery/1790344835200-WhatsApp_Image_2026-09-23_at_2.40.31_PM.jpeg",
       "description": "Quiet, hygienic, and 4-hour fire-resistant hospital clinic space built with Smart Sandwich Panels."
     },
     {
@@ -697,7 +715,7 @@
       "category": "Healthcare",
       "status": "On-Going",
       "time": "Under Construction",
-      "image": "/uploads/gallery/1790185205382-WhatsApp_Image_2026-09-23_at_2.39.55_PM.jpeg",
+      "image": "/uploads/gallery/1790344872380-WhatsApp_Image_2026-09-23_at_2.39.55_PM.jpeg",
       "description": "High-density clean panel walling designed for medical recovery suites and diagnostic wings."
     },
     {
@@ -713,7 +731,7 @@
     {
       "id": "p6",
       "title": "Doctor Gym",
-      "location": "Lakeside, Pokhara",
+      "location": "Bhaktapur",
       "category": "Commercial",
       "status": "Completed",
       "time": "Completed 2025",

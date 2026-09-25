@@ -17,13 +17,13 @@ export default function Header({ settings, servicesList = [] }) {
   const serviceChildren = servicesList && servicesList.length > 0
     ? servicesList.map((s) => ({ label: s.name, href: `/services/${s.slug}` }))
     : [
-        { label: "Earthquake Resistant Construction", href: "/services/earthquake-resistant-structure" },
-        { label: "Smart Sandwich Panel Installation", href: "/services/smart-sandwich-panel-solutions" },
-        { label: "Smart Solid Panel Wall Systems", href: "/services/smart-solid-panel-construction" },
-        { label: "Turnkey Prefab Residential & Commercial Homes", href: "/services/prefab-house" },
-        { label: "Smart EPS Construction Blocks", href: "/services/smart-eps-blocks" },
-        { label: "Wall & Roof Insulation Systems", href: "/services/wall-roof-solutions" },
-      ];
+      { label: "Earthquake Resistant Construction", href: "/services/earthquake-resistant-structure" },
+      { label: "Smart Sandwich Panel Installation", href: "/services/smart-sandwich-panel-solutions" },
+      { label: "Smart Solid Panel Wall Systems", href: "/services/smart-solid-panel-construction" },
+      { label: "Turnkey Prefab Residential & Commercial Homes", href: "/services/prefab-house" },
+      { label: "Smart EPS Construction Blocks", href: "/services/smart-eps-blocks" },
+      { label: "Wall & Roof Insulation Systems", href: "/services/wall-roof-solutions" },
+    ];
 
   const NAV = [
     { label: "Home", href: "/" },
@@ -31,7 +31,7 @@ export default function Header({ settings, servicesList = [] }) {
       label: "About Us",
       href: "/about-us",
       children: [
-        { label: "Chairperson's Message", href: "/about-us/chairperson-message" },
+        { label: "CEO's Message", href: "/about-us/chairperson-message" },
         { label: "Our Mission & Vision", href: "/about-us/mission-vision" },
         { label: "Board of Directors", href: "/about-us/board-of-directors" },
         { label: "Management Committee", href: "/about-us/management-committee" },
@@ -46,9 +46,8 @@ export default function Header({ settings, servicesList = [] }) {
     { label: "Dealership", href: "/dealership" },
     { label: "Gallery", href: "/gallery" },
     { label: "Catalogue", href: "/catalogue" },
-    { label: "Investor Relations", href: "/investor-relations" },
+
     { label: "Notice", href: "/notice" },
-    { label: "Newsletter", href: "/newsletter" },
     { label: "Contact", href: "/contact" },
   ];
 
