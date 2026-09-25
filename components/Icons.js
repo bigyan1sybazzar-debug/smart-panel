@@ -109,7 +109,6 @@ export function CloseIcon(props) {
   );
 }
 
-
 /* =========================================================
    SOCIAL ICONS
    ========================================================= */
@@ -149,65 +148,66 @@ export function SocialIcon({ name, ...props }) {
   );
 }
 
-
 /* =========================================================
-   ADVANTAGE ICONS
+   ADVANTAGE ICONS — NOW USING UNSPLASH IMAGES
    ========================================================= */
 
-const advantagePaths = {
-  /* Modern house / prefab */
-  heat:
-    "M3 10.5 12 3l9 7.5v9a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 19.5v-9Z M8 21v-6h8v6 M9 10h.01 M12 10h.01 M15 10h.01",
+const advantageImages = {
+  /* Prefab / insulated home */
+  heat: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=200&h=200&fit=crop&q=80",
 
   /* Feather / lightweight */
-  feather:
-    "M20.5 3.5C13 3.5 6 7.1 6 13.5c0 3.2 1.8 5.5 5 5.5 6.4 0 9.5-7 9.5-15.5Z M6 19l12-12 M10 15h4 M13 11h4",
+  feather: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=200&h=200&fit=crop&q=80",
 
   /* Sound / acoustic */
-  sound:
-    "M4 9v6h4l5 4V5L8 9H4Z M17 9.5a4 4 0 0 1 0 5 M19.5 7a7 7 0 0 1 0 10",
+  sound: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=200&h=200&fit=crop&q=80",
 
   /* Wrench / installation */
-  wrench:
-    "m14.7 6.3 3-3a5.2 5.2 0 0 0 0 7.4l-8.8 8.8a2.1 2.1 0 0 1-3-3l8.8-8.8a5.2 5.2 0 0 0 7.4 0l-3 3-4.4-4.4Z",
+  wrench: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=200&h=200&fit=crop&q=80",
 
   /* Earthquake / structural */
-  quake:
-    "M3 12h4l2-6 4 12 3-9 2 3h3 M4 20h16",
+  quake: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&h=200&fit=crop&q=80",
 
   /* Space / room */
-  space:
-    "M4 4h6v2H6v4H4V4Zm10 0h6v6h-2V6h-4V4ZM4 14h2v4h4v2H4v-6Zm14 4v-4h2v6h-6v-2h4Z",
+  space: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=200&h=200&fit=crop&q=80",
 
   /* Cost / savings */
-  cost:
-    "M12 2v20 M17 6.5c-.8-1.4-2.4-2.2-4.5-2.2-2.5 0-4.2 1.3-4.2 3.1 0 2 1.7 2.8 4.5 3.4 2.8.6 4.5 1.4 4.5 3.5 0 2-1.8 3.4-4.7 3.4-2.3 0-4.1-.8-5.1-2.5",
+  cost: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=200&h=200&fit=crop&q=80",
 
   /* Fire / fast construction */
-  fire:
-    "M12 22c4.4 0 7.5-3 7.5-7.2 0-3.2-1.7-5.4-4-7.8.1 2.5-1.1 4.2-2.6 5.2.1-3.5-1.5-6.5-4.4-8.2.3 3.7-3.5 5.7-3.5 10.3C5 18.8 8 22 12 22Z M12 18.5a2.7 2.7 0 0 0 2.7-2.7c0-1-.4-1.8-1.1-2.6-.2 1.2-.8 2-1.6 2.4-.1-.9-.5-1.7-1.3-2.4-.1 1.2-.9 2.1-.9 3 0 1.3 1 2.3 2.2 2.3Z",
+  fire: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=200&h=200&fit=crop&q=80",
 
   /* Shield / durability */
-  shield:
-    "M12 3 4.5 6v5.5c0 4.8 3.1 8.9 7.5 10.5 4.4-1.6 7.5-5.7 7.5-10.5V6L12 3Z M8.5 12l2.3 2.3 4.7-4.7",
+  shield: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=200&h=200&fit=crop&q=80",
 };
 
-export function AdvantageIcon({ name, ...props }) {
-  const d = advantagePaths[name] || advantagePaths.cost;
+/**
+ * AdvantageIcon
+ * Renders a circular Unsplash image for the given advantage name.
+ *
+ * @param {string} name - one of: heat, feather, sound, wrench, quake, space, cost, fire, shield
+ * @param {number} size - pixel size (default 28)
+ */
+export function AdvantageIcon({ name, size = 28, className = "", style, ...props }) {
+  const src = advantageImages[name] || advantageImages.cost;
 
   return (
-    <svg
-      viewBox="0 0 24 24"
-      width="28"
-      height="28"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+    <img
+      src={src}
+      alt={name}
+      width={size}
+      height={size}
+      loading="lazy"
+      decoding="async"
+      className={className}
+      style={{
+        objectFit: "cover",
+        borderRadius: "50%",
+        display: "block",
+        flexShrink: 0,
+        ...(style || {}),
+      }}
       {...props}
-    >
-      <path d={d} />
-    </svg>
+    />
   );
 }

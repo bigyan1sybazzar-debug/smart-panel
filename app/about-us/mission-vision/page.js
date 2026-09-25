@@ -6,7 +6,8 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "Our Mission & Vision | Smart Panel Nepal",
-  description: "Our corporate mission and vision to lead Nepal's construction transition toward sustainable, pre-engineered, and earthquake-resilient building technologies.",
+  description:
+    "Our corporate mission and vision to lead Nepal's construction transition toward sustainable, pre-engineered, and earthquake-resilient building technologies.",
 };
 
 export default function MissionVisionPage() {
@@ -24,7 +25,7 @@ export default function MissionVisionPage() {
         <div className="bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-sm flex flex-col justify-between">
           <div className="h-56 w-full relative overflow-hidden bg-gray-100">
             <Image
-              src="/images/about/mission.jpg"
+              src="/uploads/gallery/1790185561419-WhatsApp_Image_2026-09-23_at_2.38.52_PMHF.webp"
               alt="Smart Panel Mission - Eco-friendly and Safe Building"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -38,7 +39,9 @@ export default function MissionVisionPage() {
           </div>
           <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
             <div>
-              <h2 className="font-display text-2xl font-extrabold text-brand-blue-dark mb-3">Our Mission</h2>
+              <h2 className="font-display text-2xl font-extrabold text-brand-blue-dark mb-3">
+                Our Mission
+              </h2>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                 {about.mission}
               </p>
@@ -53,7 +56,7 @@ export default function MissionVisionPage() {
         <div className="bg-brand-blue text-white rounded-2xl overflow-hidden border border-blue-900 shadow-sm flex flex-col justify-between">
           <div className="h-56 w-full relative overflow-hidden bg-slate-900">
             <Image
-              src="/images/about/vision.jpg"
+              src="/uploads/gallery/1790346454483-WhatsApp_Image_2026-09-23_at_2.38.20_PMFRT.jpeg"
               alt="Smart Panel Vision - Future of Construction in Nepal"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -67,7 +70,9 @@ export default function MissionVisionPage() {
           </div>
           <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
             <div>
-              <h2 className="font-display text-2xl font-extrabold text-white mb-3">Our Vision</h2>
+              <h2 className="font-display text-2xl font-extrabold text-white mb-3">
+                Our Vision
+              </h2>
               <p className="text-white/90 leading-relaxed text-sm sm:text-base">
                 {about.vision}
               </p>

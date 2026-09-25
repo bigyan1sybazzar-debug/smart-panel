@@ -8,8 +8,8 @@
     "phone": "+977-9851149804 / +977-9709084173",
     "whatsapp": "+977-9851149804",
     "email": "info@prefabpanelnepal.com",
-    "address": "Pepsicola-32, Madhyapur Thimi, Nepal",
-    "corporateOffice": "Pepsicola-32, Madhyapur Thimi, Nepal",
+    "address": "Pepsicola-32, Kathmandu, Nepal",
+    "corporateOffice": "Pepsicola-32, Kathmandu, Nepal",
     "factoryAddress": "Darai Tole-8, Bharatpur, Chitwan, Nepal",
     "directSalesHotlines": "+977-9851149804 / +977-9709084173",
     "website": "www.prefabpanelnepal.com",
@@ -80,7 +80,7 @@
     {
       "id": "9",
       "title": "Water & Moisture Resistant",
-      "icon": "shield",
+      "icon": "water",
       "description": "Non-asbestos calcium silicate boards on both faces prevent water seepage, moisture buildup, mold, and seasonal dampness across Nepal's climate."
     }
   ],
@@ -291,7 +291,7 @@
       "description": "Secures the galvanized steel framing and structural connection joints."
     },
     {
-      "name": "Thread Hand Drill",
+      "name": "Thread ",
       "description": "Used for fine adjustments, electrical conduit pass-throughs, and finishing."
     },
     {
@@ -359,7 +359,7 @@
       "id": "1",
       "name": "Smart Sandwich Panel",
       "category": "Sandwich Panel",
-      "image": "/images/sandwich-panel.jpg",
+      "image": "/uploads/products/1790352180507-Sandwich_Panel.jpeg",
       "description": "Smart Sandwich Panel is our flagship lightweight interlocking prefabricated panel. It features a light EPS-and-cement core wrapped in 4.5 mm calcium silicate boards on both faces. The precision tongue-and-groove design allows every panel to lock securely into the next for fast installation and a clean finish.",
       "sizes": "Thickness: 50 mm, 75 mm, 100 mm, 120 mm",
       "price": "",
@@ -369,7 +369,7 @@
       "id": "2",
       "name": "Smart Solid Panel",
       "category": "Solid Panel",
-      "image": "/uploads/products/1790184498513-csfd.jpg",
+      "image": "/uploads/products/1790352339682-images__33_.jpg",
       "description": "Smart Solid Panel is a lightweight interlocking prefabricated panel made from EPS beads, cement, sand, water and bonding agents, reinforced with mesh for added strength. Both sides are plastered after installation to create a smooth, ready-to-finish surface.",
       "sizes": "50mm, 75mm, 100mm, 120mm × 2400/2700/3000mm × 610mm",
       "price": "",
@@ -377,9 +377,9 @@
     },
     {
       "id": "3",
-      "name": "Smart EPS Block",
+      "name": "EPS based cement blocks",
       "category": "EPS Block",
-      "image": "/uploads/products/1790184562131-WhatsApp_Image_2026-09-23_at_2.39.10_PM.jpeg",
+      "image": "/uploads/products/1790352201227-EPS_based_cement_blocks.jpeg",
       "description": "Smart EPS Blocks are lightweight construction blocks made from EPS beads, OPC cement, water and essential additives. Molded into precise sizes and shapes, they offer a fast, economical and eco-friendly alternative to traditional clay bricks and concrete blocks.",
       "sizes": "100×200×600mm, 150×200×600mm, 200×200×600mm",
       "price": "",
@@ -825,7 +825,7 @@
     {
       "id": "fq3",
       "question": "Where is the Smart Panel factory and corporate office located?",
-      "answer": "Our state-of-the-art manufacturing plant is located at Darai Tole-8, Bharatpur, Chitwan, backed by an NPR 20 crore investment with an annual capacity of 150,000 sq. ft. Our corporate headquarters is located at Pepsicola-32, Madhyapur Thimi, Nepal."
+      "answer": "Our state-of-the-art manufacturing plant is located at Darai Tole-8, Bharatpur, Chitwan, backed by an NPR 20 crore investment with an annual capacity of 150,000 sq. ft. Our corporate headquarters is located at Pepsicola-32, Kathmandu, Nepal."
     },
     {
       "id": "fq4",

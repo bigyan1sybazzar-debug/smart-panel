@@ -6,6 +6,7 @@ import HeroSlider from "@/components/HeroSlider";
 import FaqAccordion from "@/components/FaqAccordion";
 import AdvantageCard from "@/components/AdvantageCard";
 import ProjectsShowcase from "@/components/ProjectsShowcase";
+import ProductsCatalogue from "@/components/ProductsCatalogue";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -33,13 +34,8 @@ export default function HomePage() {
   const demoReviews = reviews?.length ? reviews : [];
   const demoSteps = processSteps?.length ? processSteps : [];
 
-  // Prefer the dedicated `projects` collection; fall back to `gallery`
-  // (managed via /admin/gallery) so the section is never empty.
   const sourceProjects = projects?.length ? projects : gallery;
 
-  // Normalize each item so the JSX below works for both shapes
-  // (projects uses `title/location/category/image/description`,
-  //  gallery uses only `title/image`).
   const demoProjects = sourceProjects.map((item, idx) => ({
     id: item.id ?? `g-${idx}`,
     title: item.title ?? "Project",
@@ -100,17 +96,28 @@ export default function HomePage() {
       </div>
 
       {/* 2. Key Advantages / Salient Features Section */}
-      <section className="py-8 sm:py-12 lg:py-16 bg-gray-50/80">
+      <section className="py-8 sm:py-12 lg:py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="container-page">
-          <div className="text-left sm:text-center sm:max-w-3xl sm:mx-auto mb-6 sm:mb-10">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Why Builders Choose Us</span>
-            <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Salient Features &amp; Advantages</h2>
+          {/* Heading */}
+          <div className="text-left sm:text-center sm:max-w-3xl sm:mx-auto mb-8 sm:mb-12">
+            <span className="
+        inline-block text-[11px] uppercase tracking-widest
+        text-brand-orange font-bold
+        bg-brand-orange/10 px-3 py-1 rounded-full
+      ">
+              Why Builders Choose Us
+            </span>
+            <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-3">
+              Salient Features &amp; Advantages
+            </h2>
             <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 mb-4 rounded-full" />
             <p className="text-gray-600 text-xs sm:text-sm md:text-base leading-relaxed w-full">
-              Seismic strength isn&apos;t an add-on — it&apos;s built into every Smart Panel. Tested and certified for fire, thermal, sound, and impact resistance.
+              Seismic strength isn&apos;t an add-on — it&apos;s built into every Smart Panel.
+              Tested and certified for fire, thermal, sound, and impact resistance.
             </p>
           </div>
 
+          {/* Grid — 2 on mobile, 3 on desktop */}
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
             {advantages.map((a, idx) => (
               <AdvantageCard key={a.id} advantage={a} idx={idx} />
@@ -143,7 +150,6 @@ export default function HomePage() {
                 <p className="text-xs text-white/80 mt-0.5">Manufacturing Plant: Darai Tole-8, Bharatpur, Chitwan</p>
               </div>
             </div>
-            {/* Floating Badge */}
             <div className="hidden sm:block absolute -bottom-6 -right-6 bg-brand-blue text-white p-5 lg:p-6 rounded-2xl shadow-xl max-w-xs border-4 border-white">
               <p className="text-xl lg:text-2xl font-extrabold font-display text-amber-300">NPR 20 Crore</p>
               <p className="text-xs text-white/90 mt-1 font-medium">State-of-the-art plant with 150,000 sq. ft. annual output</p>
@@ -203,7 +209,6 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-            {/* Rates Table */}
             <div className="lg:col-span-8 bg-slate-800/90 rounded-2xl p-4 sm:p-6 border border-slate-700 shadow-xl overflow-x-auto">
               <h3 className="font-display text-lg font-bold text-amber-300 mb-4 flex items-center gap-2">
                 <span>📋 Official Approved Panel Rates</span>
@@ -237,7 +242,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Why Rates Matter Card */}
             <div className="lg:col-span-4 bg-gradient-to-br from-blue-900/50 to-emerald-950/50 p-6 rounded-2xl border border-blue-800/40 flex flex-col justify-between">
               <div>
                 <span className="text-xs uppercase tracking-widest text-emerald-400 font-bold">Public &amp; Private Tender Ready</span>
@@ -264,76 +268,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. Products Catalogue Section */}
-      <section className="py-8 sm:py-12 lg:py-16 bg-white">
-        <div className="container-page">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-8 gap-3">
-            <div className="text-left">
-              <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Product Showcase</span>
-              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1">
-                Our Smart Panel Products
-              </h2>
-              <p className="text-xs sm:text-sm text-gray-500 mt-1">
-                4.5mm calcium silicate board skins, light EPS-cement core, and tongue-and-groove interlocking.
-              </p>
-            </div>
-            <Link href="/products" className="btn-outline text-xs sm:text-sm py-2 px-4 self-start sm:self-auto">
-              View All Products &rarr;
-            </Link>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {products.map((p) => (
-              <div
-                key={p.id}
-                className="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
-              >
-                <div>
-                  <div className="h-48 w-full overflow-hidden relative bg-gray-50">
-                    <Image
-                      src={p.image || "/images/sandwich-panel.jpg"}
-                      alt={p.name}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
-                    />
-                    <div className="absolute top-2.5 left-2.5 bg-brand-blue text-white text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-md shadow-sm z-10">
-                      {p.category}
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <Link href={`/products/${p.id}`}>
-                      <h3 className="font-display font-bold text-base text-brand-blue-dark hover:text-brand-orange transition-colors leading-tight">
-                        {p.name}
-                      </h3>
-                    </Link>
-                    {p.sizes && (
-                      <p className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded inline-block mt-2">
-                        Sizes: {p.sizes}
-                      </p>
-                    )}
-                    <p className="text-xs text-gray-600 mt-2.5 leading-relaxed">{p.description}</p>
-                  </div>
-                </div>
-                <div className="p-5 pt-0 grid grid-cols-2 gap-2">
-                  <Link
-                    href={`/products/${p.id}`}
-                    className="block text-center text-xs font-bold text-brand-blue bg-blue-50 hover:bg-brand-blue hover:text-white py-2 px-2.5 rounded-lg transition-colors"
-                  >
-                    View Specs &rarr;
-                  </Link>
-                  <Link
-                    href="/contact"
-                    className="block text-center text-xs font-bold text-white bg-brand-orange hover:bg-[#d9820f] py-2 px-2.5 rounded-lg transition-colors"
-                  >
-                    Quote &rarr;
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* 5. Products Catalogue Section — SLIDER (3 desktop / 2 mobile) */}
+      <ProductsCatalogue products={products} />
 
       {/* 6. Technical Data Specifications */}
       {technicalData.length > 0 && (
@@ -408,6 +344,7 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
       {/* 8. On-Site Installation (Five Tools) */}
       {installationTools.length > 0 && (
         <section className="py-8 sm:py-12 lg:py-16 bg-slate-900 text-white">
@@ -431,17 +368,6 @@ export default function HomePage() {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
               {installationTools.map((tool, idx) => {
-
-                /*
-                 * Images are matched to the five installation tools.
-                 *
-                 * 01 - Cordless Drill / Impact Driver
-                 * 02 - Circular Saw
-                 * 03 - Spirit Level
-                 * 04 - Wrench / Spanner
-                 * 05 - Measuring Tape
-                 */
-
                 const toolImages = [
                   "https://hardwarepasal.com/src/img/product/2023-11-19-14-27-44_MZgYTorhc8product.jpg",
                   "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=900&h=700&fit=crop&q=85",
@@ -469,7 +395,6 @@ export default function HomePage() {
                 transition-all duration-300
               "
                   >
-                    {/* Image */}
                     <div className="relative w-full aspect-[4/3] overflow-hidden bg-slate-700">
                       <img
                         src={image}
@@ -484,7 +409,6 @@ export default function HomePage() {
                   "
                       />
 
-                      {/* Dark overlay */}
                       <div className="
                   absolute inset-0
                   bg-gradient-to-t
@@ -493,7 +417,6 @@ export default function HomePage() {
                   to-transparent
                 " />
 
-                      {/* Number badge */}
                       <div className="
                   absolute top-2 left-2
                   w-8 h-8
@@ -508,7 +431,6 @@ export default function HomePage() {
                         {String(idx + 1).padStart(2, "0")}
                       </div>
 
-                      {/* Tool label */}
                       <div className="
                   absolute bottom-2 left-3 right-3
                   text-left
@@ -530,7 +452,6 @@ export default function HomePage() {
                       </div>
                     </div>
 
-                    {/* Content */}
                     <div className="
                 p-4 sm:p-5
                 flex flex-col
@@ -562,6 +483,7 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
       {/* 9. Completed & On-Going Projects Showcase — DYNAMIC */}
       <ProjectsShowcase initialProjects={demoProjects} />
 
@@ -584,7 +506,6 @@ export default function HomePage() {
                 className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
-                  {/* Demo Project / Site Image Header */}
                   {(rev.projectImage || rev.image) && (
                     <div className="h-40 w-full overflow-hidden relative bg-gray-100">
                       <Image

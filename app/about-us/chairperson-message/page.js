@@ -11,7 +11,7 @@ export default function ChairpersonPage() {
 
   return (
     <div>
-      <PageHero crumb="About Us" title="Chairperson & CEO Message" />
+      <PageHero crumb="About Us" title="CEO Message" />
       <div className="container-page py-12 md:py-16 grid md:grid-cols-3 gap-8 md:gap-12 items-start">
         <div className="md:col-span-1 bg-white p-4 rounded-2xl border border-gray-200 shadow-sm text-center">
           <div className="aspect-[4/5] rounded-xl overflow-hidden relative shadow-inner bg-gray-100 mb-4">

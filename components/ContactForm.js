@@ -2,64 +2,125 @@
 
 import { useState } from "react";
 
-export default function ContactForm() {
-  const [status, setStatus] = useState("idle");
-  const [error, setError] = useState("");
+const advantageImages = {
+  heat: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&h=400&fit=crop&q=80",
+  feather: "https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=600&h=400&fit=crop&q=80",
+  sound: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop&q=80",
+  wrench: "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&h=400&fit=crop&q=80",
+  quake: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&q=80",
+  space: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=600&h=400&fit=crop&q=80",
+  cost: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop&q=80",
+  fire: "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=600&h=400&fit=crop&q=80",
+  shield: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&q=80",
+  green: "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=600&h=400&fit=crop&q=80",
+  thermal: "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&h=400&fit=crop&q=80",
+};
 
-  async function handleSubmit(e) {
-    e.preventDefault();
-    setStatus("loading");
-    setError("");
-    const form = e.target;
-    const payload = Object.fromEntries(new FormData(form).entries());
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      if (!res.ok) throw new Error("Failed to send");
-      setStatus("success");
-      form.reset();
-    } catch (err) {
-      setStatus("error");
-      setError("Something went wrong. Please try again or call us directly.");
-    }
-  }
-
-  if (status === "success") {
-    return (
-      <div className="rounded-md bg-brand-cream border border-brand-green/20 p-6 text-brand-green-dark">
-        <p className="font-semibold">Message sent.</p>
-        <p className="text-sm mt-1">Thank you for reaching out — our team will get back to you shortly.</p>
-      </div>
-    );
-  }
+export default function AdvantageCard({ advantage, idx }) {
+  const [imgError, setImgError] = useState(false);
+  const imgSrc = advantageImages[advantage.icon] || advantageImages.cost;
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div className="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label className="block text-sm font-medium text-brand-green-dark mb-1">Full Name</label>
-          <input required name="name" type="text" className="w-full rounded-md border border-gray-300 px-3 py-2.5 text-sm focus:border-brand-green focus:outline-none" />
+    <article
+      className="
+        group relative bg-white rounded-xl sm:rounded-2xl overflow-hidden
+        border border-gray-100 shadow-sm
+        hover:shadow-2xl hover:-translate-y-1.5
+        transition-all duration-500 ease-out
+        flex flex-col
+      "
+    >
+      {/* ===== Image Banner ===== */}
+      <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden bg-gradient-to-br from-slate-100 to-slate-200">
+        {!imgError ? (
+          <img
+            src={imgSrc}
+            alt={advantage.title}
+            loading="lazy"
+            decoding="async"
+            onError={() => setImgError(true)}
+            className="
+              absolute inset-0 w-full h-full object-cover
+              group-hover:scale-110
+              transition-transform duration-700 ease-out
+            "
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center text-3xl">
+            🏗️
+          </div>
+        )}
+
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/15 to-transparent" />
+
+        {/* Number badge (smaller on mobile) */}
+        <div className="
+          absolute top-2 left-2 sm:top-3 sm:left-3
+          w-7 h-7 sm:w-9 sm:h-9
+          rounded-lg sm:rounded-xl
+          bg-brand-orange text-white
+          font-extrabold text-[11px] sm:text-sm
+          flex items-center justify-center
+          shadow-lg shadow-orange-500/30
+          ring-2 ring-white/30
+        ">
+          {String(idx + 1).padStart(2, "0")}
         </div>
-        <div>
-          <label className="block text-sm font-medium text-brand-green-dark mb-1">Phone Number</label>
-          <input required name="phone" type="tel" className="w-full rounded-md border border-gray-300 px-3 py-2.5 text-sm focus:border-brand-green focus:outline-none" />
+
+        {/* Hover badge — desktop only */}
+        <div className="
+          hidden sm:block
+          absolute top-3 right-3
+          px-2.5 py-1 rounded-full
+          bg-white/90 backdrop-blur-sm
+          text-[10px] font-bold uppercase tracking-wider
+          text-brand-blue-dark
+          opacity-0 group-hover:opacity-100
+          translate-y-1 group-hover:translate-y-0
+          transition-all duration-300
+        ">
+          Smart Panel
         </div>
       </div>
-      <div>
-        <label className="block text-sm font-medium text-brand-green-dark mb-1">Email Address</label>
-        <input required name="email" type="email" className="w-full rounded-md border border-gray-300 px-3 py-2.5 text-sm focus:border-brand-green focus:outline-none" />
+
+      {/* ===== Content ===== */}
+      <div className="p-3 sm:p-5 lg:p-6 flex flex-col flex-1">
+        <h3 className="
+          font-display font-bold
+          text-xs sm:text-base lg:text-lg
+          text-brand-blue-dark leading-snug mb-1
+          group-hover:text-brand-orange
+          transition-colors duration-300
+        ">
+          {advantage.title}
+        </h3>
+
+        {/* Accent underline */}
+        <div className="
+          w-6 sm:w-8 h-0.5 bg-brand-orange rounded-full
+          mb-2 sm:mb-3
+          group-hover:w-12 sm:group-hover:w-16
+          transition-all duration-500
+        " />
+
+        <p className="
+          text-[10px] sm:text-xs lg:text-sm
+          text-gray-600 leading-relaxed
+          line-clamp-4 sm:line-clamp-5
+          flex-1
+        ">
+          {advantage.description}
+        </p>
       </div>
-      <div>
-        <label className="block text-sm font-medium text-brand-green-dark mb-1">Message</label>
-        <textarea required name="message" rows={5} className="w-full rounded-md border border-gray-300 px-3 py-2.5 text-sm focus:border-brand-green focus:outline-none" />
-      </div>
-      {error && <p className="text-sm text-red-600">{error}</p>}
-      <button type="submit" disabled={status === "loading"} className="btn-primary disabled:opacity-60">
-        {status === "loading" ? "Sending..." : "Send Message"}
-      </button>
-    </form>
+
+      {/* Bottom accent */}
+      <div className="
+        absolute bottom-0 left-0 right-0 h-0.5 sm:h-1
+        bg-gradient-to-r from-brand-orange to-amber-400
+        scale-x-0 group-hover:scale-x-100
+        origin-left transition-transform duration-500
+      " />
+    </article>
   );
 }

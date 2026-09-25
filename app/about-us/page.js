@@ -27,7 +27,7 @@ export default function AboutUsPage() {
         title="About Smart Panel"
         subtitle={settings.aboutSummary}
       />
-      
+
       {/* Story & Company Overview */}
       <section className="container-page py-12 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -79,7 +79,7 @@ export default function AboutUsPage() {
               </div>
               <div className="flex justify-between">
                 <dt className="text-gray-500 font-medium">Headquarters:</dt>
-                <dd className="font-bold text-gray-800 text-right">Pepsicola-32, Madhyapur Thimi</dd>
+                <dd className="font-bold text-gray-800 text-right">Pepsicola-32, Kathmandu, Nepal</dd>
               </div>
             </dl>
           </div>

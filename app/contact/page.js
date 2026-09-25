@@ -32,7 +32,7 @@ export default function ContactPage() {
         <div>
           <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Direct Channels</span>
           <h2 className="font-display text-2xl font-extrabold text-brand-blue-dark mb-6 mt-1">Official Contact Information</h2>
-          
+
           <div className="space-y-4 mb-8">
             {/* Direct Sales Hotlines */}
             <div className="flex items-start gap-3 p-4 bg-blue-50/70 rounded-xl border border-blue-100">
@@ -73,7 +73,7 @@ export default function ContactPage() {
               <div>
                 <p className="text-xs font-bold text-gray-500 uppercase tracking-wider">Corporate Headquarters</p>
                 <p className="font-medium text-gray-800 text-sm mt-1">
-                  {settings?.corporateOffice || "Pepsicola -32, Madhyapur Thimi, Nepal"}
+                  {settings?.corporateOffice || "Pepsicola -32, Kathmandu, Nepal"}
                 </p>
                 <p className="text-xs text-gray-500 mt-0.5">Kathmandu / Bhaktapur Valley</p>
               </div>
