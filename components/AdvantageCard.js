@@ -3,31 +3,31 @@
 import { useState } from "react";
 const advantageImages = {
   // 1. Seismic Safety & Resilience (icon: "quake")
-  quake: "https://blog.oshaonlinecenter.com/wp-content/uploads/2025/02/iStock-2202944165.webp",
+  quake: "./images/img/istockphoto-1007936248-612x612.jpg",
 
   // 2. Speed & Lower Cost (icon: "wrench")
-  wrench: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDEJjekmieSj2xw_-EprSSoRpYcxvt0lnFs7BLJCjT5A&s=10",
+  wrench: "./images/img/Cost_Savings.jpg",
 
   // 3. Certified & Approved (icon: "shield") — approval badge
   shield: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDDoeSdjJt9lpAwyJ_tXdksUF9O5Zr57Zob3_GGR3EIA&s=10",
 
   // 4. Green Construction (icon: "feather")
-  feather: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMB7VQ3wdAqD7rhTysRY42KG_ryXuAiOMjiJDKZgrdLDAsvz_8lwiYwI4&s=10",
+  feather: "./images/img/green.jpg",
 
   // 5. Thermal Resistant & Insulation (icon: "heat") — thermovision image
-  heat: "https://media.istockphoto.com/id/517995089/photo/thermovision-image-on-house.jpg?s=612x612&w=0&k=20&c=9EGdYRvzqaGSkRE0U7U2Lih9Pj7Khs7rt-YcwRU_qDI=",
+  heat: "./images/img/images (4).jpg",
 
   // 6. Fire Proof Time Limit (icon: "fire")
-  fire: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg8q-v0IAAQiEIMB7qiiYxpEBE7cNnYVmJJS1xler1xv7cNevG4BOfYiU&s=10",
+  fire: "./images/img/fire-resistant-seal-logo-vector.jpg",
 
   // 7. Sound Insulation (icon: "sound")
-  sound: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcb6_3rhMF2tbtJoV7bXx0lKeod9UCDkKhunZ6uB5vA&s=10",
+  sound: "./images/img/images (3).jpg",
 
   // 8. Space & Cost Saving (icon: "space") — minimal interior
-  space: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=200&h=200&fit=crop&q=80",
+  space: "./images/img/cost-savings-seal-badge-cost-savings-label-sticker-vector-sign-cost-savings-label-sticker-vector-sign-cost-savings-seal-badge-463898354.webp",
 
   // 9. Water & Moisture Resistant (icon: "water") — CHANGED
-  water: "https://static.vecteezy.com/system/resources/previews/067/665/684/non_2x/leakproof-glyph-icon-illustration-vector.jpg",
+  water: "./images/img/leakproof-glyph-icon-illustration-vector.jpg",
 
 
 };
