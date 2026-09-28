@@ -51,6 +51,7 @@ export default function Footer({ settings }) {
             <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/products">Smart Panel Products</Link></li>
             <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/dealership">Dealership Network</Link></li>
             <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/gallery">Completed Projects</Link></li>
+            <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/blog">Blog &amp; Articles</Link></li>
             <li><Link className="inline-block py-1 text-white/70 hover:text-brand-orange transition-colors" href="/catalogue">Catalogue &amp; Specs</Link></li>
           </ul>
         </div>

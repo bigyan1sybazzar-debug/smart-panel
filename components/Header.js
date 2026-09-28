@@ -45,6 +45,7 @@ export default function Header({ settings, servicesList = [] }) {
     { label: "Products", href: "/products" },
     { label: "Dealership", href: "/dealership" },
     { label: "Gallery", href: "/gallery" },
+    { label: "Blogs", href: "/blog" },
     { label: "Catalogue", href: "/catalogue" },
     { label: "Notice", href: "/notice" },
     { label: "Contact", href: "/contact" },
