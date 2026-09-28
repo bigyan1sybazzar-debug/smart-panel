@@ -5,38 +5,66 @@ export default function TopBar({ settings }) {
   const socials = ["facebook", "instagram", "youtube", "tiktok"];
   const primaryPhone = settings?.phone?.split(" / ")[0] || "+977-9851149804";
 
+  const corporate = "Pepsicola-32, Kathmandu";
+  const factory = "Bharatpur, Chitwan";
+
   return (
     <div className="hidden md:block bg-brand-blue text-white border-b border-white/10 overflow-hidden">
-      <div className="container-page flex items-center justify-between py-2 text-xs sm:text-sm text-white">
-        <div className="flex items-center gap-4 lg:gap-6 min-w-0">
-          <span className="inline-flex items-center gap-1.5 font-bold text-amber-300 text-[11px] uppercase tracking-wider bg-white/10 px-2 py-0.5 rounded">
-            ★ ISO 9001:2015 Certified
+      <div className="container-page flex items-center justify-between py-2 text-xs text-white gap-4">
+        {/* LEFT — Contact info */}
+        <div className="flex items-center gap-5 min-w-0">
+          {/* ISO badge — compact */}
+          <span className="inline-flex items-center gap-1 font-bold text-amber-300 text-[10px] uppercase tracking-wider bg-white/10 px-2 py-0.5 rounded whitespace-nowrap">
+            ★ ISO 9001:2015
           </span>
+
+          {/* Phone */}
           <a
             href={`tel:${primaryPhone.replace(/[^0-9+]/g, "")}`}
-            className="flex items-center gap-1.5 font-medium hover:text-brand-orange shrink-0"
+            className="flex items-center gap-1.5 font-medium hover:text-brand-orange shrink-0 no-underline"
           >
-            <PhoneIcon /> {settings?.phone || "+977-9851149804"}
+            <PhoneIcon className="w-3.5 h-3.5" />
+            <span className="whitespace-nowrap">{primaryPhone}</span>
           </a>
+
+          {/* Email — shortened */}
           <a
             href={`mailto:${settings?.email || "info@prefabpanelnepal.com"}`}
-            className="flex items-center gap-1.5 font-medium hover:text-brand-orange truncate"
+            className="hidden lg:flex items-center gap-1.5 font-medium hover:text-brand-orange shrink-0 no-underline"
           >
-            <MailIcon /> {settings?.email || "info@prefabpanelnepal.com"}
+            <MailIcon className="w-3.5 h-3.5" />
+            <span className="whitespace-nowrap">info@prefabpanelnepal.com</span>
           </a>
-          <span className="hidden xl:flex items-center gap-1.5 font-medium text-white/80 shrink-0 text-xs">
-            <PinIcon /> Pepsicola, Kathmandu          </span>
+
+          {/* Locations — combined into ONE compact block */}
+          <div className="hidden xl:flex items-center gap-2 text-[11px] text-white/80 min-w-0">
+            <PinIcon className="w-3.5 h-3.5 shrink-0" />
+            <span className="truncate">
+              <span className="font-semibold text-white/95">Corporate:</span>{" "}
+              {corporate}
+              <span className="mx-2 text-white/40">•</span>
+              <span className="font-semibold text-white/95">Factory:</span>{" "}
+              {factory}
+            </span>
+          </div>
         </div>
-        <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-          <span className="text-[11px] text-white/70 hidden lg:inline">Follow us:</span>
+
+        {/* RIGHT — Socials */}
+        <div className="flex items-center gap-2 shrink-0">
+          <span className="text-[10px] text-white/60 hidden lg:inline whitespace-nowrap">
+            Follow:
+          </span>
           {socials.map((s) => (
             <Link
               key={s}
-              href={settings?.[s] || (s === "facebook" ? "https://facebook.com/smartpanelnepal" : "#")}
+              href={
+                settings?.[s] ||
+                (s === "facebook" ? "https://facebook.com/smartpanelnepal" : "#")
+              }
               aria-label={s}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-6 h-6 sm:w-7 sm:h-7 flex items-center justify-center rounded-full bg-white/20 text-white hover:bg-brand-orange transition-colors"
+              className="w-6 h-6 flex items-center justify-center rounded-full bg-white/20 text-white hover:bg-brand-orange transition-colors no-underline"
             >
               <SocialIcon name={s} />
             </Link>

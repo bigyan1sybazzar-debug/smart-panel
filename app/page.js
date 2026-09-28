@@ -366,7 +366,8 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+            {/* CHANGED: lg:grid-cols-5 → lg:grid-cols-4 */}
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
               {installationTools.map((tool, idx) => {
                 const toolImages = [
                   "https://hardwarepasal.com/src/img/product/2023-11-19-14-27-44_MZgYTorhc8product.jpg",
@@ -382,97 +383,44 @@ export default function HomePage() {
                   <div
                     key={idx}
                     className="
-                group relative
-                bg-slate-800
-                rounded-xl
-                border border-slate-700
-                overflow-hidden
-                text-center
-                flex flex-col
-                items-center
-                hover:border-brand-orange/60
-                hover:-translate-y-1
+                group bg-slate-800 rounded-xl border border-slate-700
+                overflow-hidden text-center flex flex-col items-center
+                hover:border-brand-orange/60 hover:-translate-y-1
+                hover:shadow-lg hover:shadow-black/30
                 transition-all duration-300
               "
                   >
-                    <div className="relative w-full aspect-[4/3] overflow-hidden bg-slate-700">
+                    <div className="relative w-full aspect-square overflow-hidden bg-slate-700 shrink-0">
                       <img
                         src={image}
                         alt={`${tool.name} used for Smart Panel installation`}
                         loading="lazy"
                         decoding="async"
                         className="
-                    w-full h-full
-                    object-cover
-                    group-hover:scale-110
-                    transition-transform duration-500
+                    absolute inset-0 w-full h-full object-cover
+                    group-hover:scale-110 transition-transform duration-500
                   "
                       />
 
-                      <div className="
-                  absolute inset-0
-                  bg-gradient-to-t
-                  from-slate-900/90
-                  via-slate-900/10
-                  to-transparent
-                " />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/10 to-transparent" />
 
                       <div className="
                   absolute top-2 left-2
-                  w-8 h-8
-                  rounded-full
-                  bg-brand-orange
-                  text-white
-                  font-extrabold
-                  flex items-center justify-center
-                  text-xs
-                  shadow-lg
+                  w-7 h-7 sm:w-8 sm:h-8
+                  rounded-full bg-brand-orange text-white
+                  font-extrabold text-[10px] sm:text-xs
+                  flex items-center justify-center shadow-lg
+                  ring-2 ring-white/30
                 ">
                         {String(idx + 1).padStart(2, "0")}
                       </div>
-
-                      <div className="
-                  absolute bottom-2 left-3 right-3
-                  text-left
-                ">
-                        <span className="
-                    inline-block
-                    text-[9px]
-                    uppercase
-                    tracking-widest
-                    font-bold
-                    text-white/80
-                    bg-black/30
-                    backdrop-blur-sm
-                    px-2 py-1
-                    rounded
-                  ">
-                          Installation Tool
-                        </span>
-                      </div>
                     </div>
 
-                    <div className="
-                p-4 sm:p-5
-                flex flex-col
-                items-center
-                flex-1
-              ">
-                      <h3 className="
-                  font-display
-                  font-bold
-                  text-sm
-                  text-white
-                  mb-1
-                ">
+                    <div className="p-3.5 sm:p-4 flex flex-col items-center flex-1">
+                      <h3 className="font-display font-bold text-xs sm:text-sm text-white leading-snug mb-1">
                         {tool.name}
                       </h3>
-
-                      <p className="
-                  text-[11px]
-                  text-gray-400
-                  leading-snug
-                ">
+                      <p className="text-[10px] sm:text-[11px] text-gray-400 leading-relaxed">
                         {tool.description}
                       </p>
                     </div>
@@ -483,7 +431,6 @@ export default function HomePage() {
           </div>
         </section>
       )}
-
       {/* 9. Completed & On-Going Projects Showcase — DYNAMIC */}
       <ProjectsShowcase initialProjects={demoProjects} />
 

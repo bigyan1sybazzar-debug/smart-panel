@@ -291,11 +291,7 @@
       "description": "Secures the galvanized steel framing and structural connection joints."
     },
     {
-      "name": "Thread ",
-      "description": "Used for fine adjustments, electrical conduit pass-throughs, and finishing."
-    },
-    {
-      "name": "Plumb Bob",
+      "name": "Plumb Bob and Thread",
       "description": "Ensures every interlocking panel wall is true, plumb, and perfectly vertical."
     }
   ],
@@ -321,35 +317,35 @@
     {
       "slug": "smart-sandwich-panel",
       "name": "Smart Sandwich Panel",
-      "image": "/uploads/services/1790183651956-Smart_Sandwich_Panel.jpg",
+      "image": "/uploads/services/1790579509137-WhatsApp_Image_2026-09-28_at_12.55.13_PM.jpeg",
       "summary": "Lightweight interlocking prefabricated panels with a light EPS-and-cement core wrapped in 4.5 mm calcium silicate boards. Tongue-and-groove edges lock every panel into the next for fast, clean installation.",
       "content": "Smart Sandwich Panel is our flagship product — a modern, eco-friendly alternative to traditional brick and concrete hollow blocks. Each panel features a lightweight EPS-and-cement core protected by 4.5 mm calcium silicate boards on both faces. The precision tongue-and-groove design allows panels to interlock quickly and securely, significantly reducing installation time and labour costs.\n\nThese panels deliver excellent thermal and sound insulation, fire resistance, impact resistance, and built-in seismic strength. They are much lighter than conventional masonry, reducing structural load and foundation costs. Available in 50 mm, 75 mm, 100 mm and 120 mm thicknesses with lengths up to 3000 mm and standard width of 610 mm, they are ideal for interior and exterior walls, partitions and complete building envelopes in residential, commercial, healthcare, educational and industrial projects."
     },
     {
       "slug": "smart-solid-panel",
       "name": "Smart Solid Panel",
-      "image": "/uploads/services/1790183755294-WhatsApp_Image_2026-09-23_at_2.39.10_PM.jpeg",
+      "image": "/uploads/services/1790579540200-WhatsApp_Image_2026-09-28_at_12.56.43_PM.jpeg",
       "summary": "Lightweight interlocking panels made from EPS beads, cement, sand, water and bonding agents, reinforced with mesh for extra strength. Both sides are plastered after installation for a smooth finish.",
       "content": "Smart Solid Panel is engineered for superior strength and durability while remaining lightweight and easy to handle. Manufactured from high-quality EPS beads, cement, sand, water and special bonding agents, each panel is reinforced with mesh to enhance structural performance and impact resistance.\n\nAfter installation, both faces are plastered to create a smooth surface ready for final finishing. These panels offer outstanding resistance to impact, fire, moisture and seismic forces. They reduce building weight, speed up construction and lower overall project costs. Available in the same thickness and length options as our Sandwich Panels, Smart Solid Panels are an excellent choice for load-bearing walls, high-rise construction and projects demanding maximum resilience."
     },
     {
       "slug": "smart-eps-block",
       "name": "Smart EPS Block",
-      "image": "/uploads/services/1790183834735-Smart_EPS_Block.jpg",
+      "image": "/uploads/services/1790580278361-eps.jpeg",
       "summary": "Lightweight construction blocks made from EPS beads, OPC cement, water and essential additives. Molded into various sizes for fast, economical and eco-friendly building.",
       "content": "Smart EPS Blocks provide a modern, sustainable alternative to traditional clay bricks and concrete blocks. Produced by mixing expanded polystyrene (EPS) beads with OPC cement, water and specialised additives, the material is precisely molded into different sizes and shapes.\n\nThese blocks are significantly lighter than conventional masonry, reducing structural load and foundation requirements. They offer good thermal insulation, are easy to cut and handle on site, and help accelerate construction timelines while generating less waste. Available in sizes such as 100×200×600 mm, 150×200×600 mm and 200×200×600 mm, they are ideal for infill walls, partition walls and non-load-bearing applications."
     },
     {
       "slug": "on-site-installation",
       "name": "On-Site Installation Service",
-      "image": "/uploads/services/1790183970054-WhatsApp_Image_2026-09-23_at_2.39.43_PM.jpeg",
+      "image": "/uploads/services/1790580586284-image.jpg",
       "summary": "Professional installation by trained Smart Panel crews using specialised tools for fast, precise and clean on-site assembly.",
       "content": "Our trained installation teams ensure every Smart Panel project is completed efficiently and to the highest standard. Using specialised equipment — cutting machines, drill machines, welding machines, thread hand drills and plumb bobs — our crews achieve accurate cuts, secure fixing and perfect alignment.\n\nNo heavy machinery or long learning curve is required. Panels are installed quickly with minimal labour, resulting in cleaner sites, shorter project timelines and lower overall costs. We also provide technical guidance and supervision so your project benefits from both premium materials and expert workmanship."
     },
     {
       "slug": "technical-consultation",
       "name": "Technical Consultation & Design Support",
-      "image": "/uploads/services/1790184056223-H9d9638e28b5f47a58e05aaf448b21bfbe.png_720x720q50.avif",
+      "image": "/uploads/services/1790580613254-cd.jpeg",
       "summary": "Expert guidance on panel selection, structural design, seismic performance and project optimisation for architects, engineers and contractors.",
       "content": "Choosing the right panel thickness, type and installation method is critical for performance and cost efficiency. Our technical team works closely with architects, engineers and contractors to recommend the most suitable Smart Panel solution for each project.\n\nWe provide detailed technical data, seismic performance guidance, thermal and acoustic calculations, and practical advice on foundation design and structural steel savings. Whether you are building a high-rise, hospital, school or residential project, our consultation service helps you maximise safety, speed and value."
     }
@@ -377,23 +373,13 @@
     },
     {
       "id": "3",
-      "name": "EPS based cement blocks",
+      "name": "EPS based concrete blocks",
       "category": "EPS Block",
-      "image": "/uploads/products/1790352201227-EPS_based_cement_blocks.jpeg",
+      "image": "/uploads/products/1790580239233-eps.jpeg",
       "description": "Smart EPS Blocks are lightweight construction blocks made from EPS beads, OPC cement, water and essential additives. Molded into precise sizes and shapes, they offer a fast, economical and eco-friendly alternative to traditional clay bricks and concrete blocks.",
       "sizes": "100×200×600mm, 150×200×600mm, 200×200×600mm",
       "price": "",
       "specs": "[\n  {\"name\": \"Material Composition\", \"value\": \"EPS beads + OPC cement + Water + Additives\"},\n  {\"name\": \"Density\", \"value\": \"Lightweight (significantly lower than traditional masonry)\"},\n  {\"name\": \"Thermal Insulation\", \"value\": \"Good\"},\n  {\"name\": \"Workability\", \"value\": \"Easy to cut, drill and handle\"},\n  {\"name\": \"Application\", \"value\": \"Infill walls, partitions, non-load-bearing walls\"},\n  {\"name\": \"Eco-friendly\", \"value\": \"Yes – reduced topsoil disturbance and emissions\"}\n]"
-    },
-    {
-      "id": "4",
-      "name": "Smart Interior Wall Panel",
-      "category": "Interior Wall Panel",
-      "image": "/uploads/products/1790184630347-images__24_.jpg",
-      "description": "Specially optimised Smart Sandwich Panel for interior applications. Lightweight, easy to install and excellent for creating clean, quiet and thermally comfortable internal spaces. Perfect for partitions, room dividers and internal walls in homes, offices, schools, hospitals and commercial buildings.",
-      "sizes": "Thickness: 50 mm, 75 mm, 100 mm  Length: 2400 / 2700 / 3000 mm  Width: 610 mm",
-      "price": "",
-      "specs": "[\n  {\"name\": \"Recommended Thickness\", \"value\": \"50–100 mm\"},\n  {\"name\": \"Sound Insulation\", \"value\": \"≥35 – ≥45 dB\"},\n  {\"name\": \"Fire Resistance\", \"value\": \"≥3 – ≥4 hours\"},\n  {\"name\": \"Surface\", \"value\": \"Calcium silicate board both sides\"},\n  {\"name\": \"Installation\", \"value\": \"Tongue-and-groove, fast dry installation\"}\n]"
     }
   ],
   "gallery": [
