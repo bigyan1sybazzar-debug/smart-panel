@@ -10,7 +10,7 @@ export const dynamic = "force-dynamic";
 
 const display = Poppins({
     subsets: ["latin"],
-    weight: ["600", "700", "800"],
+    weight: ["600", "700"],
     variable: "--font-display",
     display: "swap",
 });

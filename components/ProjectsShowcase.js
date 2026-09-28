@@ -84,8 +84,8 @@ export default function ProjectsShowcase({ initialProjects = [] }) {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-4">
           <div className="text-left max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/20 text-brand-orange text-xs font-bold uppercase tracking-wider mb-2">
-              <span className="w-2 h-2 rounded-full bg-brand-orange animate-pulse" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-800 text-xs font-bold uppercase tracking-wider mb-2">
+              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
               Verified Sites Across Nepal
             </div>
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark">
@@ -197,7 +197,7 @@ export default function ProjectsShowcase({ initialProjects = [] }) {
           {/* Sub-Category Chips */}
           {categories.length > 2 && (
             <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 pt-1">
-              <span className="text-[11px] font-semibold text-gray-400 uppercase tracking-wider mr-1">
+              <span className="text-[11px] font-semibold text-gray-600 uppercase tracking-wider mr-1">
                 Category:
               </span>
               {categories.map((cat) => (
@@ -254,9 +254,8 @@ export default function ProjectsShowcase({ initialProjects = [] }) {
                         src={prj.image || "/images/prefab-house.webp"}
                         alt={prj.title}
                         fill
-                        priority={prjIdx < 4}
-                        loading={prjIdx < 4 ? "eager" : "lazy"}
-                        quality={75}
+                        loading="lazy"
+                        quality={70}
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
                         className="object-cover group-hover:scale-108 transition-transform duration-700"
                       />
@@ -324,7 +323,7 @@ export default function ProjectsShowcase({ initialProjects = [] }) {
                       <span className="text-xs font-bold text-brand-blue group-hover:text-brand-orange transition-colors flex items-center gap-1">
                         Project Overview &rarr;
                       </span>
-                      <span className="text-[10px] text-gray-400">Click to preview</span>
+                      <span className="text-[10px] text-gray-500">Click to preview</span>
                     </div>
                   </div>
                 </div>
@@ -359,7 +358,7 @@ export default function ProjectsShowcase({ initialProjects = [] }) {
               <button
                 onClick={() => setSelectedProject(null)}
                 aria-label="Close modal"
-                className="absolute top-3 right-3 z-20 w-8 h-8 rounded-full bg-black/60 hover:bg-black text-white flex items-center justify-center text-sm transition-colors"
+                className="absolute top-3 right-3 z-20 w-10 h-10 rounded-full bg-black/60 hover:bg-black text-white flex items-center justify-center text-sm transition-colors"
               >
                 ✕
               </button>

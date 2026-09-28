@@ -9,7 +9,7 @@ export default function ProductsCatalogue({ products }) {
             <div className="container-page">
                 <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-8 gap-3">
                     <div className="text-left">
-                        <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">
+                        <span className="text-xs uppercase tracking-widest text-amber-800 font-bold">
                             Product Showcase
                         </span>
                         <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1">
@@ -40,7 +40,8 @@ export default function ProductsCatalogue({ products }) {
                                     src={p.image || "/images/sandwich-panel.webp"}
                                     alt={p.name}
                                     fill
-                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 420px"
+                                    quality={70}
                                     className="object-cover group-hover:scale-110 transition-transform duration-700"
                                 />
                                 <div className="absolute top-2.5 left-2.5 bg-brand-blue text-white text-[10px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-md shadow-sm z-10">
@@ -70,6 +71,7 @@ export default function ProductsCatalogue({ products }) {
                                 <div className="grid grid-cols-2 gap-2 mt-auto pt-4">
                                     <Link
                                         href={`/products/${p.id}`}
+                                        aria-label={`View specifications for ${p.name}`}
                                         className="block text-center text-xs font-bold text-brand-blue bg-blue-50 hover:bg-brand-blue hover:text-white py-2 px-2 rounded-lg transition-colors whitespace-nowrap"
                                     >
                                         View Specs

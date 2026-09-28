@@ -102,8 +102,8 @@ export default function HomePage() {
           <div className="text-left sm:text-center sm:max-w-3xl sm:mx-auto mb-8 sm:mb-12">
             <span className="
         inline-block text-[11px] uppercase tracking-widest
-        text-brand-orange font-bold
-        bg-brand-orange/10 px-3 py-1 rounded-full
+        text-amber-800 font-bold
+        bg-amber-500/10 px-3 py-1 rounded-full
       ">
               Why Builders Choose Us
             </span>
@@ -136,8 +136,8 @@ export default function HomePage() {
                 alt="Smart Panel Nepal Manufacturing & Construction"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-700"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                quality={80}
+                sizes="(max-width: 1024px) 100vw, 650px"
+                quality={75}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
@@ -157,7 +157,7 @@ export default function HomePage() {
           </div>
 
           <div className="lg:col-span-6 mt-4 lg:mt-0 flex flex-col items-start text-left">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold text-left">Our Story &amp; Leadership</span>
+            <span className="text-xs uppercase tracking-widest text-amber-800 font-bold text-left">Our Story &amp; Leadership</span>
             <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-blue-dark mt-1 leading-tight text-left">
               The Smart Way to Build in Nepal
             </h2>
@@ -276,7 +276,7 @@ export default function HomePage() {
         <section className="py-8 sm:py-12 lg:py-16 bg-gray-50 border-t border-b border-gray-200/70">
           <div className="container-page">
             <div className="text-left sm:text-center sm:max-w-3xl sm:mx-auto mb-6 sm:mb-10">
-              <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Tested &amp; Certified</span>
+              <span className="text-xs uppercase tracking-widest text-amber-800 font-bold">Tested &amp; Certified</span>
               <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">
                 Technical Data — Sandwich Panel
               </h2>
@@ -319,7 +319,7 @@ export default function HomePage() {
         <section className="py-8 sm:py-12 lg:py-16 bg-white">
           <div className="container-page">
             <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-10">
-              <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Applications</span>
+              <span className="text-xs uppercase tracking-widest text-amber-800 font-bold">Applications</span>
               <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Built for Every Builder</h2>
               <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
               <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">
@@ -438,7 +438,7 @@ export default function HomePage() {
       <section className="py-8 sm:py-12 lg:py-16 bg-gray-50 border-t border-b border-gray-200">
         <div className="container-page">
           <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-10">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">What Clients Say</span>
+            <span className="text-xs uppercase tracking-widest text-amber-800 font-bold">What Clients Say</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Verified Testimonials</h2>
             <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
             <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">
@@ -505,7 +505,7 @@ export default function HomePage() {
                         {rev.name}
                       </h3>
                       <p className="text-[11px] text-gray-500 truncate" title={rev.role}>{rev.role}</p>
-                      <p className="text-[11px] text-brand-orange font-semibold truncate flex items-center gap-1 mt-0.5">
+                      <p className="text-[11px] text-amber-800 font-semibold truncate flex items-center gap-1 mt-0.5">
                         <span>📍</span> {rev.location}
                       </p>
                     </div>
@@ -521,7 +521,7 @@ export default function HomePage() {
       <section className="py-10 md:py-16 lg:py-20 bg-white">
         <div className="container-page">
           <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-8 sm:mb-12">
-            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">Got Questions?</span>
+            <span className="text-xs uppercase tracking-widest text-amber-800 font-bold">Got Questions?</span>
             <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">Frequently Asked Questions</h2>
             <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
             <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">

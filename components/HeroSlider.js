@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export default function HeroSlider({ slides }) {
   const [index, setIndex] = useState(0);
+  const [mounted, setMounted] = useState(false);
   const timerRef = useRef(null);
   const count = slides.length;
 
@@ -29,6 +30,7 @@ export default function HeroSlider({ slides }) {
   }, [count]);
 
   useEffect(() => {
+    setMounted(true);
     startTimer();
     return () => clearInterval(timerRef.current);
   }, [startTimer]);
@@ -97,25 +99,31 @@ export default function HeroSlider({ slides }) {
       onMouseMove={onMouseMove}
       onMouseUp={onMouseUp}
     >
-      {/* Background images — priority on first slide for LCP */}
+      {/* Background images — priority on first slide for LCP, defer non-initial slides */}
       <div className="relative min-h-[340px] sm:min-h-[420px] lg:min-h-[480px]">
-        {slides.map((s, i) => (
-          <div
-            key={s.id ?? i}
-            className={`absolute inset-0 transition-opacity duration-1000 ${i === index ? "opacity-100" : "opacity-0"}`}
-          >
-            <Image
-              src={s.image || "/images/prefab-house.webp"}
-              alt={s.title || "Smart Prefab Panel"}
-              fill
-              className="object-cover object-center pointer-events-none"
-              priority={i === 0}
-              sizes="100vw"
-              quality={80}
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-950/85" />
-          </div>
-        ))}
+        {slides.map((s, i) => {
+          if (i > 0 && !mounted) return null;
+          return (
+            <div
+              key={s.id ?? i}
+              className={`absolute inset-0 transition-opacity duration-1000 ${
+                i === index ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <Image
+                src={s.image || "/images/prefab-house.webp"}
+                alt={s.title || "Smart Prefab Panel"}
+                fill
+                className="object-cover object-center pointer-events-none"
+                priority={i === 0}
+                loading={i === 0 ? "eager" : "lazy"}
+                sizes="(max-width: 768px) 100vw, (max-width: 1440px) 100vw, 1600px"
+                quality={70}
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-950/85" />
+            </div>
+          );
+        })}
 
         {/* Content */}
         <div className="relative z-20 container-page py-8 sm:py-12 lg:py-16 pointer-events-auto">
@@ -158,14 +166,20 @@ export default function HeroSlider({ slides }) {
 
             {/* Dots — desktop only, hidden on mobile */}
             {count > 1 && (
-              <div className="mt-5 hidden sm:flex items-center justify-center gap-2">
+              <div className="mt-5 hidden sm:flex items-center justify-center gap-1">
                 {slides.map((s, i) => (
                   <button
                     key={s.id ?? i}
                     onClick={() => goTo(i)}
-                    aria-label={`Slide ${i + 1}`}
-                    className={`h-2 rounded-full transition-all duration-300 ${i === index ? "w-7 bg-brand-orange" : "w-2 bg-white/40 hover:bg-white/70"}`}
-                  />
+                    aria-label={`Go to slide ${i + 1}`}
+                    className="p-2 flex items-center justify-center min-w-[32px] min-h-[32px]"
+                  >
+                    <span
+                      className={`h-2 rounded-full transition-all duration-300 ${
+                        i === index ? "w-7 bg-brand-orange" : "w-2 bg-white/40 hover:bg-white/70"
+                      }`}
+                    />
+                  </button>
                 ))}
               </div>
             )}

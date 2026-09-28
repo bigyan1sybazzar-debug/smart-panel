@@ -53,7 +53,7 @@ export default function AdvantageCard({ advantage, idx }) {
             src={imgSrc}
             alt={advantage.title || "Advantage"}
             fill
-            sizes="(max-width: 640px) 56px, 64px"
+            sizes="64px"
             quality={75}
             onError={() => setImgError(true)}
             className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -71,7 +71,7 @@ export default function AdvantageCard({ advantage, idx }) {
       </h3>
 
       {/* Description */}
-      <p className="text-gray-500 text-[11px] sm:text-xs leading-relaxed text-center line-clamp-3 sm:line-clamp-none">
+      <p className="text-gray-600 text-[11px] sm:text-xs leading-relaxed text-center line-clamp-3 sm:line-clamp-none">
         {advantage.description || ""}
       </p>
     </div>
