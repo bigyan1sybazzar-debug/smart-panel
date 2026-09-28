@@ -1,0 +1,4 @@
+cd ~/smart-panel
+git fetch origin main
+git reset --hard origin/main
+touch tmp/restart.txt

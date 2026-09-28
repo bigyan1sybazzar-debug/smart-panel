@@ -1,7 +1,7 @@
 import { readDB } from "@/lib/db";
 
 export default function sitemap() {
-  const { settings, servicesList, products } = readDB();
+  const { settings, servicesList, products, blogs = [] } = readDB();
   const domain = settings?.domain ? `https://${settings.domain.replace(/^https?:\/\//, "")}` : "https://prefabpanelnepal.com";
 
   const staticRoutes = [
@@ -15,6 +15,7 @@ export default function sitemap() {
     "/products",
     "/dealership",
     "/gallery",
+    "/blog",
     "/catalogue",
     "/investor-relations",
     "/notice",
@@ -23,8 +24,8 @@ export default function sitemap() {
   ].map((route) => ({
     url: `${domain}${route}`,
     lastModified: new Date().toISOString().split("T")[0],
-    changeFrequency: route === "" ? "daily" : "weekly",
-    priority: route === "" ? 1.0 : 0.8,
+    changeFrequency: route === "" ? "daily" : route === "/blog" ? "weekly" : "weekly",
+    priority: route === "" ? 1.0 : route === "/blog" ? 0.9 : 0.8,
   }));
 
   const serviceRoutes = (servicesList || []).map((s) => ({
@@ -41,5 +42,14 @@ export default function sitemap() {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...serviceRoutes, ...productRoutes];
+  const blogRoutes = blogs
+    .filter((b) => (b.status || "Published").toLowerCase() === "published" && b.slug)
+    .map((b) => ({
+      url: `${domain}/blog/${b.slug}`,
+      lastModified: b.publishedDate || new Date().toISOString().split("T")[0],
+      changeFrequency: "monthly",
+      priority: 0.75,
+    }));
+
+  return [...staticRoutes, ...serviceRoutes, ...productRoutes, ...blogRoutes];
 }
