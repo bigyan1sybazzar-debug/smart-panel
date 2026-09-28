@@ -72,12 +72,6 @@
       "description": "High sound damping capacity (≥35 to ≥45 dB) absorbs external noise, making it ideal for quiet residences, schools, hospitals, and conference spaces."
     },
     {
-      "id": "8",
-      "title": "Space & Cost Saving",
-      "icon": "space",
-      "description": "Slimmer panel profiles increase carpet area by up to 5-8%, while ultra-light density trims structural steel and foundation costs by 5-6%."
-    },
-    {
       "id": "9",
       "title": "Water & Moisture Resistant",
       "icon": "water",
@@ -544,11 +538,6 @@
   ],
   "catalogue": [
     {
-      "id": "muh0z8xmmflxb",
-      "title": "Company Profile ",
-      "file": "/uploads/catalogue/1790344641618-smart_profile.pdf"
-    },
-    {
       "id": "1",
       "title": "Smart Panel Official Company Profile & Technical Catalogue",
       "file": "/uploads/catalogue/1790344664317-smart_profile.pdf"
@@ -556,17 +545,17 @@
     {
       "id": "2",
       "title": "Government District Rate List Schedule — Smart Panel",
-      "file": ""
+      "file": "/uploads/catalogue/1790613674238-Smart_Panel_Government_District_Rate_List.pdf"
     },
     {
       "id": "3",
       "title": "Technical Data & Specification Sheet (50mm, 75mm, 100mm, 120mm)",
-      "file": ""
+      "file": "/uploads/catalogue/1790613681980-Smart_Panel_Technical_Data_Specification_Sheet.pdf"
     },
     {
       "id": "4",
       "title": "On-Site Installation Guide with 5 Essential Tools",
-      "file": ""
+      "file": "/uploads/catalogue/1790613688526-Smart-Panel-On-Site-Installation-Guide.pdf"
     }
   ],
   "newsletterSubs": [],

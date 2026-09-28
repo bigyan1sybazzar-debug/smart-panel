@@ -10,26 +10,15 @@
       "page": "/",
       "matchers": [
         {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(.json)?[\\/#\\?]?$",
-          "originalSource": "/admin/:path*"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/admin-dashboard(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(.json)?[\\/#\\?]?$",
-          "originalSource": "/admin-dashboard/:path*"
-        },
-        {
-          "regexp": "^(?:\\/(_next\\/data\\/[^/]{1,}))?\\/api\\/admin(?:\\/((?:[^\\/#\\?]+?)(?:\\/(?:[^\\/#\\?]+?))*))?(.json)?[\\/#\\?]?$",
-          "originalSource": "/api/admin/:path*"
+          "regexp": "^/.*$",
+          "originalSource": "/:path*"
         }
       ],
       "wasm": [],
       "assets": [],
       "env": {
-        "__NEXT_BUILD_ID": "Ctb_gym6zsqvToBB7RgnC",
-        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "k2iobTXlHxsmQidaH8lePyszdfxkdsMmqQm/gsNiWIs=",
-        "__NEXT_PREVIEW_MODE_ID": "23e9e638b98dbec8b141c69c594e446f",
-        "__NEXT_PREVIEW_MODE_ENCRYPTION_KEY": "3eb755367db2d28362dfc6975cc05ef5e2f73dfac59051b7999ce676e0f87cdb",
-        "__NEXT_PREVIEW_MODE_SIGNING_KEY": "6f188f8c13f3a336cb4e276b697ddff55695a449907c023fdb7ac38422f936a6"
+        "__NEXT_BUILD_ID": "development",
+        "NEXT_SERVER_ACTIONS_ENCRYPTION_KEY": "UYyhwHuSaN7wMKUA+7C+PsrZJ3gg+6LGiV6MtElqka0="
       }
     }
   },
