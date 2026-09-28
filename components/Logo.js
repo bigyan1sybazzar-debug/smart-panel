@@ -9,7 +9,7 @@ export default function Logo({ compact = false, className = "" }) {
       aria-label="Smart Prefab Panel home"
     >
       <Image
-        src="/images/logo.png"
+        src="/images/logo.webp"
         alt="Smart Prefab Panel Nepal"
         width={220}
         height={56}

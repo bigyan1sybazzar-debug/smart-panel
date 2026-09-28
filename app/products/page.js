@@ -22,7 +22,7 @@ export async function generateMetadata() {
     openGraph: {
       title: `EPS & PUF Sandwich Panels & Prefab Products | ${companyName}`,
       description: "High performance earthquake-resistant sandwich panels and roofing solutions factory manufactured in Nepal.",
-      images: ["/images/sandwich-panel.jpg"],
+      images: ["/images/sandwich-panel.webp"],
     },
   };
 }
@@ -44,7 +44,7 @@ export default function ProductsPage() {
         "name": p.name,
         "category": p.category,
         "description": p.description,
-        "image": `${domain}${p.image || "/images/sandwich-panel.jpg"}`,
+        "image": `${domain}${p.image || "/images/sandwich-panel.webp"}`,
         "brand": {
           "@type": "Brand",
           "name": settings?.companyName || "Smart Prefab Panel"
@@ -82,7 +82,7 @@ export default function ProductsPage() {
               <div className="w-full">
                 <div className="h-36 sm:h-56 overflow-hidden relative bg-gray-50">
                   <Image
-                    src={p.image || "/images/sandwich-panel.jpg"}
+                    src={p.image || "/images/sandwich-panel.webp"}
                     alt={`${p.name} - Smart Prefab Panel Nepal`}
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 25vw"

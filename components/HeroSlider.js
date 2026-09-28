@@ -105,7 +105,7 @@ export default function HeroSlider({ slides }) {
             className={`absolute inset-0 transition-opacity duration-1000 ${i === index ? "opacity-100" : "opacity-0"}`}
           >
             <Image
-              src={s.image || "/images/prefab-house.jpg"}
+              src={s.image || "/images/prefab-house.webp"}
               alt={s.title || "Smart Prefab Panel"}
               fill
               className="object-cover object-center pointer-events-none"

@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import PageHero from "@/components/PageHero";
+import ServiceImageGallery from "@/components/ServiceImageGallery";
 import { readDB } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
@@ -13,6 +13,10 @@ export function generateMetadata({ params }) {
   if (!service) return { title: "Service Not Found" };
 
   const companyName = settings?.companyName || "Smart Prefab Panel";
+  const primaryImage = (Array.isArray(service.images) && service.images.length > 0)
+    ? service.images[0]
+    : (service.image || "/images/prefab-house.webp");
+
   return {
     title: `${service.name} in Nepal | ${companyName}`,
     description: service.summary || service.content?.substring(0, 160),
@@ -20,7 +24,7 @@ export function generateMetadata({ params }) {
     openGraph: {
       title: `${service.name} in Nepal | ${companyName}`,
       description: service.summary,
-      images: [service.image || "/images/prefab-house.jpg"],
+      images: [primaryImage],
     },
   };
 }
@@ -31,6 +35,9 @@ export default function ServiceDetailPage({ params }) {
   if (!service) notFound();
 
   const others = servicesList.filter((s) => s.slug !== params.slug);
+  const images = Array.isArray(service.images) && service.images.length > 0
+    ? service.images
+    : (service.image ? [service.image] : []);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -59,19 +66,8 @@ export default function ServiceDetailPage({ params }) {
       <PageHero crumb="Services" title={service.name} subtitle={service.summary} />
       <div className="container-page py-16 grid md:grid-cols-3 gap-10">
         <div className="md:col-span-2 space-y-6">
-          {service.image && (
-            <div className="rounded-2xl overflow-hidden shadow-md h-72 md:h-96 relative">
-              <Image
-                src={service.image}
-                alt={service.name}
-                fill
-                sizes="(max-width: 768px) 100vw, 66vw"
-                className="object-cover"
-                priority
-              />
-            </div>
-          )}
-          <p className="text-gray-700 leading-relaxed text-base">{service.content}</p>
+          <ServiceImageGallery images={images} serviceName={service.name} />
+          <p className="text-gray-700 leading-relaxed text-base whitespace-pre-line">{service.content}</p>
           <div className="pt-4">
             <Link href="/contact" className="btn-primary">Request a Quote &rarr;</Link>
           </div>

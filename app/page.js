@@ -42,7 +42,7 @@ export default function HomePage() {
     status: item.status || "Completed",
     location: item.location ?? item.subtitle ?? "Nepal",
     category: item.category ?? "Completed Project",
-    image: item.image || "/images/prefab-house.jpg",
+    image: item.image || "/images/prefab-house.webp",
     description:
       item.description ??
       item.summary ??
@@ -62,7 +62,7 @@ export default function HomePage() {
                 id: "default",
                 title: settings.heroTitle,
                 subtitle: settings.heroSubtitle,
-                image: "/images/prefab-house.jpg",
+                image: "/images/prefab-house.webp",
                 ctaLabel: "Explore Products",
                 ctaHref: "/products",
               },
@@ -373,7 +373,7 @@ export default function HomePage() {
                   "https://hardwarepasal.com/src/img/product/2023-11-19-14-27-44_MZgYTorhc8product.jpg",
                   "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=900&h=700&fit=crop&q=85",
                   "https://static-01.daraz.com.np/p/dc31c347ca8021da1d47e72709023e43.jpg",
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa1SGTIolJ1pMjdBUzKolK3Ea4GwR9YBhXksER9iZn4Q&s=10",
+
                   "https://www.ragsons.co.ke/web/image/product.template/3465/image_1024?unique=641292d",
                 ];
 
@@ -493,7 +493,7 @@ export default function HomePage() {
                   <div className="pt-4 border-t border-gray-100 flex items-center gap-3">
                     <div className="relative w-11 h-11 rounded-full overflow-hidden shrink-0 ring-2 ring-brand-blue/20 bg-gray-100 shadow-sm">
                       <Image
-                        src={rev.avatar || "/images/testimonials/avatar-1.jpg"}
+                        src={rev.avatar || "/images/testimonials/avatar-1.webp"}
                         alt={rev.name}
                         fill
                         sizes="44px"

@@ -11,7 +11,7 @@ export default function Footer({ settings }) {
           <div className="mb-4">
             <Link href="/" className="inline-block bg-white px-3.5 py-2 rounded-xl shadow-md hover:opacity-95 transition-opacity">
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt={settings?.companyName || "Smart Prefab Panel"}
                 width={180}
                 height={46}

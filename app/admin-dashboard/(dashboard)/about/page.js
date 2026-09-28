@@ -90,7 +90,7 @@ export default function AdminAboutPage() {
               />
             </div>
             <input
-              placeholder="/images/team/chairperson.jpg"
+              placeholder="/images/team/chairperson.webp"
               value={about.chairperson.image || ""}
               onChange={(e) => setAbout({ ...about, chairperson: { ...about.chairperson, image: e.target.value } })}
               className="w-full rounded-md border border-gray-300 px-3 py-1.5 text-xs focus:border-brand-green focus:outline-none"

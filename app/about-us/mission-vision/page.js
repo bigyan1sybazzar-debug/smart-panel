@@ -56,7 +56,7 @@ export default function MissionVisionPage() {
         <div className="bg-brand-blue text-white rounded-2xl overflow-hidden border border-blue-900 shadow-sm flex flex-col justify-between">
           <div className="h-56 w-full relative overflow-hidden bg-slate-900">
             <Image
-              src="/uploads/gallery/1790346454483-WhatsApp_Image_2026-09-23_at_2.38.20_PMFRT.jpeg"
+              src="/uploads/gallery/1790346454483-WhatsApp_Image_2026-09-23_at_2.38.20_PMFRT.webp"
               alt="Smart Panel Vision - Future of Construction in Nepal"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

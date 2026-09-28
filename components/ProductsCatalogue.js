@@ -37,7 +37,7 @@ export default function ProductsCatalogue({ products }) {
                             {/* Image */}
                             <div className="h-48 sm:h-48 w-full overflow-hidden relative bg-gray-50 shrink-0">
                                 <Image
-                                    src={p.image || "/images/sandwich-panel.jpg"}
+                                    src={p.image || "/images/sandwich-panel.webp"}
                                     alt={p.name}
                                     fill
                                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

@@ -28,7 +28,7 @@ export default function DealershipPage() {
         <div className="space-y-6">
           <div className="rounded-2xl overflow-hidden shadow-md relative h-56 sm:h-72 border border-gray-200">
             <Image
-              src="/images/dealership/dealership-partner.jpg"
+              src="/images/dealership/aaaa.webp"
               alt="Smart Panel Dealership Logistics and Network"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

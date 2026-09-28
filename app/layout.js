@@ -64,7 +64,7 @@ export async function generateMetadata() {
             siteName: "Smart Panel Nepal (Prefab Panel Nepal Pvt. Ltd.)",
             images: [
                 {
-                    url: settings?.ogImage || "/images/prefab-house.jpg",
+                    url: settings?.ogImage || "/images/prefab-house.webp",
                     width: 1200,
                     height: 630,
                     alt: "Smart Panel Nepal - The Smart Way to Build",
@@ -77,15 +77,15 @@ export async function generateMetadata() {
             card: "summary_large_image",
             title: settings?.metaTitle || "Smart Panel Nepal | The Smart Way to Build",
             description: settings?.metaDescription || settings?.aboutSummary,
-            images: [settings?.ogImage || "/images/prefab-house.jpg"],
+            images: [settings?.ogImage || "/images/prefab-house.webp"],
         },
         icons: {
             icon: [
-                { url: "/images/logo-icon.png" },
+                { url: "/images/logo-icon.webp" },
                 { url: "/favicon.ico" },
             ],
-            shortcut: "/images/logo-icon.png",
-            apple: "/images/logo-icon.png",
+            shortcut: "/images/logo-icon.webp",
+            apple: "/images/logo-icon.webp",
         },
         verification: settings?.googleVerificationCode
             ? { google: settings.googleVerificationCode }
@@ -108,7 +108,7 @@ export default function RootLayout({ children }) {
         name: "Smart Panel",
         legalName: "Prefab Panel Nepal Pvt. Ltd.",
         slogan: "The Smart Way to Build",
-        image: `${domain}${settings?.ogImage || "/images/prefab-house.jpg"}`,
+        image: `${domain}${settings?.ogImage || "/images/prefab-house.webp"}`,
         "@id": domain,
         url: domain,
         telephone: ["+977-9851149804", "+977-9709084173"],
@@ -169,8 +169,8 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en" className={`${display.variable} ${body.variable}`}>
             <head>
-                <link rel="icon" type="image/png" href="/images/logo-icon.png" />
-                <link rel="apple-touch-icon" href="/images/logo-icon.png" />
+                <link rel="icon" type="image/png" href="/images/logo-icon.webp" />
+                <link rel="apple-touch-icon" href="/images/logo-icon.webp" />
 
                 {/* Google Analytics (gtag.js) */}
                 {gaId ? (

@@ -238,7 +238,7 @@ export default function ProjectsShowcase({ initialProjects = [] }) {
           </div>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
-            {displayedProjects.map((prj) => {
+            {displayedProjects.map((prj, prjIdx) => {
               const isOngoing = (prj.status || "").toLowerCase().includes("going");
 
               return (
@@ -251,10 +251,13 @@ export default function ProjectsShowcase({ initialProjects = [] }) {
                     {/* Project Photo Container */}
                     <div className="h-48 w-full overflow-hidden relative bg-slate-100">
                       <Image
-                        src={prj.image || "/images/prefab-house.jpg"}
+                        src={prj.image || "/images/prefab-house.webp"}
                         alt={prj.title}
                         fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        priority={prjIdx < 4}
+                        loading={prjIdx < 4 ? "eager" : "lazy"}
+                        quality={75}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
                         className="object-cover group-hover:scale-108 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
@@ -364,7 +367,7 @@ export default function ProjectsShowcase({ initialProjects = [] }) {
               {/* Modal Image */}
               <div className="relative h-64 sm:h-80 w-full bg-gray-900">
                 <Image
-                  src={selectedProject.image || "/images/prefab-house.jpg"}
+                  src={selectedProject.image || "/images/prefab-house.webp"}
                   alt={selectedProject.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 672px"

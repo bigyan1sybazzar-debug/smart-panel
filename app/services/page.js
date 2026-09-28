@@ -31,7 +31,7 @@ export default function ServicesPage() {
               <div>
                 <div className="h-48 sm:h-52 w-full relative overflow-hidden bg-gray-100">
                   <Image
-                    src={s.image || "/images/prefab-house.jpg"}
+                    src={(Array.isArray(s.images) && s.images[0]) || s.image || "/images/prefab-house.webp"}
                     alt={s.name}
                     fill
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"

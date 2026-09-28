@@ -16,7 +16,7 @@ export default function ChairpersonPage() {
         <div className="md:col-span-1 bg-white p-4 rounded-2xl border border-gray-200 shadow-sm text-center">
           <div className="aspect-[4/5] rounded-xl overflow-hidden relative shadow-inner bg-gray-100 mb-4">
             <Image
-              src={c.image || "/images/team/chairperson.jpg"}
+              src={c.image || "/images/team/chairperson.webp"}
               alt={c.name}
               fill
               sizes="(max-width: 768px) 100vw, 33vw"

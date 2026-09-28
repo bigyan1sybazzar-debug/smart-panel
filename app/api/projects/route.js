@@ -20,7 +20,7 @@ export async function GET(request) {
       category: item.category || "Completed Project",
       location: item.location || item.subtitle || "Nepal",
       time: item.time || "",
-      image: item.image || "/images/prefab-house.jpg",
+      image: item.image || "/images/prefab-house.webp",
       description:
         item.description ||
         item.summary ||

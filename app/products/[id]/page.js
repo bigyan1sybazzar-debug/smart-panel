@@ -27,7 +27,7 @@ export function generateMetadata({ params }) {
     openGraph: {
       title: `${product.name} | ${companyName}`,
       description: product.description,
-      images: [product.image || "/images/sandwich-panel.jpg"],
+      images: [product.image || "/images/sandwich-panel.webp"],
     },
   };
 }
@@ -48,7 +48,7 @@ export default function ProductDetailPage({ params }) {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": product.name,
-    "image": `${domain}${product.image || "/images/sandwich-panel.jpg"}`,
+    "image": `${domain}${product.image || "/images/sandwich-panel.webp"}`,
     "description": product.description,
     "category": product.category,
     "brand": {
@@ -158,7 +158,7 @@ export default function ProductDetailPage({ params }) {
             <div className="lg:col-span-6 flex flex-col gap-4">
               <div className="relative h-72 sm:h-96 md:h-[420px] w-full rounded-2xl overflow-hidden border border-gray-100 shadow-lg bg-gray-50 group">
                 <Image
-                  src={product.image || "/images/sandwich-panel.jpg"}
+                  src={product.image || "/images/sandwich-panel.webp"}
                   alt={product.name}
                   fill
                   priority
@@ -373,7 +373,7 @@ export default function ProductDetailPage({ params }) {
                 <div>
                   <div className="h-44 w-full relative overflow-hidden bg-gray-50">
                     <Image
-                      src={p.image || "/images/sandwich-panel.jpg"}
+                      src={p.image || "/images/sandwich-panel.webp"}
                       alt={p.name}
                       fill
                       sizes="(max-width: 640px) 100vw, 33vw"
