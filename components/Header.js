@@ -37,8 +37,8 @@ export default function Header({ settings, servicesList = [] }) {
       children: [
         { label: "CEO's Message", href: "/about-us/chairperson-message" },
         { label: "Our Mission & Vision", href: "/about-us/mission-vision" },
-        { label: "Board of Directors", href: "/about-us/board-of-directors" },
-        { label: "Management Committee", href: "/about-us/management-committee" },
+        // { label: "Board of Directors", href: "/about-us/board-of-directors" },
+        //{  { label: "Management Committee", href: "/about-us/management-committee" },}
       ],
     },
     { label: "Services", href: "/services", children: serviceChildren },
