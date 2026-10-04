@@ -6,7 +6,8 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "About Smart Panel | Prefab Panel Nepal Pvt. Ltd.",
-  description: "Learn about Smart Panel (Prefab Panel Nepal Pvt. Ltd.), an ISO 9001:2015 certified company with an NPR 20 Cr plant in Bharatpur, Chitwan producing 150,000 sq. ft. annually.",
+  description:
+    "Learn about Smart Panel (Prefab Panel Nepal Pvt. Ltd.), an ISO 9001:2015 certified company with an NPR 20 Cr plant in Bharatpur, Chitwan producing 150,000 sq. ft. annually.",
 };
 
 const LINKS = [
@@ -14,6 +15,23 @@ const LINKS = [
   { href: "/about-us/mission-vision", label: "Our Mission & Vision", desc: "What drives us and our commitment to seismic-safe, green construction." },
   { href: "/about-us/board-of-directors", label: "Board of Directors", desc: "The strategic leadership guiding Prefab Panel Nepal Pvt. Ltd." },
   { href: "/about-us/management-committee", label: "Management Committee", desc: "The operational team overseeing plant manufacturing and nationwide distribution." },
+];
+
+const SISTER_ORGS = [
+  {
+    name: "KTM Builders Pvt. Ltd.",
+    logo: "/images/ktm-builders.jpeg",
+    tagline: "Construction & Development",
+    description:
+      "Civil construction and project development partner delivering residential, commercial, and institutional builds across Nepal.",
+  },
+  {
+    name: "Smart Infra Pvt. Ltd.",
+    logo: "/images/smart-infta.jpeg",
+    tagline: "Infrastructure & Engineering",
+    description:
+      "Infrastructure and engineering arm focused on pre-engineered structures, seismic-resilient systems, and modern construction technology.",
+  },
 ];
 
 export default function AboutUsPage() {
@@ -112,7 +130,7 @@ export default function AboutUsPage() {
             <Link
               key={l.href}
               href={l.href}
-              className="bg-brand-cream/70 rounded-xl p-4 sm:p-5 border border-gray-200 hover:shadow-md transition-all flex flex-col justify-between"
+              className="bg-brand-cream/70 rounded-xl p-4 sm:p-5 border border-gray-200 hover:shadow-md transition-all flex flex-col justify-between no-underline"
             >
               <div>
                 <h3 className="font-display font-bold text-brand-blue-dark text-xs sm:text-base leading-tight">
@@ -125,6 +143,56 @@ export default function AboutUsPage() {
               </span>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* ============================================================
+          Sister Organizations Section
+          ============================================================ */}
+      <section className="bg-gray-50 border-t border-gray-200 py-12 lg:py-16">
+        <div className="container-page">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-xs uppercase tracking-widest text-brand-orange font-bold">
+              Our Group
+            </span>
+            <h2 className="font-display text-2xl sm:text-3xl font-extrabold text-brand-blue-dark mt-1">
+              Sister Organizations
+            </h2>
+            <div className="w-16 h-1 bg-brand-orange mx-auto mt-3 mb-4 rounded-full" />
+            <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
+              Smart Panel is part of a growing group of construction and infrastructure companies working together to build a stronger Nepal.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 max-w-4xl mx-auto">
+            {SISTER_ORGS.map((org) => (
+              <div
+                key={org.name}
+                className="group bg-white rounded-2xl border border-gray-200 p-6 sm:p-7 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 text-center flex flex-col items-center"
+              >
+                {/* Logo */}
+                <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl bg-white border border-gray-100 flex items-center justify-center mb-4 overflow-hidden group-hover:border-brand-orange/40 transition-colors">
+                  <img
+                    src={org.logo}
+                    alt={`${org.name} logo`}
+                    className="w-full h-full object-contain p-2"
+                  />
+                </div>
+
+                <span className="text-[10px] uppercase tracking-widest font-bold text-brand-orange">
+                  {org.tagline}
+                </span>
+
+                <h3 className="font-display font-bold text-brand-blue-dark text-base sm:text-lg mt-1.5">
+                  {org.name}
+                </h3>
+
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mt-2">
+                  {org.description}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </div>
