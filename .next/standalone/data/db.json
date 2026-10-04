@@ -389,6 +389,30 @@
   ],
   "gallery": [
     {
+      "id": "mutzwmsd86wbq",
+      "title": "Bal Bikash School Kindergarten block",
+      "location": "Bhaktapur",
+      "category": "Education",
+      "description": "",
+      "image": "/uploads/gallery/1791128904883-aadarsha.webp"
+    },
+    {
+      "id": "mutzvta9bj7lv",
+      "title": "Bal Bikash School Kindergarten block",
+      "location": "Bhaktapur",
+      "category": "Education",
+      "description": "",
+      "image": "/uploads/gallery/1791128865784-aadarsha1.webp"
+    },
+    {
+      "id": "mutzv4n41nxzs",
+      "title": "Bal Bikash School Kindergarten block",
+      "location": "Bhaktapur",
+      "category": "Education",
+      "description": "",
+      "image": "/uploads/gallery/1791128835332-aadarsha3.webp"
+    },
+    {
       "id": "muh2b5sc4a7pd",
       "title": "Santi ardarsha School ",
       "location": "Boudha, kathmandu",
@@ -645,6 +669,16 @@
   ],
   "projects": [
     {
+      "id": "mutztiyi3fq6k",
+      "title": "Bal Bikash School Kindergarten block",
+      "status": "",
+      "category": "Education",
+      "location": "Bhaktapur",
+      "time": "Completed ",
+      "image": "/uploads/gallery/1791128757898-aadarsha.webp",
+      "description": ""
+    },
+    {
       "id": "mumb5gkxknbsv",
       "title": "Indreni banquet",
       "status": "On-Going",
@@ -678,7 +712,7 @@
       "id": "muh1ffzob8xhp",
       "title": "Bhaktapur municipality Montessori ",
       "status": "",
-      "category": "EDucation",
+      "category": "Education",
       "location": "Bhaktapur",
       "time": "Completed 2025",
       "image": "/uploads/gallery/1790345403597-WhatsApp_Image_2026-09-23_at_2.38.22_PM.webp",
