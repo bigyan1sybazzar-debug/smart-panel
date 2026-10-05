@@ -8,6 +8,7 @@ export const metadata = { title: "Chairperson's Message | Smart Panel Nepal" };
 export default function ChairpersonPage() {
   const { about } = readDB();
   const c = about.chairperson;
+  const paragraphs = (c.message || "").split("\n").filter(Boolean);
 
   return (
     <div>
@@ -16,7 +17,7 @@ export default function ChairpersonPage() {
         <div className="md:col-span-1 bg-white p-4 rounded-2xl border border-gray-200 shadow-sm text-center">
           <div className="aspect-[4/5] rounded-xl overflow-hidden relative shadow-inner bg-gray-100 mb-4">
             <Image
-              src={c.image || "/images/team/chairperson.webp"}
+              src={c.image || "/images/img/bimal-goasai.webp"}
               alt={c.name}
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -27,14 +28,23 @@ export default function ChairpersonPage() {
           <h3 className="font-display font-bold text-lg text-brand-blue-dark">{c.name}</h3>
           <p className="text-xs sm:text-sm text-brand-orange font-semibold mt-0.5">{c.title}</p>
         </div>
-        <div className="md:col-span-2">
-          <p className="text-lg leading-relaxed text-gray-700 first-letter:text-4xl first-letter:font-display first-letter:font-extrabold first-letter:text-brand-green first-letter:mr-1">
-            {c.message}
-          </p>
-          <p className="mt-8 font-display font-bold text-brand-green-dark">{c.name}</p>
-          <p className="text-sm text-gray-500">{c.title}</p>
+        <div className="md:col-span-2 space-y-6">
+          {paragraphs.map((para, i) => (
+            <p
+              key={i}
+              className={
+                "text-lg leading-relaxed text-gray-700" +
+                (i === 0
+                  ? " first-letter:text-4xl first-letter:font-display first-letter:font-extrabold first-letter:text-brand-green first-letter:mr-1"
+                  : "")
+              }
+            >
+              {para}
+            </p>
+          ))}
         </div>
       </div>
     </div>
   );
 }
+
