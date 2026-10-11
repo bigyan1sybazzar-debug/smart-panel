@@ -3,7 +3,7 @@ import fs from "fs";
 import path from "path";
 import sharp from "sharp";
 
-const ALLOWED_FOLDERS = ["gallery", "products", "notices", "investor", "catalogue", "slides", "team", "testimonials", "services", "blogs"];
+const ALLOWED_FOLDERS = ["gallery", "products", "notices", "investor", "catalogue", "slides", "team", "testimonials", "services", "blogs", "partners"];
 
 export const dynamic = "force-dynamic";
 

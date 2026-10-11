@@ -16,6 +16,8 @@ const ALLOWED = {
   projects: "projects",
   blogs: "blogs",
   blog: "blogs",
+  partners: "partners",
+  "trusted-by": "partners",
 };
 
 function resolveKey(name) {

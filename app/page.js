@@ -7,6 +7,7 @@ import FaqAccordion from "@/components/FaqAccordion";
 import AdvantageCard from "@/components/AdvantageCard";
 import ProjectsShowcase from "@/components/ProjectsShowcase";
 import ProductsCatalogue from "@/components/ProductsCatalogue";
+import TrustedBySlider from "@/components/TrustedBySlider";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
@@ -29,6 +30,7 @@ export default function HomePage() {
     technicalData = [],
     installationTools = [],
     sectors = [],
+    partners = [],
   } = readDB();
 
   const demoReviews = reviews?.length ? reviews : [];
@@ -516,6 +518,28 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* 10.5 Trusted By / Client Logos (Circular Slider: 5 on desktop, 2.85 on mobile) */}
+      {partners.length > 0 && (
+        <section className="py-8 sm:py-12 lg:py-14 bg-white border-b border-gray-100 overflow-hidden">
+          <div className="container-page">
+            <div className="text-left sm:text-center sm:max-w-2xl sm:mx-auto mb-6 sm:mb-8">
+              <span className="text-xs uppercase tracking-widest text-amber-800 font-bold">
+                Institutional &amp; Builder Trust
+              </span>
+              <h2 className="section-title text-2xl sm:text-3xl md:text-4xl mt-1">
+                Trusted By
+              </h2>
+              <div className="w-16 sm:w-20 h-1 bg-brand-orange sm:mx-auto mt-3 rounded-full" />
+              <p className="text-xs sm:text-sm text-gray-600 mt-3 text-left sm:text-center w-full">
+                Proudly partnering with municipal bodies, leading builders, healthcare centers, and educational institutions across Nepal.
+              </p>
+            </div>
+
+            <TrustedBySlider partners={partners} />
+          </div>
+        </section>
+      )}
 
       {/* 11. FAQ Section */}
       <section className="py-10 md:py-16 lg:py-20 bg-white">

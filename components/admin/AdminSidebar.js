@@ -17,6 +17,7 @@ const NAV = [
   { href: "/admin-dashboard/blogs", label: "Blog & Articles" },
   { href: "/admin-dashboard/projects", label: "Projects Showcase" },
   { href: "/admin-dashboard/testimonials", label: "Verified Testimonials" },
+  { href: "/admin-dashboard/partners", label: "Trusted By / Partners" },
   { href: "/admin-dashboard/notices", label: "Notices" },
   { href: "/admin-dashboard/investor", label: "Investor Relations" },
   { href: "/admin-dashboard/catalogue", label: "Catalogue" },
