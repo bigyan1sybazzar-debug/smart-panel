@@ -106,13 +106,12 @@ export default function HeroSlider({ slides }) {
           return (
             <div
               key={s.id ?? i}
-              className={`absolute inset-0 transition-opacity duration-1000 ${
-                i === index ? "opacity-100" : "opacity-0"
-              }`}
+              className={`absolute inset-0 transition-opacity duration-1000 ${i === index ? "opacity-100" : "opacity-0"
+                }`}
             >
               <Image
                 src={s.image || "/images/prefab-house.webp"}
-                alt={s.title || "Smart Prefab Panel"}
+                alt={s.title || "Smart Panel"}
                 fill
                 className="object-cover object-center pointer-events-none"
                 priority={i === 0}
@@ -132,7 +131,7 @@ export default function HeroSlider({ slides }) {
             {/* Badge */}
             <div className="inline-flex items-center gap-1.5 sm:gap-2 bg-brand-blue/85 text-white text-[9.5px] sm:text-xs font-bold uppercase tracking-wide sm:tracking-widest px-2.5 sm:px-3 py-1 rounded-full mb-3 border border-blue-400/20 whitespace-nowrap shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse shrink-0" />
-              <span>SMART PREFAB PANEL • NEPAL&apos;S LEADER</span>
+              <span>SMART PANEL • NEPAL&apos;S LEADER</span>
             </div>
 
             {/* Title */}
@@ -175,9 +174,8 @@ export default function HeroSlider({ slides }) {
                     className="p-2 flex items-center justify-center min-w-[32px] min-h-[32px]"
                   >
                     <span
-                      className={`h-2 rounded-full transition-all duration-300 ${
-                        i === index ? "w-7 bg-brand-orange" : "w-2 bg-white/40 hover:bg-white/70"
-                      }`}
+                      className={`h-2 rounded-full transition-all duration-300 ${i === index ? "w-7 bg-brand-orange" : "w-2 bg-white/40 hover:bg-white/70"
+                        }`}
                     />
                   </button>
                 ))}
