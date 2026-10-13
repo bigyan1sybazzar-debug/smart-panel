@@ -154,7 +154,7 @@ export default function HomePage() {
             </div>
             <div className="hidden sm:block absolute -bottom-6 -right-6 bg-brand-blue text-white p-5 lg:p-6 rounded-2xl shadow-xl max-w-xs border-4 border-white">
               <p className="text-xl lg:text-2xl font-extrabold font-display text-amber-300">NPR 20 Crore</p>
-              <p className="text-xs text-white/90 mt-1 font-medium">State-of-the-art plant with 150,000 sq. ft. annual output</p>
+              <p className="text-xs text-white/90 mt-1 font-medium">State-of-the-art plant with 150,000 sqm. annual output</p>
             </div>
           </div>
 
@@ -177,7 +177,7 @@ export default function HomePage() {
 
             <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-2 gap-3 sm:gap-4 bg-brand-cream/80 p-4 sm:p-5 rounded-xl border border-blue-900/5 text-center w-full">
               <Stat number="NPR 20 Cr" label="Chitwan Plant Investment" />
-              <Stat number="150,000" label="Sq. Ft. Annual Output" />
+              <Stat number="150,000" label="Sq. M. Annual Output" />
               <Stat number="≥3-4 Hrs" label="Fire Proof Rating" />
               <Stat number="77" label="Districts Served" />
             </div>
