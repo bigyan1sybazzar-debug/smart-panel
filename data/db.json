@@ -389,6 +389,22 @@
   ],
   "gallery": [
     {
+      "id": "mv95pkn71n8rg",
+      "title": "QFX Cinema Hall",
+      "location": "Chitwan",
+      "category": "Commercial",
+      "description": "",
+      "image": "/uploads/gallery/1792045647965-QFX_main.webp"
+    },
+    {
+      "id": "mv95p38lx9k68",
+      "title": "QFX cinema Hall",
+      "location": "Chitwan",
+      "category": "Commercial",
+      "description": "",
+      "image": "/uploads/gallery/1792045624393-seat.webp"
+    },
+    {
       "id": "mutzwmsd86wbq",
       "title": "Bal Bikash School Kindergarten block",
       "location": "Bhaktapur",
@@ -673,6 +689,16 @@
     }
   ],
   "projects": [
+    {
+      "id": "mv95ohb1umcnp",
+      "title": "QFX CINEMA HALL",
+      "status": "",
+      "category": "Commercial",
+      "location": "Chitwan",
+      "time": "completed 2026",
+      "image": "/uploads/gallery/1792045586833-QFX_main.webp",
+      "description": "We are proud to announce that the 100mm thick Smart Panel installation work at QFX Cinema Hall, Chitwan, is now ready for handover. \nFrom quality materials to efficient construction, Smart Panel continues to deliver modern building solutions designed for strength, thermal insulation, and faster construction."
+    },
     {
       "id": "mutztiyi3fq6k",
       "title": "Bal Bikash School Kindergarten block",
